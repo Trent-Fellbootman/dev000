@@ -1,19 +1,42 @@
 # DEV-000 Course Structure
 
-Preface: Course goal? What do you need to know to be a "true developer"? How to learn this course?
+## Module 0: The Developer's Mindset
 
-- Don't try to learn a "specific language"; consult GPT when you have difficulties.
+This module covers the fundamental concepts that underlies all aspect of the developer's world, such as abstraction and hierarchy.
 
-## Module 0: The Abstraction of a Computer
+Topics include:
 
-- Address space & memory
-- Machine code & compiling
+- Abstraction
+- Hierarchy
+- Standards
 
-## Module 1: Programming
+## Module 1: The Abstract Computer
 
-### How do programming languages work?
+Prerequisite Modules:
 
-#### Programming Fundamentals (Also mention common semantics & coding practices)
+- Module 0: The Developer's Mindset
+
+This module explains how a computer is abstracted to developers. Topics include:
+
+- Memory address, stack, heap, etc.
+- How a program gets run: compilation, linking, etc.
+
+## Module 2: Programming Languages
+
+Prerequisite Modules:
+
+- Module 0: The Developer's Mindset
+- Module 1: The Abstract Computer
+
+This module gives a panoramic introduction to programming languages. This is not a tutorial to a specific language; instead, it explains how programming languages generally work, introduces the syntactical constructs found in almost all mainstream languages and compares the styles and design choices of multiple programming languages.
+
+This module does not assume you have any experience with coding, but it is not a programming tutorial. Instead of learning to code by reading this module exclusive, you are expected to consult GPT on how to actually code in specific languages.
+
+After learning this module, you should have a good understanding of how modern programming languages work and why they are designed in certain ways. With the help of GPT, you should be able to get started and code in any language.
+
+Specific topics covered in this module are listed below.
+
+### Programming Fundamentals
 
 - variables & types
 - control flow statements
@@ -21,14 +44,14 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
 - classes
 - modules
 
-#### Programming Language Taxonomy
+### Programming Language Taxonomy
 
 - Compiled Languages v.s. Interpreted Languages + virtual-machine-based
 - Static typing v.s. Dynamic typing
 - Garbage collection v.s. manual resource management
 - High-level v.s. low-level
 
-#### Common Concepts in Programming Languages
+### Common Concepts in Programming Languages
 
 - **Abstraction**
 - Interfaces & ABCs & Polymorphism
@@ -40,13 +63,21 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
   - try-catch
   - Result
 
-#### Other "Abnormal" Languages
+### Other "Abnormal" Languages
 
 - LISP
 
-### How to code properly?
+## Module 3: Coding Properly
 
-#### Common Coding Practices
+Prerequisite Modules:
+
+- Module 2: Programming Languages
+
+This module explains the "good practices" and paradigms in programming, and more importantly, the logic behind them.
+
+After learning this module, you should get a good idea of how to design and code up large projects with hundreds of thousands of lines of code.
+
+### Common Coding Practices
 
 - Code Styling
   - CODE_OF_CONDUCT
@@ -54,7 +85,7 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
 - Comments & docstrings
 - Testing (just mention some concepts)
 
-#### Programming Principles
+### Programming Principles
 
 - Syntax & Semantics: What it can be v.s. What it should be (and usually be)
 - Don't repeat yourself
@@ -65,19 +96,29 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
 - Write comments
 - When the program is short, forget about all principles
 
-#### Programming Paradigms
+### Programming Paradigms
 
 - Object Oriented Programming
 - Functional Programming
 
-#### Designing Software Systems (preliminary)
+### Designing Software Systems
 
-- Modules & APIs
+- Modules & APIs & Interfaces
 - Coupling & Cohesion
+- Other Considerations
+  - Abstract your dependencies
 
-#### How do computer programs run under the hood?
+## Module 4: Terminal & Superuser Basics
 
-## Module 2: Terminal & Unix Basics
+Prerequisite Modules:
+
+- Module 2: Programming Languages (recommended)
+
+This module introduces terminal, operating system basics and other "superuser stuff".
+
+This module should take you from a "regular user" who interacts with a computer by dragging-dropping and pushing buttons to a "superuser" who feels comfortable using terminals and doing multi-booting.
+
+Specific topics are listed below.
 
 ### Terminal & Shell Scripting
 
@@ -120,7 +161,18 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
 - Linux potpourri
   - kernel modules
 
-## Module 3: Software Systems Development
+## Module 5: Software Development
+
+Prerequisite Modules:
+
+- Module 2: Programming Languages
+- Module 3: Coding Properly
+
+This module explains the common concepts and tools involved with software development.
+
+After learning this module, you should feel comfortable starting a large project, coding it up with a team, and publishing it to the public.
+
+Specific topics are listed below.
 
 ### Common Concepts in Software Systems
 
@@ -140,13 +192,6 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
     - CPU Instruction Set Architectures (ISAs)
     - GPU specifications (OpenGL & Vulkan)
     - Data Representation Standards (JSON, TOML, YAML, XML, HTML)
-
-### Designing Software Systems
-
-- Modules & APIs & Interfaces
-- Coupling & Cohesion
-- Software System Design Principles (In addition to programming principles)
-  - Abstract your dependencies
 
 ### Testing
 
@@ -183,7 +228,16 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
 - README, CONTRIBUTE, LICENSE
 - TODOs & FIXMEs
 
-## Module 4: Concurrent Programming (Tentative Structure)
+## Module 6: Concurrent Programming
+
+Prerequisite Modules:
+
+- Module 2: Programming Languages
+- Module 3: Coding Properly (recommended)
+
+This is a relatively stand-alone module that explains the concepts involved with concurrent programming.
+
+Topics are listed below.
 
 ### Introduction to Concurrency
 
@@ -214,7 +268,18 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
 - Futures & poll
 - async & await
 
-## Module 5: Computer Architecture Fundamentals
+## Module 7: Computer Architecture Fundamentals
+
+Prerequisite Modules:
+
+- Module 1: The Abstract Computer
+- Module 2: Programming Languages (strongly recommended)
+
+This module introduces the very basics of how computers work in hardware.
+
+After learning this module, you should have a deeper understanding of computers and be able to code programs that utilize the hardware in an optimized way.
+
+Topics are listed below.
 
 ### CPUs
 
@@ -226,7 +291,16 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
 
 ### GPUs & Accelerators
 
-## Module 6: Miscellaneous Topics in the Developer's World
+## Module 8: Miscellaneous Topics in the Developer's World
+
+Prerequisite Modules:
+
+- Module 2: Programming Languages (strongly recommended)
+- Module 3: Coding Properly (recommended)
+
+This section discusses the various fields and common tools in the developer's world.
+
+Topics are listed below.
 
 ### UI & App Development
 
@@ -249,7 +323,16 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
 - LSPs
 - Hugging Face
 
-## Module 7: AI Aided Development & AI Software Development
+## Module 9: AI Aided Development & AI Software Development
+
+Prerequisite Modules:
+
+- Module 2: Programming Languages
+- Module 3: Coding Properly (Recommended)
+
+This module discusses how to use AI to develop better, and how to develop applications that take advantage of AI.
+
+Topics are listed below.
 
 ### Artificial Intelligence Basics
 

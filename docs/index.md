@@ -2,7 +2,7 @@
 
 ## THIS PROJECT IS CURRENTLY UNDER CONSTRUCTION
 
-## What is this course about?
+## What is this course about? What can you get out of it?
 
 This course provides a complete introduction to programming, computers and software development and covers various topics such as:
 
@@ -13,12 +13,14 @@ This course provides a complete introduction to programming, computers and softw
 - Computer Hardware Fundamentals
 - AI Aided Development & AI Application Development
 
+After learning this course, you should be ready to develop large projects with hundreds of thousands of lines of code. And, you will have a good understanding of the fundamental concepts, design choices and tradeoffs that underlies the developer's world. You won't get to know every language, every framework and every piece of syntax; but you will know where to look for answers, what you should checkout and how to solve problems with Google and ChatGPT.
+
 ## Who might find this course helpful?
 
 This tutorial is for those who:
 
 - Are completely new to computers and want to learn programming;
-- Already have some familiarity with programming and wish to learn more and become a "qualified developer".
+- Already have some familiarity with programming and wish to learn more and become a "true developer".
 
 ## How to learn programming and development?
 
@@ -35,4 +37,3 @@ Personally, I believe that harnessing the power of AI is a very important skill 
 ## What is the right way to take this course?
 
 This course is organized into modules. You don't need to take all modules sequentially; just find the modules that interest you the most. However, some modules might depend on others.
-
