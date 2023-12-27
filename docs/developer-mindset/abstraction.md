@@ -26,7 +26,7 @@ Although I gave a definition above, abstraction itself is an "abstract" idea whi
 | ![abstracted-car](res/car-abstraction.png) | ![concrete-car](res/car-mechanics.png) |
 | ---------------------------------------- | ------------------------------------ |
 
-When you're in a morning rush and you see a car, what first comes to your mind? Is it "I can drive this thing around", or chasis, engine, tires and fuel tanks?
+When you're in a morning rush and you see a car, what first comes to your mind? Is it "I can drive this thing around", or chassis, engine, tires and fuel tanks?
 
 I believe most people's view would be the former. Of course, the latter view is also important, but it is **irrelevant** to you at the moment: you're in a rush, so all that matters to you is that you can drive a car to get to your workplace fast.
 
@@ -36,7 +36,7 @@ Believe it or not, you have already created an abstraction in the example above.
 - Target audience: You.
 - What is this thing: Something you can use to drive around and get to anywhere fast.
 - Relevant information: You can drive this thing around. It's fast.
-- Irrelevant information: It's made up of an engine, a fuel tank, a chasis, etc. It's 4.6 meters long and 1.6 meters tall, with a peak power output of 140 hp. Stuff like that.
+- Irrelevant information: It's made up of an engine, a fuel tank, a chassis, etc. It's 4.6 meters long and 1.6 meters tall, with a peak power output of 140 hp. Stuff like that.
 
 The explanation above should be easy to understand: the target audience is you, and the only thing you need to know is that you can drive a car around, so that's the abstraction.
 
@@ -44,7 +44,7 @@ For workers at a car factory, however, the view would be different. The workers 
 
 - Target of abstraction: The car.
 - Target audience: Factory workers.
-- What is this thing: A car is made of an engine, a fuel tank, a chasis and a bunch of other stuff.
+- What is this thing: A car is made of an engine, a fuel tank, a chassis and a bunch of other stuff.
 - Relevant information: Internal structures of a car.
 - Irrelevant information: How to drive a car.
 
