@@ -12,11 +12,13 @@
         <meta name="author" content="Trent Fellbootman">
       
       
-        <link rel="canonical" href="https://TODO/abstraction/abstraction-intro/">
+        <link rel="canonical" href="https://TODO/developer-mindset/abstraction/">
       
       
-        <link rel="prev" href="../../outline/">
+        <link rel="prev" href="../">
       
+      
+        <link rel="next" href="../hierarchy/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -235,10 +237,10 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
-  Abstraction
+  Module 0: The Developer's Mindset
 
         </a>
       </li>
@@ -416,7 +418,7 @@
             
   
   <span class="md-ellipsis">
-    Abstraction
+    Module 0: The Developer's Mindset
   </span>
   
 
@@ -426,9 +428,30 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Abstraction
+            Module 0: The Developer's Mindset
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module 0: The Developer's Mindset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -485,7 +508,7 @@
         <li class="md-nav__item">
   <a href="#what-is-abstraction" class="md-nav__link">
     <span class="md-ellipsis">
-      What is "Abstraction"?
+      What is "abstraction"?
     </span>
   </a>
   
@@ -500,10 +523,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-does-abstraction-look-like-in-the-developers-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      What does abstraction look like in the developer's world?
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hierarchy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hierarchy: A Way to Manage Complexity
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -545,7 +598,7 @@
         <li class="md-nav__item">
   <a href="#what-is-abstraction" class="md-nav__link">
     <span class="md-ellipsis">
-      What is "Abstraction"?
+      What is "abstraction"?
     </span>
   </a>
   
@@ -555,6 +608,15 @@
   <a href="#an-example-of-abstraction" class="md-nav__link">
     <span class="md-ellipsis">
       An Example of Abstraction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-abstraction-look-like-in-the-developers-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      What does abstraction look like in the developer's world?
     </span>
   </a>
   
@@ -575,7 +637,7 @@
                   
 
   
-    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/abstraction/abstraction-intro.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/developer-mindset/abstraction.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -584,9 +646,9 @@
 
 
 <h1 id="abstraction-the-developers-way-of-thinking">Abstraction: The Developer's Way of Thinking</h1>
-<p>Before diving into "developer stuff" like programming languages, it is important to first understand the idea of <strong>abstraction</strong>, which is a fundamental concept underlying <strong>all</strong> software systems, hardware architectures, and essentially, all complicated things.</p>
+<p>The single most important idea that every developer must have is <strong>abstraction</strong>, a fundamental concept underlying <strong>all</strong> software systems, hardware architectures, and essentially, all complicated things.</p>
 <p>Abstraction helps to manage the complexity of real world systems, to break down complex systems into simpler components and to allow both the creator and non-creators something to quickly understand "what this thing is". Abstraction is found in almost every aspect in the modern world, from software applications to hardware and even "non-technical" industries such as animated films. However, it is especially important to developers as they deal with and use this concept every day. Essentially, abstraction should be the second instinct of all developers.</p>
-<h2 id="what-is-abstraction">What is "Abstraction"?</h2>
+<h2 id="what-is-abstraction">What is "abstraction"?</h2>
 <p>Generally speaking, "to abstract" roughly means "<strong>to define what something is to someone, disregarding all irrelevant information</strong>".</p>
 <p>According to the definition above, there are two important questions to ask when abstracting something:</p>
 <ol>
@@ -630,8 +692,63 @@
 <li>Relevant information: Internal structures of a car.</li>
 <li>Irrelevant information: How to drive a car.</li>
 </ul>
-<p>As you can see, <strong>abstraction depends on the target audience</strong>. As the target audience changes, the definition of the target of abstraction can change, and previously relevant/irrelevant information can become irrelevant/relevant as well. Furthermore, both the definition and the relevant information depend on <strong>expected interaction</strong> of the target audience, i.e., what he/she/it will do with the target of abstraction: for you in a morning rush, the expected interaction is that you will drive the car to your workplace, so the relevant information are how to drive a car; for factory workers, the expected interaction is that they will build cars, so the relevant information are the internal structures of a car.</p>
-<p>Therefore, it is always important to identify the target audience and understand what he/she/it will do with the target of abstraction, and then decide what information are relevant/irrelevant.</p>
+<p>As you can see, <strong>abstraction depends on the target audience</strong>. As the target audience changes, the definition of the target of abstraction can change, and previously relevant/irrelevant information can become irrelevant/relevant as well.</p>
+<p>Abstraction also depends on the role of the target audience. When you're driving a car, the abstraction of a car is "something you can drive"; when you're repairing a car, the abstraction starts including engines, tires, etc., because such details are now relevant to you.</p>
+<p>Therefore, it is always important to identify the target audience and understand what it will do with the target of abstraction, and then decide what information are relevant/irrelevant and abstract the "thing" to the audience.</p>
+<h2 id="what-does-abstraction-look-like-in-the-developers-world">What does abstraction look like in the developer's world?</h2>
+<p>Although the car example illustrates the concept of abstraction, it seems to have nothing to do with developer stuff. Now, let's see what abstraction look like in real world software systems and code.</p>
+<p>Here's a source code fragment from <a href="https://github.com/Trent-Fellbootman/konnyaku-gpt">KonnyakuGPT</a> developed by Trent Fellbootman (yep, that's me), an AI-powered anime subtitle generator (there is no need to understand the code):</p>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span> <span class="nf">simple_split_subtitles</span><span class="p">(</span><span class="n">subtitles</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">srt</span><span class="o">.</span><span class="n">Subtitle</span><span class="p">],</span> <span class="n">max_duration</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">srt</span><span class="o">.</span><span class="n">Subtitle</span><span class="p">]:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Splits subtitles that are too long.</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="sd">    The splitting scheme is simple; sentences are LIKELY to be broken into pieces.</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="sd">    Args:</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="sd">        subtitles (Sequence[srt.Subtitle]): Original subtitles.</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="sd">        max_duration (float, optional): The maximum duration of each output subtitle, in seconds. Defaults to 10.</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">new_subtitles</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="k">for</span> <span class="n">subtitle</span> <span class="ow">in</span> <span class="n">subtitles</span><span class="p">:</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="n">remaining_text</span> <span class="o">=</span> <span class="n">subtitle</span><span class="o">.</span><span class="n">content</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="n">current_start</span> <span class="o">=</span> <span class="n">subtitle</span><span class="o">.</span><span class="n">start</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="n">splitted_subtitles</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">remaining_text</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>            <span class="n">expected_text_length</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">max_duration</span> <span class="o">/</span> <span class="p">(</span><span class="n">subtitle</span><span class="o">.</span><span class="n">end</span> <span class="o">-</span> <span class="n">current_start</span><span class="p">)</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">remaining_text</span><span class="p">))</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>            <span class="n">actual_text_length</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">expected_text_length</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">remaining_text</span><span class="p">))</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>            <span class="n">item_text</span> <span class="o">=</span> <span class="n">remaining_text</span><span class="p">[:</span><span class="n">actual_text_length</span><span class="p">]</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>            <span class="n">item_duration</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">item_text</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">remaining_text</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">subtitle</span><span class="o">.</span><span class="n">end</span> <span class="o">-</span> <span class="n">current_start</span><span class="p">)</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>            <span class="n">splitted_subtitles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">srt</span><span class="o">.</span><span class="n">Subtitle</span><span class="p">(</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>                <span class="n">index</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">new_subtitles</span><span class="p">)</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">splitted_subtitles</span><span class="p">),</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>                <span class="n">start</span><span class="o">=</span><span class="n">current_start</span><span class="p">,</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>                <span class="n">end</span><span class="o">=</span><span class="n">current_start</span> <span class="o">+</span> <span class="n">item_duration</span><span class="p">,</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>                <span class="n">content</span><span class="o">=</span><span class="n">item_text</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>            <span class="p">))</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>            <span class="n">remaining_text</span> <span class="o">=</span> <span class="n">remaining_text</span><span class="p">[</span><span class="n">actual_text_length</span><span class="p">:]</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>            <span class="n">current_start</span> <span class="o">+=</span> <span class="n">item_duration</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>        <span class="n">new_subtitles</span> <span class="o">+=</span> <span class="n">splitted_subtitles</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>    <span class="k">return</span> <span class="n">new_subtitles</span>
+</span></code></pre></div>
+<p>There is no need to understand what the code does and how it does its job for now. Basically, the code segment makes up a function (think of it as a tool you can use to do something) which can split up long subtitles into shorter ones.</p>
+<p>You may have noticed that there is some human-readable text at the beginning, namely the following:</p>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="sd">&quot;&quot;&quot;Splits subtitles that are too long.</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="sd">The splitting scheme is simple; sentences are LIKELY to be broken into pieces.</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="sd">Args:</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="sd">    subtitles (Sequence[srt.Subtitle]): Original subtitles.</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="sd">    max_duration (float, optional): The maximum duration of each output subtitle, in seconds. Defaults to 10.</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="sd">&quot;&quot;&quot;</span>
+</span></code></pre></div>
+<p>Such text is called a "docstring", which, as its name suggests, provides documentation for the function. Such a docstring serves as an abstraction to the user of the function, as it includes and only includes what the user needs to know: what the function does and how to use it. The rest of the function, i.e., everything after the docstring, are all irrelevant to the user even though they are the logic code that allow the function to work. The user only needs to know how to use the function; it does not care about how the function works internally.</p>
+<p>Abstraction is very important in this scenario, because it allows the user of the function to quickly understand <strong>only</strong> the things that it needs to understand. Without the docstring, the only way to see what the function does is to read and understand the code. While this is possible, it is much more time consuming than reading the docstring, and a bigger problem is, if the logic code changes, users would need to change the way they use the function, which will result in a lot of code modifications. With abstraction however, no matter how the logic code changes, as long as it maintains the interface (i.e., what the function does and how to use it) defined in the abstraction, the users don't need to change how they use the function at all.</p>
+<p>Abstractions are important not only to users of software systems, but to those who develop the system as well. When there are a lot of code involved in a software (e.g., KonnyakuGPT has roughly ~2,000 lines of Python code), it becomes hard to remember what each piece of code does. Without abstractions like docstrings, even you yourself will find it hard to understand the code you written previously, and abstractions make it much easier to understand, organize and maintain the software you work on.</p>
+<p>Congratulations! You have understood abstraction, which is a concept fundamental to all programming languages and software development processes. Next, we will take a look at <strong>hierarchy</strong>, which is a way to manage complexity and an idea used in every aspect of the developer's world.</p>
 
 
 
@@ -663,7 +780,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../outline/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Course Outline">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Module 0: The Developer&#39;s Mindset">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -673,11 +790,27 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Course Outline
+                Module 0: The Developer's Mindset
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../hierarchy/" class="md-footer__link md-footer__link--next" aria-label="Next: Hierarchy: A Way to Manage Complexity">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Hierarchy: A Way to Manage Complexity
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
