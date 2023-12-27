@@ -40,10 +40,21 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
 nav:
   - Home:
     - About: index.md
     - Course Outline: outline.md
 
-  - Abstraction:
-    - "Abstraction: The Developer's Way of Thinking": abstraction/abstraction-intro.md
+  - "Module 0: The Developer's Mindset":
+    - developer-mindset/index.md
+    - developer-mindset/abstraction.md
+    - developer-mindset/hierarchy.md

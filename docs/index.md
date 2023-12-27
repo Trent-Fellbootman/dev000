@@ -10,3 +10,5 @@ This course provides a complete introduction to programming, computers and softw
 - Software Design & Project Development
 - Computer Hardware Fundamentals
 - AI Aided Development & AI Application Development
+
+
