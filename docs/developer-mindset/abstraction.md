@@ -1,6 +1,6 @@
 # Abstraction: The Developer's Way of Thinking
 
-Before diving into "developer stuff" like programming languages, it is important to first understand the idea of **abstraction**, which is a fundamental concept underlying **all** software systems, hardware architectures, and essentially, all complicated things.
+The single most important idea that every developer must have is **abstraction**, a fundamental concept underlying **all** software systems, hardware architectures, and essentially, all complicated things.
 
 Abstraction helps to manage the complexity of real world systems, to break down complex systems into simpler components and to allow both the creator and non-creators something to quickly understand "what this thing is". Abstraction is found in almost every aspect in the modern world, from software applications to hardware and even "non-technical" industries such as animated films. However, it is especially important to developers as they deal with and use this concept every day. Essentially, abstraction should be the second instinct of all developers.
 
@@ -22,7 +22,7 @@ Although I gave a definition above, abstraction itself is an "abstract" idea whi
 ## An Example of Abstraction
 
 | ![abstracted-car](res/car-abstraction.png) | ![concrete-car](res/car-mechanics.png) |
-| -- | -- |
+| ---------------------------------------- | ------------------------------------ |
 
 When you're in a morning rush and you see a car, what first comes to your mind? Is it "I can drive this thing around", or chasis, engine, tires and fuel tanks?
 
@@ -61,7 +61,7 @@ Here's a source code fragment from [KonnyakuGPT](https://github.com/Trent-Fellbo
 ```Python
 def simple_split_subtitles(subtitles: Sequence[srt.Subtitle], max_duration: datetime.timedelta) -> List[srt.Subtitle]:
     """Splits subtitles that are too long.
-    
+  
     The splitting scheme is simple; sentences are LIKELY to be broken into pieces.
 
     Args:
@@ -90,9 +90,9 @@ def simple_split_subtitles(subtitles: Sequence[srt.Subtitle], max_duration: date
 
             remaining_text = remaining_text[actual_text_length:]
             current_start += item_duration
-        
+      
         new_subtitles += splitted_subtitles
-    
+  
     return new_subtitles
 ```
 
