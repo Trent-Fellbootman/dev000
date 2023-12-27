@@ -441,7 +441,7 @@
         
   
   <span class="md-ellipsis">
-    Module 0: The Developer's Mindset
+    Introduction
   </span>
   
 
@@ -488,6 +488,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Hierarchy: A Way to Manage Complexity
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -497,6 +508,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-hierarchy-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      What does "hierarchy" mean?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-types-of-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Types of Hierarchy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Types of Hierarchy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#composition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-to-specific-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      General-to-Specific Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-hierarchy-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why is hierarchy important?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -530,6 +611,65 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-hierarchy-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      What does "hierarchy" mean?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-types-of-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Types of Hierarchy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Types of Hierarchy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#composition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-to-specific-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      General-to-Specific Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-hierarchy-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why is hierarchy important?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -552,6 +692,192 @@
 
 
 <h1 id="hierarchy-a-way-to-manage-complexity">Hierarchy: A Way to Manage Complexity</h1>
+<p>The second most important idea following abstraction is the idea of hierarchy.
+Hierarchy is a way to manage complexity, and is found in almost every software application.</p>
+<h2 id="what-does-hierarchy-mean">What does "hierarchy" mean?</h2>
+<p>Broadly speaking, <strong>the idea of hierarchy is about grouping things together and forming a tree of abstractions;
+that "tree of abstractions" is called a "hierarchy"</strong>.</p>
+<p>That's a very abstract definition, so let's look at an example.</p>
+<p>Suppose you are a college students and you have the following files for course assignments, PPT slides, etc.:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>introduction-to-ai.pdf
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>calculus-assignment-1.pdf
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>programming-assignment-2.py
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>literature-textbook.epub
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>introduction-to-ai-lecture-2.pdf
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>calculus-assignment-2.pdf
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>programming-assignment-3.py
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>literature-review-article.epub
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>introduction-to-ai-project-outline.docx
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>calculus-final-exam-review.pdf
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>programming-code-snippets.txt
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>literature-essay-draft.docx
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>introduction-to-ai-research-paper.pdf
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>calculus-quiz-answers.docx
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>programming-tutorial-slides.pptx
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>literature-poetry-analysis.pdf
+</span></code></pre></div>
+<p>Man, that's a lot of files. And it looks messy, doesn't it?</p>
+<p>A natural idea would be to group them into folders, for example:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>course-files/
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  AI/
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    introduction-to-ai.pdf
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    introduction-to-ai-lecture-2.pdf
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    introduction-to-ai-project-outline.docx
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    introduction-to-ai-research-paper.pdf
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  Calculus/
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    calculus-assignment-1.pdf
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    calculus-assignment-2.pdf
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    calculus-final-exam-review.pdf
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    calculus-quiz-answers.docx
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  Programming/
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    programming-assignment-2.py
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    programming-assignment-3.py
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    programming-code-snippets.txt
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    programming-tutorial-slides.pptx
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  Literature/
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    literature-textbook.epub
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    literature-review-article.epub
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    literature-essay-draft.docx
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    literature-poetry-analysis.pdf
+</span></code></pre></div>
+<p>That looks much better, right?
+Files for the same subject are grouped together,
+and this way, you can find what you need much more easily.</p>
+<p>That is the idea of hierarchy.
+Recall the definition of hierarchy:
+<em>the idea of hierarchy is about grouping things together and forming a tree of abstractions</em>.
+Here, we group the files together according to the subject they belong to.
+You might ask: "where's the 'tree of abstractions'?"
+Well, the above directory structure can also be represented using the following graph:</p>
+<pre class="mermaid"><code>mindmap
+  root((course-files))
+    AI
+      introduction-to-ai.pdf
+      introduction-to-ai-lecture-2.pdf
+      introduction-to-ai-project-outline.docx
+      introduction-to-ai-research-paper.pdf
+
+    Calculus
+      calculus-assignment-1.pdf
+      calculus-assignment-2.pdf
+      calculus-final-exam-review.pdf
+      calculus-quiz-answers.docx
+
+    Programming
+      programming-assignment-2.py
+      programming-assignment-3.py
+      programming-code-snippets.txt
+      programming-tutorial-slides.pptx
+
+    Literature
+      literature-textbook.epub
+      literature-review-article.epub
+      literature-essay-draft.docx
+      literature-poetry-analysis.pdf</code></pre>
+<p>This looks just like the branches of a tree.
+Each node in the tree represents an abstraction,
+and the abstraction of the child relates to that of its parent.
+For example, the abstraction of the "course-files" folder might be
+"all the files for the college courses";
+its children are "AI", "Calculus", "Programming", and "Literature",
+and each of these folders abstracts away "all the files for a certain course",
+which is a part of "all the files for the courses".</p>
+<p>Now that you have a rough understanding of hierarchy,
+let's look at some common types of hierarchies to understand the idea better.</p>
+<h2 id="common-types-of-hierarchy">Common Types of Hierarchy</h2>
+<h3 id="composition">Composition</h3>
+<p>Composition is possibly the most common type of hierarchy.
+A composition hierarchy is a hierarchy where, in the tree of abstraction,
+the parent <strong>contains</strong> the children.</p>
+<p>The previous course files example is a composition hierarchy.
+In this example, "course-files" folder is the parent of "AI", "Calculus", "Programming", and "Literature" folders;
+the folder for each course is the parent of the files of that course.
+"course-files" contains the course folders;
+each course folder contains its files.
+That is, the parent contains the children.</p>
+<p>Another example is a car.
+On the highest level, a car consists of a car body, engine, chassis, and the wheels.
+Then, the car body contains doors and windows,
+the engine contains gears and cylinders,
+and so on.</p>
+<pre class="mermaid"><code>graph TD
+
+Car
+
+Car --&gt; Car-Body
+Car --&gt; chassis
+Car --&gt; Wheels
+Car --&gt; Engine
+
+Car-Body --&gt; Doors
+Car-Body --&gt; Windows
+
+Engine --&gt; Gears
+Engine --&gt; Cylinders</code></pre>
+<h3 id="general-to-specific-hierarchy">General-to-Specific Hierarchy</h3>
+<p>Another common type of hierarchy is the general-to-specific hierarchy.
+In a hierarchy of this type, the parent <strong>generalizes</strong> its children,
+and its abstraction is the intersection of the natures of the children.</p>
+<p>For example, consider the following hierarchy:</p>
+<pre class="mermaid"><code>graph TD
+
+Creatures
+
+Creatures --&gt; Plants
+
+Plants --&gt; Trees
+
+Plants --&gt; Grass
+
+Creatures --&gt; Animals
+
+Animals --&gt; Insects
+
+Animals --&gt; Mammals
+
+Mammals --&gt; Humans</code></pre>
+<p>In this hierarchy, "Animals" is a type of "Creatures";
+"Mammals" is a type of "Animals";
+and "Humans" is a type of "Mammals", etc.
+That is, each child is a type of the parent,
+plus some characteristics specific to itself;
+the characteristics of the parent is common to all of its children.</p>
+<h2 id="why-is-hierarchy-important">Why is hierarchy important?</h2>
+<p>Hierarchy is important, because it allows a system to be abstracted differently at different levels,
+which makes it easier to design, understand and maintain.</p>
+<p>Suppose we want to design a car.
+Without a hierarchy, we would need to design every single part together,
+from every bolt on the steering wheel to every gear in the engine.
+As there can be tens of thousands of parts in the car,
+it would be very hard to keep track of all of them
+and make sure they all work together.</p>
+<p>When the car is malfunctioning, we would need to check every part
+to find the faulty one and replace it;
+if we want to explain how the car works,
+we would need to explain what each part does,
+and the fact the all the parts cooperate to make up a functional car
+would probably look like magic.</p>
+<p>With the idea of hierarchy in mind, we would split up the car into more manageable pieces.
+For example, we can have one team of engineers to work on the engine,
+another team to work on the chassis, etc.
+And the team that works on the engine may further split up the engine into smaller pieces to make sure they all work together.
+The team that works on the engine does not need to know how the chassis works (generally); and vice versa.</p>
+<p>When the car is malfunctioning, we would first check each high-level component
+to see if it works correctly, identify the faulty component,
+check all of its sub-components, until finally reaching the broken part;
+although this is a lot of work as well,
+it is much easier than checking through every bolt and gear.
+If we want to explain how the car works,
+we would first explain the function of each top-level components,
+and then explain how the sub-components work together and make up a functional high-level component.
+Obviously, it is much easier to explain the car this way
+than first describe what each screw does, and "suddenly, the parts just magically become a working car".</p>
+<p>In software development, "replacing the faulty part" roughly maps to fixing the faulty piece of code;
+"explaining how the car works" roughly maps to understanding how the software is made up, so that you know how to write code for it.</p>
+<p>As you can see, by decomposing complex systems and grouping things together,
+the idea of hierarchy allows people to manage complexity, and to design and understand complex systems effectively.</p>
+<p>Congratulations! You have now learned the idea of hierarchy.
+Next, we are going to talk about the last concept in this module: standards.</p>
 
 
 
