@@ -650,12 +650,14 @@
 <p>Abstraction helps to manage the complexity of real world systems, to break down complex systems into simpler components and to allow both the creator and non-creators something to quickly understand "what this thing is". Abstraction is found in almost every aspect in the modern world, from software applications to hardware and even "non-technical" industries such as animated films. However, it is especially important to developers as they deal with and use this concept every day. Essentially, abstraction should be the second instinct of all developers.</p>
 <h2 id="what-is-abstraction">What is "abstraction"?</h2>
 <p>Generally speaking, "to abstract" roughly means "<strong>to define what something is to someone, disregarding all irrelevant information</strong>".</p>
-<p>According to the definition above, there are two important questions to ask when abstracting something:</p>
+<p>According to the definition above, there are a few important questions to ask when abstracting something:</p>
 <ol>
-<li><strong>What is this thing?</strong></li>
+<li><strong>What is the "thing" to be abstracted?</strong></li>
+<li><strong>Who is that "someone"? How will he/she/it interact with the "thing"?</strong></li>
+<li><strong>What is this "thing", in that "someone"'s view?</strong></li>
 <li><strong>What information are relevant? What information are not? I.e., What does that "someone" need to know about?</strong></li>
 </ol>
-<p>Notice that both of these questions are dependent to the "target audience" of the abstraction, i.e., the person (or the system) that will use the abstraction. If your audience changes, the "thing" might look different, relevant information might become irrelevant, and vice versa.</p>
+<p>Notice that the answer to these questions are dependent to the "target audience" of the abstraction, i.e., the person (or the system) that will use the abstraction and interact with the "thing". If your audience changes, the "thing" might look different, relevant information might become irrelevant, and vice versa.</p>
 <p>Abstraction is not meant for other people only; sometimes (actually most of the time), the target audience will be yourself who is designing and implementing the thing to be abstracted.</p>
 <p>Although I gave a definition above, abstraction itself is an "abstract" idea which is very hard to define clearly, and there is no broadly-accepted definition. So, I will use an example to illustrate what abstraction really means.</p>
 <h2 id="an-example-of-abstraction">An Example of Abstraction</h2>
@@ -675,7 +677,7 @@
 </table>
 <p>When you're in a morning rush and you see a car, what first comes to your mind? Is it "I can drive this thing around", or chasis, engine, tires and fuel tanks?</p>
 <p>I believe most people's view would be the former. Of course, the latter view is also important, but it is <strong>irrelevant</strong> to you at the moment: you're in a rush, so all that matters to you is that you can drive a car to get to your workplace fast.</p>
-<p>Believe it or not, you have already used abstraction in the example above. Let's break it down a little:</p>
+<p>Believe it or not, you have already created an abstraction in the example above. Let's break it down a little:</p>
 <ul>
 <li>Target of abstraction: The car.</li>
 <li>Target audience: You.</li>
@@ -684,7 +686,7 @@
 <li>Irrelevant information: It's made up of an engine, a fuel tank, a chasis, etc. It's 4.6 meters long and 1.6 meters tall, with a peak power output of 140 hp. Stuff like that.</li>
 </ul>
 <p>The explanation above should be easy to understand: the target audience is you, and the only thing you need to know is that you can drive a car around, so that's the abstraction.</p>
-<p>For workers at a car factory, however, the view would be different. The workers build cars; they do not need to know how to drive the car, but they do need to know the inner workings of car so that they can build it. This time, the abstraction becomes:</p>
+<p>For workers at a car factory, however, the view would be different. The workers build cars; they do not need to know how to drive the car, but they do need to know the inner workings of a car so that they can build it. This time, the abstraction becomes:</p>
 <ul>
 <li>Target of abstraction: The car.</li>
 <li>Target audience: Factory workers.</li>
@@ -697,7 +699,7 @@
 <p>Therefore, it is always important to identify the target audience and understand what it will do with the target of abstraction, and then decide what information are relevant/irrelevant and abstract the "thing" to the audience.</p>
 <h2 id="what-does-abstraction-look-like-in-the-developers-world">What does abstraction look like in the developer's world?</h2>
 <p>Although the car example illustrates the concept of abstraction, it seems to have nothing to do with developer stuff. Now, let's see what abstraction look like in real world software systems and code.</p>
-<p>Here's a source code fragment from <a href="https://github.com/Trent-Fellbootman/konnyaku-gpt">KonnyakuGPT</a> developed by Trent Fellbootman (yep, that's me), an AI-powered anime subtitle generator (there is no need to understand the code):</p>
+<p>Here's a source code fragment from <a href="https://github.com/Trent-Fellbootman/konnyaku-gpt">KonnyakuGPT</a>, an AI-powered anime subtitle generator (there is no need to understand the code):</p>
 <div class="language-Python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span> <span class="nf">simple_split_subtitles</span><span class="p">(</span><span class="n">subtitles</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">srt</span><span class="o">.</span><span class="n">Subtitle</span><span class="p">],</span> <span class="n">max_duration</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">srt</span><span class="o">.</span><span class="n">Subtitle</span><span class="p">]:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Splits subtitles that are too long.</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
@@ -745,9 +747,9 @@
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="sd">    max_duration (float, optional): The maximum duration of each output subtitle, in seconds. Defaults to 10.</span>
 </span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="sd">&quot;&quot;&quot;</span>
 </span></code></pre></div>
-<p>Such text is called a "docstring", which, as its name suggests, provides documentation for the function. Such a docstring serves as an abstraction to the user of the function, as it includes and only includes what the user needs to know: what the function does and how to use it. The rest of the function, i.e., everything after the docstring, are all irrelevant to the user even though they are the logic code that allow the function to work. The user only needs to know how to use the function; it does not care about how the function works internally.</p>
+<p>Such text is called a "docstring", which, as its name suggests, provides documentation for the function. Such a docstring serves as an abstraction to the user of the function, as it includes and <strong>only</strong> includes what the user needs to know: what the function does and how to use it. The rest of the function, i.e., everything after the docstring, are all irrelevant to the user even though they are the logic code that allow the function to work. The user only needs to know how to use the function; it does not care about how the function works internally.</p>
 <p>Abstraction is very important in this scenario, because it allows the user of the function to quickly understand <strong>only</strong> the things that it needs to understand. Without the docstring, the only way to see what the function does is to read and understand the code. While this is possible, it is much more time consuming than reading the docstring, and a bigger problem is, if the logic code changes, users would need to change the way they use the function, which will result in a lot of code modifications. With abstraction however, no matter how the logic code changes, as long as it maintains the interface (i.e., what the function does and how to use it) defined in the abstraction, the users don't need to change how they use the function at all.</p>
-<p>Abstractions are important not only to users of software systems, but to those who develop the system as well. When there are a lot of code involved in a software (e.g., KonnyakuGPT has roughly ~2,000 lines of Python code), it becomes hard to remember what each piece of code does. Without abstractions like docstrings, even you yourself will find it hard to understand the code you written previously, and abstractions make it much easier to understand, organize and maintain the software you work on.</p>
+<p>Abstractions are important not only to users of software systems, but to those who develop the system as well. When there are a lot of code involved in a software (e.g., KonnyakuGPT has roughly ~2,000 lines of Python code), it becomes hard to remember what each piece of code does. Without abstractions like docstrings, even you yourself will find it hard to understand the code you written previously; abstractions make it much easier to understand, organize and maintain the software you work on.</p>
 <p>Congratulations! You have understood abstraction, which is a concept fundamental to all programming languages and software development processes. Next, we will take a look at <strong>hierarchy</strong>, which is a way to manage complexity and an idea used in every aspect of the developer's world.</p>
 
 
