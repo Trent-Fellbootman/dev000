@@ -44,3 +44,6 @@ nav:
   - Home:
     - About: index.md
     - Course Outline: outline.md
+
+  - Abstraction:
+    - "Abstraction: The Developer's Way of Thinking": abstraction/abstraction-intro.md

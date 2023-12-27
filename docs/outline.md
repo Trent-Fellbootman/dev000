@@ -82,7 +82,7 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
 ### Terminal & Shell Scripting
 
 - What is a terminal? What is a shell? What is a shell script?
-- Taxomony of shell scripting languages: text-based (bash) v.s. data-oriented (powershell & nushell)
+- Taxonomy of shell scripting languages: text-based (bash) v.s. data-oriented (powershell & nushell)
 - Key differences between scripting languages and programming languages
 - Shell scripting basics
   - Basic commands
@@ -96,7 +96,7 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
 - Terminal Tricks & Common Practices
   - Auto-completion, history, etc.
   - Shell config files
-  - Prompt-custimization & theming
+  - Prompt-customization & theming
   - Shell plugins
   - Common Tools & Commands
     - grep, cut, awk, tmux, ssh, etc.
@@ -260,7 +260,7 @@ Preface: Course goal? What do you need to know to be a "true developer"? How to 
 
 - Code-completion
 - AI Code Generation (logic code, unit tests, documentation, etc.)
-- Auto internationlization
+- Auto internationalization
 - AI as an augmented Google
 
 ### AI Software Development
