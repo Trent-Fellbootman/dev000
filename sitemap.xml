@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://TODO/</loc>
-         <lastmod>2023-12-26</lastmod>
+         <lastmod>2023-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://TODO/outline/</loc>
-         <lastmod>2023-12-26</lastmod>
+         <lastmod>2023-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TODO/abstraction/</loc>
+         <lastmod>2023-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TODO/abstraction/abstraction-intro/</loc>
+         <lastmod>2023-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TODO/abstraction/computer-abstraction/</loc>
+         <lastmod>2023-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
