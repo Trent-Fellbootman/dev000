@@ -64,3 +64,5 @@ nav:
     - developer-mindset/hierarchy.md
     - developer-mindset/standards.md
     - developer-mindset/conclusion.md
+  - "Module 1: The Abstract Computer":
+    - Introduction: abstract-computer/index.md
