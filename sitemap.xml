@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://TODO/abstract-computer/</loc>
+         <lastmod>2023-12-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://TODO/developer-mindset/</loc>
          <lastmod>2023-12-28</lastmod>
          <changefreq>daily</changefreq>
