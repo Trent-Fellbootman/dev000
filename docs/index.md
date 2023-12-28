@@ -36,4 +36,16 @@ Personally, I believe that harnessing the power of AI is a very important skill 
 
 ## What is the right way to take this course?
 
-This course is organized into modules. You don't need to take all modules sequentially; just find the modules that interest you the most. However, some modules might depend on others.
+This course is organized into modules.
+For those completely new to programming and development,
+it is recommended to learn each module in order,
+so that you can get a complete and systematic understanding of the developer's world.
+
+However, the modules are not strictly dependent on each other,
+so if you already have some experience,
+or if you're only interested in certain aspects of development,
+feel free to find the modules that interest you the most and skip the rest.
+
+## Next Steps
+
+Take a look at the [course outline](outline.md) and pick a module to start with!

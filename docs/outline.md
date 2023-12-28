@@ -1,6 +1,10 @@
 # DEV-000 Course Structure
 
-## Module 0: The Developer's Mindset
+Note: Some modules are not available yet.
+The names of available modules are shown as links,
+while unavailable modules are shown as plain text.
+
+## [Module 0: The Developer's Mindset](developer-mindset/index.md)
 
 This module covers the fundamental concepts that underlies all aspect of the developer's world, such as abstraction and hierarchy.
 
@@ -10,7 +14,7 @@ Topics include:
 - Hierarchy
 - Standards
 
-## Module 1: The Abstract Computer
+## [Module 1: The Abstract Computer](abstract-computer/index.md)
 
 Prerequisite Modules:
 
