@@ -62,3 +62,5 @@ nav:
     - Introduction: developer-mindset/index.md
     - developer-mindset/abstraction.md
     - developer-mindset/hierarchy.md
+    - developer-mindset/standards.md
+    - developer-mindset/conclusion.md

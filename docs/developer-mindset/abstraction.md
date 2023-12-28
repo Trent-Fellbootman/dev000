@@ -6,7 +6,15 @@ Abstraction helps to manage the complexity of real world systems, to break down 
 
 ## What is "abstraction"?
 
-Generally speaking, "to abstract" roughly means "**to define what something is to someone, disregarding all irrelevant information**".
+Generally speaking, "to abstract" roughly means **"to define what something is to someone, disregarding all irrelevant information",
+and that definition ("what something is") is called an abstraction**.
+
+Notice that some people may define "abstraction" differently,
+such as "the abstract nature that is common to multiple entities".
+Here, I'm splitting that definition into two parts:
+the "abstract nature" part is defined as abstraction;
+the "common to multiple entities" part is defined as "standards",
+which is a concept introduced in a later section.
 
 According to the definition above, there are a few important questions to ask when abstracting something:
 
@@ -34,17 +42,17 @@ Believe it or not, you have already created an abstraction in the example above.
 
 - Target of abstraction: The car.
 - Target audience: You.
-- What is this thing: Something you can use to drive around and get to anywhere fast.
+- What is this thing ("abstraction"): Something you can use to drive around and get to anywhere fast.
 - Relevant information: You can drive this thing around. It's fast.
 - Irrelevant information: It's made up of an engine, a fuel tank, a chassis, etc. It's 4.6 meters long and 1.6 meters tall, with a peak power output of 140 hp. Stuff like that.
 
 The explanation above should be easy to understand: the target audience is you, and the only thing you need to know is that you can drive a car around, so that's the abstraction.
 
-For workers at a car factory, however, the view would be different. The workers build cars; they do not need to know how to drive the car, but they do need to know the inner workings of a car so that they can build it. This time, the abstraction becomes:
+For workers at a car factory, however, the view would be different. The workers build cars; they do not need to know how to drive the car, but they do need to know the inner workings of a car so that they can build it. This time, we have:
 
 - Target of abstraction: The car.
 - Target audience: Factory workers.
-- What is this thing: A car is made of an engine, a fuel tank, a chassis and a bunch of other stuff.
+- What is this thing ("abstraction"): Something made of an engine, a fuel tank, a chassis and a bunch of other stuff.
 - Relevant information: Internal structures of a car.
 - Irrelevant information: How to drive a car.
 
@@ -92,7 +100,7 @@ def simple_split_subtitles(subtitles: Sequence[srt.Subtitle], max_duration: date
 
             remaining_text = remaining_text[actual_text_length:]
             current_start += item_duration
-    
+  
         new_subtitles += splitted_subtitles
   
     return new_subtitles

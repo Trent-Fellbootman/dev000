@@ -70,6 +70,8 @@ Here, we group the files together according to the subject they belong to.
 You might ask: "where's the 'tree of abstractions'?"
 Well, the above directory structure can also be represented using the following graph:
 
+<div style="text-align: center;">
+
 ```mermaid
 mindmap
   root((course-files))
@@ -97,6 +99,8 @@ mindmap
       literature-essay-draft.docx
       literature-poetry-analysis.pdf
 ```
+
+</div>
 
 This looks just like the branches of a tree.
 Each node in the tree represents an abstraction,
@@ -131,6 +135,8 @@ Then, the car body contains doors and windows,
 the engine contains gears and cylinders,
 and so on.
 
+<div style="text-align: center;">
+
 ```mermaid
 graph TD
 
@@ -148,6 +154,8 @@ Engine --> Gears
 Engine --> Cylinders
 ```
 
+</div>
+
 ### General-to-Specific Hierarchy
 
 Another common type of hierarchy is the general-to-specific hierarchy.
@@ -155,6 +163,8 @@ In a hierarchy of this type, the parent **generalizes** its children,
 and its abstraction is the intersection of the natures of the children.
 
 For example, consider the following hierarchy:
+
+<div style="text-align: center;">
 
 ```mermaid
 graph TD
@@ -175,6 +185,8 @@ Animals --> Mammals
 
 Mammals --> Humans
 ```
+
+</div>
 
 In this hierarchy, "Animals" is a type of "Creatures";
 "Mammals" is a type of "Animals";
