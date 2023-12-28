@@ -47,7 +47,11 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
   - Home:
@@ -55,6 +59,8 @@ nav:
     - Course Outline: outline.md
 
   - "Module 0: The Developer's Mindset":
-    - developer-mindset/index.md
+    - Introduction: developer-mindset/index.md
     - developer-mindset/abstraction.md
     - developer-mindset/hierarchy.md
+    - developer-mindset/standards.md
+    - developer-mindset/conclusion.md
