@@ -13,6 +13,8 @@ This course provides a complete introduction to programming, computers and softw
 
 The goal of this course is to provide a complete introduction to the developer's world, so that you have a good idea of what programming looks like, where you should ask for help and how you can start and develop a project.
 
+**The course is NOT complete yet; new sections are being added continuously.**
+
 ## Who might find this course helpful?
 
 This tutorial is for those who:

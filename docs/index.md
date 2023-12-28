@@ -1,7 +1,5 @@
 # DEV-000: The Complete Introduction to Development
 
-## THIS PROJECT IS CURRENTLY UNDER CONSTRUCTION
-
 ## What is this course about? What can you get out of it?
 
 This course provides a complete introduction to programming, computers and software development and covers various topics such as:
@@ -14,6 +12,8 @@ This course provides a complete introduction to programming, computers and softw
 - AI Aided Development & AI Application Development
 
 After learning this course, you should be ready to develop large projects with hundreds of thousands of lines of code. And, you will have a good understanding of the fundamental concepts, design choices and tradeoffs that underlies the developer's world. You won't get to know every language, every framework and every piece of syntax; but you will know where to look for answers, what you should checkout and how to solve problems with Google and ChatGPT.
+
+**The course is NOT complete yet; new sections are being added continuously.**
 
 ## Who might find this course helpful?
 
