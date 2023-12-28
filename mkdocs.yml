@@ -66,3 +66,4 @@ nav:
     - developer-mindset/conclusion.md
   - "Module 1: The Abstract Computer":
     - Introduction: abstract-computer/index.md
+    - abstract-computer/why-abstraction.md
