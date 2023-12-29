@@ -1,5 +1,7 @@
 # Module 1: The Abstract Computer
 
+![computer](res/computer.png)
+
 This module assumes that you know the fundamental ideas in the developer's world,
 specifically, abstraction, hierarchy and standards.
 If you don't, please take a look at [Module 0: The Developer's Mindset](../developer-mindset/index.md)
