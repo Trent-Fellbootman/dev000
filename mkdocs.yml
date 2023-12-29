@@ -41,6 +41,8 @@ theme:
     - navigation.tabs.sticky
 
 markdown_extensions:
+  - admonition
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -67,3 +69,4 @@ nav:
   - "Module 1: The Abstract Computer":
     - Introduction: abstract-computer/index.md
     - abstract-computer/why-abstraction.md
+    - abstract-computer/isa.md
