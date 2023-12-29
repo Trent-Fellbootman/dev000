@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://TODO/abstract-computer/isa/</loc>
+         <lastmod>2023-12-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://TODO/abstract-computer/why-abstraction/</loc>
          <lastmod>2023-12-29</lastmod>
          <changefreq>daily</changefreq>

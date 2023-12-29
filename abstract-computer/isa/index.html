@@ -12,28 +12,26 @@
         <meta name="author" content="Trent Fellbootman">
       
       
-        <link rel="canonical" href="https://TODO/developer-mindset/">
+        <link rel="canonical" href="https://TODO/abstract-computer/isa/">
       
       
-        <link rel="prev" href="../outline/">
+        <link rel="prev" href="../why-abstraction/">
       
       
-        <link rel="next" href="abstraction/">
       
-      
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
     
     
       
-        <title>Introduction - DEV-000</title>
+        <title>Registers, Memory and Instructions: Instruction Set Architectures - DEV-000</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.45e1311d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.45e1311d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#module-0-the-developers-mindset" class="md-skip">
+        <a href="#registers-memory-and-instructions-instruction-set-architectures" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +92,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="DEV-000" class="md-header__button md-logo" aria-label="DEV-000" data-md-component="logo">
+    <a href="../.." title="DEV-000" class="md-header__button md-logo" aria-label="DEV-000" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -114,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Registers, Memory and Instructions: Instruction Set Architectures
             
           </span>
         </div>
@@ -217,10 +215,28 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developer-mindset/" class="md-tabs__link">
+          
+  
+  Module 0: The Developer's Mindset
 
         </a>
       </li>
@@ -237,25 +253,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
-          
-  
-  Module 0: The Developer's Mindset
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../abstract-computer/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   Module 1: The Abstract Computer
@@ -294,7 +292,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="DEV-000" class="md-nav__button md-logo" aria-label="DEV-000" data-md-component="logo">
+    <a href="../.." title="DEV-000" class="md-nav__button md-logo" aria-label="DEV-000" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -366,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -387,175 +385,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../outline/" class="md-nav__link">
+      <a href="../../outline/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Course Outline
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Module 0: The Developer's Mindset
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Module 0: The Developer's Mindset
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="abstraction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Abstraction: The Developer's Way of Thinking
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hierarchy/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Hierarchy: A Way to Manage Complexity
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="standards/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Standards: Facilitating Interactions Between Entities
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="conclusion/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Conclusion
   </span>
   
 
@@ -593,24 +427,24 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    Module 1: The Abstract Computer
+    Module 0: The Developer's Mindset
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Module 1: The Abstract Computer
+            Module 0: The Developer's Mindset
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -621,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../abstract-computer/" class="md-nav__link">
+      <a href="../../developer-mindset/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -642,7 +476,161 @@
   
   
     <li class="md-nav__item">
-      <a href="../abstract-computer/why-abstraction/" class="md-nav__link">
+      <a href="../../developer-mindset/abstraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abstraction: The Developer's Way of Thinking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/hierarchy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hierarchy: A Way to Manage Complexity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/standards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standards: Facilitating Interactions Between Entities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Module 1: The Abstract Computer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Module 1: The Abstract Computer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../why-abstraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,10 +648,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../abstract-computer/isa/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Registers, Memory and Instructions: Instruction Set Architectures
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -672,6 +680,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#registers-memory-and-instructions-the-most-generally-applicable-abstraction-of-computers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registers, Memory and Instructions: The Most Generally-Applicable Abstraction of Computers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-are-computer-programs-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      How are computer programs run?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -704,6 +759,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#registers-memory-and-instructions-the-most-generally-applicable-abstraction-of-computers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registers, Memory and Instructions: The Most Generally-Applicable Abstraction of Computers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-are-computer-programs-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      How are computer programs run?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -717,7 +807,7 @@
                   
 
   
-    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/developer-mindset/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/abstract-computer/isa.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -725,11 +815,118 @@
   
 
 
-<h1 id="module-0-the-developers-mindset">Module 0: The Developer's Mindset</h1>
-<p><img alt="mindset" src="res/mindset.png" /></p>
-<p>Before diving into coding, it is beneficial to first understand the fundamental ideas behind the developer's world and develop a "developer's mindset", so that you understand not only <strong>how</strong> to code, but also <strong>why</strong> programming languages are designed in the way they are, and why you should code in certain ways instead of others. This is what this module is all about.</p>
-<p>This module may seem to have nothing to do with programming, but the ideas are universal and broadly applicable to almost everything in the developer's world.</p>
-<p>This module does not assume you have any experience with programming or have learned any other module in this course.</p>
+<h1 id="registers-memory-and-instructions-instruction-set-architectures">Registers, Memory and Instructions: Instruction Set Architectures</h1>
+<p>Instruction Set Architectures (ISAs) are the lowest-level abstractions for computers.
+ISAs are designed to be as close to hardware as possible,
+while being general enough to be applicable to the majority of computers.
+As such, ISAs are extremely human-unfriendly and
+few developers actually code with them directly,
+and higher level programming languages tend to abstract computers in a way completely different to ISAs.
+However, understanding ISAs provides a good starting point to understanding how computer hardware works,
+and it helps to explain a lot of design choices in higher-level programming languages and software applications,
+which is why they're introduced here.</p>
+<p>There exist multiple different ISAs, such as x86, ARM, MIPS and RISC-V.
+Each of them is designed a little bit differently
+(or quite differently, as in the case with CISC and RISC architecture families),
+but there are some concepts that are shared across almost all of them.
+These concepts are the fundamental abstraction that applies to almost all computer hardwares,
+and are covered in this section.</p>
+<h2 id="registers-memory-and-instructions-the-most-generally-applicable-abstraction-of-computers">Registers, Memory and Instructions: The Most Generally-Applicable Abstraction of Computers</h2>
+<p>Virtually all ISAs employ the following concepts:</p>
+<ul>
+<li>There is a finite set of <strong>registers</strong> where you can hold data.</li>
+<li>There is a (virtually infinite) <strong>memory</strong> where you can hold more data.
+Each location in the memory can hold some data,
+and has an <strong>address</strong> associated with it;
+you use that address to access the data stored in that location.</li>
+<li>There is a "processor" that supports executing a finite set of <strong>instructions</strong> which modify the registers or memory in some way.</li>
+<li>Instructions are stored in memory and executed in order;</li>
+<li>There is a special register (usually called the "<strong>program counter</strong>", or "<strong>PC</strong>")
+that holds an address in memory;
+at each point in time, the "processor" reads the data at that memory address,
+interprets that data as an instruction, executes it, then updates the PC in some way.</li>
+</ul>
+<p>There are several important things to notice in the above concepts:</p>
+<ul>
+<li>Compared to memory, registers can only hold very limited amount of data.
+In most ISAs, the number of registers is less than 100,
+and the total amount of data that can be held in all registers is unlikely to exceed 1 megabyte (MB).
+On the contrary, memory is much larger: modern computers typically have anywhere from 4 to hundreds of gigabytes (GBs) of memory;
+even cell phones typically have 4 or more gigabytes of memory.</li>
+<li>What a computer will do starting from a specific point in time
+is completely determined by the data held in the registers (including the PC) and the memory.
+You can think of the registers and the memory as the "<strong>state</strong>" of a program;
+that state completely determines the program's behavior.</li>
+<li>The instructions supported by an ISA are generally very simple operations
+(CISC, or "Complex Instruction Set Computers", which is a family of ISAs support more complex instructions,
+but their functionalities are still extremely limited compared to complete computer programs),
+such as "add up the data in register 5 and register 11, and store the result into register 0",
+"load the value at memory address 122 to register 1", or "move the PC 40 memory addresses forward".
+These instructions are not complete computer programs;
+they are used as the building blocks of larger programs.
+By composing these simple instructions (called "programming"),
+one can create programs that do virtually anything.</li>
+</ul>
+<h2 id="how-are-computer-programs-run">How are computer programs run?</h2>
+<p>Imagine a person with a pencil holding a notebook.
+At the beginning, the notebook is on a certain page;
+then, at each point in time, the person reads a page,
+does something (either do some calculations and memorize the result, or write something to another page)
+according to what that page says, changes to another page, and the same process goes on.</p>
+<p>That is a good analogy of how a program gets run on a computer:
+the person is the processor; the notebook is the memory,
+and the person's brain memory is the registers.</p>
+<p>More abstractly, the way programs run, as defined by the ISAs, is like the following:</p>
+<ol>
+<li>At the beginning, the memory and registers are initialized to some values.
+Typically there is a special segment in the memory which holds all the instructions;
+the instructions held in that segment are the "program".</li>
+<li>At each point in time, the processor reads an ISA-defined instruction at the memory address specified by the PC,
+executes it (either do some calculation and write the result to a register, or write some data to a certain memory address, etc.),
+and updates the PC (usually to the memory address of the next instruction, but could also be somewhere else).</li>
+<li>This process is repeated until the program is finished.</li>
+</ol>
+<div style="text-align: center;">
+
+<pre class="mermaid"><code>graph TD
+
+    start --&gt; read-instruction
+    read-instruction --&gt; execute-instruction
+    execute-instruction --&gt; update-PC
+    update-PC --&gt; read-instruction</code></pre>
+
+</div>
+
+<div class="admonition info">
+<p class="admonition-title">Why do we need registers?</p>
+<p>You might wonder why we need registers at all:
+both registers and memory serve as the "state" of a program,
+so why can't we use memory exclusively?
+After all, registers can only store very limited amount of data,
+while memory is much larger.</p>
+<p>The answer relates to how computer hardwares work.
+Although registers are small, they are very fast;
+on the contrary, memory is large but also slow (compared to registers).
+As a result, the typical practice is to store the data that needs to be accessed frequently in registers,
+and the rest of the data in memory.</p>
+<p>This is a good example of how ISAs are close to hardware,
+and as you can see, although abstractions are "general and abstract characteristics",
+they typically depend on and reflect the underlying objects which they apply to.</p>
+</div>
+<h2 id="conclusion">Conclusion</h2>
+<p>In this section, we talked about the lowest-level abstractions of computers: Instruction Set Architectures (ISAs).
+Compared to other abstractions of computers, such as higher-level programming languages,
+ISAs are closer to the hardware but also less human-friendly.
+Although developers typically use completely different abstractions when programming,
+understanding ISAs provides a good foundation of understanding how computers work.</p>
+<p>Virtually all ISAs have a set of <strong>registers</strong>, a <strong>memory</strong> and define a set of supported, simple <strong>instructions</strong>.
+One special register is called the <strong>program counter (PC)</strong>.
+The way a program runs is basically "<strong>fetch instruction at PC - execute instruction - update PC - repeat</strong>".</p>
+<p>Congratulations, you now understand how computer hardware works!
+Real world computer hardwares are much more complicated than ISAs,
+but for now, ISAs are a good approximation to the real hardware.</p>
+<p>Next, we will introduce stack and heap,
+which are two concepts built upon ISAs and found in most low-level programming languages like C/C++ and Rust.</p>
 
 
 
@@ -761,7 +958,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../outline/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Course Outline">
+          <a href="../why-abstraction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: The Abstract Computer: Why do we need it?">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -771,27 +968,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Course Outline
+                The Abstract Computer: Why do we need it?
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="abstraction/" class="md-footer__link md-footer__link--next" aria-label="Next: Abstraction: The Developer&#39;s Way of Thinking">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Abstraction: The Developer's Way of Thinking
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -818,10 +999,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
   </body>
