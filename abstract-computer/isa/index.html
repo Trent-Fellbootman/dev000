@@ -876,7 +876,12 @@ according to what that page says, changes to another page, and the same process 
 <p>That is a good analogy of how a program gets run on a computer:
 the person is the processor; the notebook is the memory,
 and the person's brain memory is the registers.</p>
-<p>More abstractly, the way programs run, as defined by the ISAs, is like the following:</p>
+<p>As mentioned before, ISAs only support a very limited number of instructions
+with very limited functionalities;
+those instructions serve as the building blocks for larger software applications.
+<strong>Virtually every software application boils down to a large number (from hundreds to millions) of ISA instructions
+when it gets run on the computer hardware</strong>.
+Basically, the way programs run, as defined by the ISAs, is like the following:</p>
 <ol>
 <li>At the beginning, the memory and registers are initialized to some values.
 Typically there is a special segment in the memory which holds all the instructions;
@@ -921,7 +926,9 @@ Although developers typically use completely different abstractions when program
 understanding ISAs provides a good foundation of understanding how computers work.</p>
 <p>Virtually all ISAs have a set of <strong>registers</strong>, a <strong>memory</strong> and define a set of supported, simple <strong>instructions</strong>.
 One special register is called the <strong>program counter (PC)</strong>.
-The way a program runs is basically "<strong>fetch instruction at PC - execute instruction - update PC - repeat</strong>".</p>
+The way a program runs is basically "<strong>fetch instruction at PC - execute instruction - update PC - repeat</strong>".
+ISA instructions serve as building blocks for more complex software applications;
+<strong>virtually every software application boils down to a large number of simple ISA instructions when it gets run on the hardware</strong>.</p>
 <p>Congratulations, you now understand how computer hardware works!
 Real world computer hardwares are much more complicated than ISAs,
 but for now, ISAs are a good approximation to the real hardware.</p>
