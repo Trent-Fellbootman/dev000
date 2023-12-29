@@ -814,7 +814,23 @@ and the functionality of computers is extremely limited.</p>
 <p>By targeting <strong>abstraction</strong> of computers, however, things become much easier:
 as long as the computer share the abstraction which an application targets,
 the application runs on that computer;
-<strong>all computers that share the same abstraction will be able to run any software application that targets that abstraction</strong>.</p>
+<strong>all computers that share the same abstraction will be able to run any software application that targets that abstraction</strong>,
+as illustrated below:</p>
+<div style="text-align: center;">
+
+<pre class="mermaid"><code>%%{init: { "flowchart": { "curve": "linear" } } }%%
+graph TD
+
+Software-1 --&gt; ISA
+Software-2 --&gt; ISA
+Software-3 --&gt; ISA
+
+ISA --&gt; Computer-1
+ISA --&gt; Computer-2
+ISA --&gt; Computer-3</code></pre>
+
+</div>
+
 <p>For now, you can think of the lowest-level abstract computers as being Instruction Set Architectures (ISAs),
 which are standards that define what operations a computer must support,
 such as math operations like addition and multiplication.
