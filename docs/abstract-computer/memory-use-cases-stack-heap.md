@@ -107,6 +107,16 @@ rather, they are "pools" from which memory can be allocated in a well-defined wa
 
 You can think of the stack and heap as both being existent for the whole lifetime of a program.
 
+!!! note "Stack & Heap as Data Structures"
+
+    Stack and heap are also names for data structures.
+    While they share some similarities with the memory objects introduced here,
+    they are not the same things.
+
+    For clarification between the "stack memory object" and the "stack data structure",
+    the former is usually referred to as "stack memory", while the latter just "stack".
+    Similarly, the "heap memory object" and the "heap data structure" are usually referred to as "heap memory" and just "heap".
+
 ### Stack
 
 In terms of memory use cases,
@@ -179,3 +189,12 @@ The key takeaways:
 - The **stack** is a small, ordered piece of memory which is fast and easy to access and allocate memory from.
 - The **heap** is a unordered piece of memory. Compared to stack, it is slower to allocate memory from the heap,
 but the heap is much larger than the stack.
+
+## AI Prompt Samples
+
+If you're interested in the topics of this section,
+feel free to consult and AI such as ChatGPT for more information.
+
+Some sample prompts to get you started:
+
+- Please explain the difference between stack and heap memory.

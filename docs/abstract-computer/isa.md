@@ -72,6 +72,13 @@ one can create programs that do virtually anything.
     and as you can see, although abstractions are "general and abstract characteristics",
     they typically depend on and reflect the underlying objects which they apply to.
 
+!!! info "Other ISAs"
+
+    Although what is introduced here is applicable to the vast majority of ISAs,
+    there are ISAs that abstract computers differently.
+    For example, [WebAssembly (WASM)](https://webassembly.org/)
+    is a stack-based architecture which does not have registers.
+
 ## How are computer programs run?
 
 Imagine a person with a pencil holding a notebook.
