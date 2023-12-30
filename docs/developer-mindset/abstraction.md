@@ -62,24 +62,46 @@ Abstraction also depends on the role of the target audience. When you're driving
 
 Therefore, it is always important to identify the target audience and understand what it will do with the target of abstraction, and then decide what information are relevant/irrelevant and abstract the "thing" to the audience.
 
-!!! info "Some terms & phrases related to "abstraction""
+## Terms & Phrases Related to Abstraction
 
-    In the developer's world, you're likely to encounter some terms or phrases related to abstraction.
-    Here are the meanings of some of them:
+In the developer's world, you're likely to encounter some terms or phrases related to abstraction.
+Here are the meanings of some of them:
 
-    - Abstraction: Depending on the scenario, "abstraction" can have 3 different meanings:
-        - The first meaning is "abstract definition" of an object, as defined in this section.
-        The emphasis of this meaning is on "what something looks like to someone",
-        but that "what something looks like" can be either simple or complicated, depending on that "someone";
-        - The second meaning is "a simplified definition of an object, created by hiding the irrelevant details".
-        This meaning emphasizes that the "abstraction" is a simplified description which hides away the details.
-        - The third meaning is "an abstract standard which is shared among many objects";
-        the emphasis of this meaning is that the abstraction applies to potentially many objects.
-    - Abstraction **over**: "An abstraction over $A$" means that $A$ is the target of abstraction,
-    i.e., the "thing" from which the abstraction is created and which the abstraction applies to.
-    - Abstract **away**: To abstract away $A$ means to hide away the irrelevant details when creating an abstraction;
-    $A$ is that "irrelevant details".
-    An example is "Programming languages abstracts away many details in the computer hardware".
+### Abstraction
+
+Depending on the scenario, "abstraction" can have 3 different meanings:
+
+- The first meaning is "abstract definition" of an object, as defined in this section.
+The emphasis of this meaning is on "what something looks like to someone",
+but that "what something looks like" can be either simple or complicated, depending on that "someone";
+- The second meaning is "a simplified definition of an object, created by hiding the irrelevant details".
+This meaning emphasizes that the "abstraction" is a simplified description which hides away the details.
+- The third meaning is "an abstract standard which is shared among many objects";
+the emphasis of this meaning is that the abstraction applies to potentially many objects.
+
+### Abstraction over
+
+"An abstraction over $A$" means that $A$ is the target of abstraction,
+i.e., the "thing" from which the abstraction is created and which the abstraction applies to.
+
+### Abstract away
+
+To abstract away $A$ means to hide away the irrelevant details when creating an abstraction;
+$A$ is that "irrelevant details".
+An example is "Programming languages abstracts away many details in the computer hardware".
+
+### High/low level abstraction
+
+A high-level abstraction is a more abstract abstraction,
+whereas a low-level abstraction is a more concrete one.
+In other words, high level abstractions are typically simpler but also farther away to the actual object(s) that is(are) abstracted;
+low-level abstractions are typically more complicated but also closer to the target(s) of abstraction.
+
+For example, if the target of abstraction is a car, a high-level abstraction might be "something you can drive";
+a low-level abstraction might be "something that has an engine, a chassis and some wheels"
+(yes, this is an abstraction too. Since every fuel-powered car has an engine, a chassis and some wheels,
+and that this definition hides away the inner workings of the engine, chassis, etc.,
+it can be thought of as being "abstract and general" in some way).
 
 ## What does abstraction look like in the developer's world?
 
