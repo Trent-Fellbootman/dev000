@@ -42,6 +42,7 @@ theme:
 
 markdown_extensions:
   - admonition
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -74,3 +75,7 @@ nav:
     - developer-mindset/conclusion.md
   - "Module 1: The Abstract Computer":
     - Introduction: abstract-computer/index.md
+    - abstract-computer/why-abstraction.md
+    - abstract-computer/isa.md
+    - abstract-computer/memory-use-cases-stack-heap.md
+    - abstract-computer/conclusion.md
