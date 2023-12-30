@@ -40,16 +40,24 @@ at a certain period of time,
 what are the ways that it should be used?
 I.e., **what is this piece of memory for, at each point in time**?
 
+!!! Note "Memory Use Cases as Abstractions"
+
+    If you recall the definition of abstraction from the previous module,
+    you'll find that memory use cases are abstractions as well:
+    a memory use case defines what something (the memory) is
+    (something you can use for a certain use case during a certain period of time)
+    to someone (the programmer), disregarding all the irrelevant details.
+
 Although it seems like an obvious idea,
 memory use cases alone helps to solve a lot of problems in memory management,
 as it clearly states what "should" and "shouldn't" be done to a memory address.
 
 Before defining the use case of a piece of memory,
 programmers would stare at a piece of memory and just don't know what to do with it:
-can I write data to it? What is the value stored here?
+*Can I write data to it? What is the value stored here?
 Is it just some random bytes I can overwrite, or meaningful contents I should keep?
 Will any instruction later make use of this piece of memory?
-If I want to store some long-lasting thing here, will it get overwritten at some point?
+If I want to store some long-lasting thing here, will it get overwritten at some point?*
 As a program gets larger, it becomes harder and harder to answer these questions,
 as that requires looking at every instruction in the program and see what it does with the memory.
 
@@ -57,12 +65,12 @@ Memory use cases makes it much easier.
 After knowing the use case of a piece of memory,
 developers can have some assumptions about the valid ways to use it and what would happen if it's used in certain ways.
 For example, the developer may think:
-"Okay, at this point, this piece of memory does not hold anything important,
+"*Okay, at this point, this piece of memory does not hold anything important,
 so I can write whatever I want to it.
 However, after operation A finishes,
 operation B would use this memory to store it's records,
 and anything I write here will be overwritten,
-so I gotta make sure that I don't read this piece of memory after operation B starts."
+so I gotta make sure that I don't read this piece of memory after operation B starts.*"
 
 ### Some Terms Associated With Memory Use Cases
 
@@ -88,4 +96,86 @@ and not okay to use it for the previous use case.
 For example, if a piece of memory is currently storing someone's birthday and it's deallocated,
 it is then okay to use it to store the result of $153 \times 13251$, etc.
 
-The term "deallocate" is sometimes used synonymously with "free", or "destroy".
+!!! Info "The term "deallocate" is sometimes used synonymously with "free", or "destroy"."
+
+## Stack & Heap
+
+Building on the concept of memory use cases,
+**stack** and **heap** are two special pieces of memory that creates a more well-defined model for memory management.
+Stack and heap are not for specific memory use cases (such as storing someone's birthday);
+rather, they are "pools" from which memory can be allocated in a well-defined way.
+
+You can think of the stack and heap as both being existent for the whole lifetime of a program.
+
+### Stack
+
+In terms of memory use cases,
+the stack is a special, typically smaller piece of memory which is used to store (roughly)
+"things that are small and need to be quickly accessed".
+
+Stack is Last-In-First-Out **(LIFO) ordered**,
+meaning that when you allocate memory from it,
+the newly allocated memory is on top of (i.e., its address always precede or follows)
+the last piece of previously allocated memory.
+Similarly, when you deallocate memory from it,
+the top most piece of memory is deallocated first.
+
+![stack](res/stack.png)
+
+Why is stack good for "things that are small and need to be quickly accessed"?
+
+Since the stack is usually small,
+it can only store small things.
+On the other hand, stack is good for things that need to be quickly accessed because it's ordered:
+as long as you know the sizes of the things after the thing you want to access,
+and the memory address of the top of the stack (i.e., the address of the last thing on the stack),
+you can easily compute the memory address of the thing you want to access and access it.
+In compiled languages such as C++,
+such memory address calculations are typically done statically at compile time,
+which means when the program is run,
+you get the address of anything you want to access on the stack with
+(almost) no calculations at all
+(for now, you don't need to understand how this works;
+just keep in mind that accessing things on the stack is easy and fast).
+
+!!! info "Fun Fact"
+
+    Stack is small and its size is often fixed during a program's lifetime;
+    when you try to use more memory than the stack can provide,
+    you trigger an exception called "**stack overflow**",
+    which happens to be the name of a [platform](https://stackoverflow.com/)
+    on which developers talk about program errors and their fixes.
+
+### Heap
+
+In terms of memory use cases,
+the heap is a special, typically larger piece of memory which is used to store (roughly)
+"large, long-lasting things".
+Heap is typically much larger than the stack.
+
+Heap is **unordered**, which makes it harder both to allocate and access memory compared to stack.
+In stack, memory is always allocated on the top;
+in heap, however, you would have to first find a free piece of memory, then allocate it;
+when you want to access something,
+you must know its memory address, or you will have a very hard time finding it on the heap.
+
+![heap](res/heap.png)
+
+In computer programs,
+a typical combination is to store something really large on the heap,
+but keep its memory address on the stack.
+This way, you can store large things (like databases, cuz the heap is large)
+but also access them relatively quickly (cuz the stack is fast).
+
+## Conclusion
+
+In this section,
+we talked about the basic models for memory management,
+which are memory use cases, stack and heap.
+
+The key takeaways:
+
+- **Memory use cases** defines what a piece of memory is for at each point in time.
+- The **stack** is a small, ordered piece of memory which is fast and easy to access and allocate memory from.
+- The **heap** is a unordered piece of memory. Compared to stack, it is slower to allocate memory from the heap,
+but the heap is much larger than the stack.
