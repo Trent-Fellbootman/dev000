@@ -18,6 +18,8 @@
         <link rel="prev" href="../why-abstraction/">
       
       
+        <link rel="next" href="../memory-use-cases-stack-heap/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
@@ -723,10 +725,61 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ai-prompt-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Prompt Samples
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memory-use-cases-stack-heap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Memory Use Cases, Stack and Heap: Basic Memory Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conclusion
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -787,6 +840,15 @@
   <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
       Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-prompt-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Prompt Samples
     </span>
   </a>
   
@@ -867,6 +929,29 @@ they are used as the building blocks of larger programs.
 By composing these simple instructions (called "programming"),
 one can create programs that do virtually anything.</li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">Why do we need registers?</p>
+<p>You might wonder why we need registers at all:
+both registers and memory serve as the "state" of a program,
+so why can't we use memory exclusively?
+After all, registers can only store very limited amount of data,
+while memory is much larger.</p>
+<p>The answer relates to how computer hardwares work.
+Although registers are small, they are very fast;
+on the contrary, memory is large but also slow (compared to registers).
+As a result, the typical practice is to store the data that needs to be accessed frequently in registers,
+and the rest of the data in memory.</p>
+<p>This is a good example of how ISAs are close to hardware,
+and as you can see, although abstractions are "general and abstract characteristics",
+they typically depend on and reflect the underlying objects which they apply to.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Other ISAs</p>
+<p>Although what is introduced here is applicable to the vast majority of ISAs,
+there are ISAs that abstract computers differently.
+For example, <a href="https://webassembly.org/">WebAssembly (WASM)</a>
+is a stack-based architecture which does not have registers.</p>
+</div>
 <h2 id="how-are-computer-programs-run">How are computer programs run?</h2>
 <p>Imagine a person with a pencil holding a notebook.
 At the beginning, the notebook is on a certain page;
@@ -903,20 +988,16 @@ and updates the PC (usually to the memory address of the next instruction, but c
 </div>
 
 <div class="admonition info">
-<p class="admonition-title">Why do we need registers?</p>
-<p>You might wonder why we need registers at all:
-both registers and memory serve as the "state" of a program,
-so why can't we use memory exclusively?
-After all, registers can only store very limited amount of data,
-while memory is much larger.</p>
-<p>The answer relates to how computer hardwares work.
-Although registers are small, they are very fast;
-on the contrary, memory is large but also slow (compared to registers).
-As a result, the typical practice is to store the data that needs to be accessed frequently in registers,
-and the rest of the data in memory.</p>
-<p>This is a good example of how ISAs are close to hardware,
-and as you can see, although abstractions are "general and abstract characteristics",
-they typically depend on and reflect the underlying objects which they apply to.</p>
+<p class="admonition-title">What if there are multiple programs?</p>
+<p>You may have wondered, what if there are multiple programs running on the same computer?
+Since they use the same piece of memory, won't they interfere with each other?
+And, how are they executed? Are they executed one by one or at the same time?</p>
+<p>The short answer is, the operating system provides another layer of abstraction which eliminates all these concerns.
+In simple words, the operation system "virtualizes" the computer hardware and
+creates the illusion of multiple, independent computers running at the same time.
+each program is allocated such a "virtual" computer of its own;
+in the program's view, there is nobody else on this computer, so no interference at all.</p>
+<p>How the operation system creates that illusion, though, is out of scope of this section.</p>
 </div>
 <h2 id="conclusion">Conclusion</h2>
 <p>In this section, we talked about the lowest-level abstractions of computers: Instruction Set Architectures (ISAs).
@@ -932,8 +1013,21 @@ ISA instructions serve as building blocks for more complex software applications
 <p>Congratulations, you now understand how computer hardware works!
 Real world computer hardwares are much more complicated than ISAs,
 but for now, ISAs are a good approximation to the real hardware.</p>
-<p>Next, we will introduce stack and heap,
-which are two concepts built upon ISAs and found in most low-level programming languages like C/C++ and Rust.</p>
+<p>Next, we will introduce some higher level abstractions that
+build upon ISAs and are found in most low-level programming languages like C/C++ and Rust.</p>
+<h2 id="ai-prompt-samples">AI Prompt Samples</h2>
+<p>If you want to learn more about the topics in this section,
+feel free to consult an AI such as ChatGPT.</p>
+<p>Here are some sample prompts to get you started:</p>
+<ul>
+<li>Can you briefly describe the ARM architecture, as well as its instructions?</li>
+<li>Can you give an example ARM assembly code and explain what it's doing?</li>
+<li>What are the differences between CISC and RISC?</li>
+<li>How do Instruction Set Architectures compare to a Turing machine?
+Why are there no registers in a Turing machine?
+Why are there registers in ISAs?</li>
+<li>What are the most popular Instruction Set Architectures nowadays?</li>
+</ul>
 
 
 
@@ -981,6 +1075,22 @@ which are two concepts built upon ISAs and found in most low-level programming l
           </a>
         
         
+          
+          <a href="../memory-use-cases-stack-heap/" class="md-footer__link md-footer__link--next" aria-label="Next: Memory Use Cases, Stack and Heap: Basic Memory Management">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Memory Use Cases, Stack and Heap: Basic Memory Management
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
       </nav>
     
   
@@ -1010,6 +1120,12 @@ which are two concepts built upon ISAs and found in most low-level programming l
     
     
       <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

@@ -12,26 +12,28 @@
         <meta name="author" content="Trent Fellbootman">
       
       
-        <link rel="canonical" href="https://TODO/">
+        <link rel="canonical" href="https://TODO/abstract-computer/memory-use-cases-stack-heap/">
       
       
+        <link rel="prev" href="../isa/">
       
-        <link rel="next" href="outline/">
+      
+        <link rel="next" href="../conclusion/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
     
     
       
-        <title>About - DEV-000</title>
+        <title>Memory Use Cases, Stack and Heap: Basic Memory Management - DEV-000</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.45e1311d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.45e1311d.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dev-000-the-complete-introduction-to-development" class="md-skip">
+        <a href="#memory-use-cases-stack-and-heap-basic-memory-management" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="DEV-000" class="md-header__button md-logo" aria-label="DEV-000" data-md-component="logo">
+    <a href="../.." title="DEV-000" class="md-header__button md-logo" aria-label="DEV-000" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About
+              Memory Use Cases, Stack and Heap: Basic Memory Management
             
           </span>
         </div>
@@ -211,13 +213,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="." class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
           
   
   Home
@@ -235,7 +235,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="developer-mindset/" class="md-tabs__link">
+        <a href="../../developer-mindset/" class="md-tabs__link">
           
   
   Module 0: The Developer's Mindset
@@ -249,11 +249,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="abstract-computer/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   Module 1: The Abstract Computer
@@ -292,7 +294,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="DEV-000" class="md-nav__button md-logo" aria-label="DEV-000" data-md-component="logo">
+    <a href="../.." title="DEV-000" class="md-nav__button md-logo" aria-label="DEV-000" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -319,8 +321,6 @@
       
   
   
-    
-  
   
   
     
@@ -331,12 +331,14 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
@@ -350,7 +352,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Home
@@ -361,30 +363,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    About
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -393,71 +375,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-this-course-about-what-can-you-get-out-of-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is this course about? What can you get out of it?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#who-might-find-this-course-helpful" class="md-nav__link">
-    <span class="md-ellipsis">
-      Who might find this course helpful?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-learn-programming-and-development" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to learn programming and development?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-the-right-way-to-take-this-course" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is the right way to take this course?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next Steps
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -470,7 +387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="outline/" class="md-nav__link">
+      <a href="../../outline/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -540,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developer-mindset/" class="md-nav__link">
+      <a href="../../developer-mindset/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -561,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developer-mindset/abstraction/" class="md-nav__link">
+      <a href="../../developer-mindset/abstraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -582,7 +499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developer-mindset/hierarchy/" class="md-nav__link">
+      <a href="../../developer-mindset/hierarchy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -603,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developer-mindset/standards/" class="md-nav__link">
+      <a href="../../developer-mindset/standards/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -624,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developer-mindset/conclusion/" class="md-nav__link">
+      <a href="../../developer-mindset/conclusion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -649,8 +566,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -659,14 +578,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -680,7 +597,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Module 1: The Abstract Computer
@@ -694,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="abstract-computer/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -715,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="abstract-computer/why-abstraction/" class="md-nav__link">
+      <a href="../why-abstraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -736,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="abstract-computer/isa/" class="md-nav__link">
+      <a href="../isa/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -754,10 +671,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="abstract-computer/memory-use-cases-stack-heap/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Memory Use Cases, Stack and Heap: Basic Memory Management
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -766,6 +703,125 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#memory-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Use Cases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Memory Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#some-terms-associated-with-memory-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Some Terms Associated With Memory Use Cases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Some Terms Associated With Memory Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allocate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allocate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deallocate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deallocate
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stack-heap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack &amp; Heap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stack & Heap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heap
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-prompt-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Prompt Samples
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -778,7 +834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="abstract-computer/conclusion/" class="md-nav__link">
+      <a href="../conclusion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -826,45 +882,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-this-course-about-what-can-you-get-out-of-it" class="md-nav__link">
+  <a href="#memory-use-cases" class="md-nav__link">
     <span class="md-ellipsis">
-      What is this course about? What can you get out of it?
+      Memory Use Cases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Memory Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#some-terms-associated-with-memory-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Some Terms Associated With Memory Use Cases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Some Terms Associated With Memory Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allocate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allocate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deallocate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deallocate
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stack-heap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack &amp; Heap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stack & Heap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heap
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#who-might-find-this-course-helpful" class="md-nav__link">
+  <a href="#ai-prompt-samples" class="md-nav__link">
     <span class="md-ellipsis">
-      Who might find this course helpful?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-learn-programming-and-development" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to learn programming and development?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-the-right-way-to-take-this-course" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is the right way to take this course?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next Steps
+      AI Prompt Samples
     </span>
   </a>
   
@@ -885,7 +995,7 @@
                   
 
   
-    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/abstract-computer/memory-use-cases-stack-heap.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -893,42 +1003,170 @@
   
 
 
-<h1 id="dev-000-the-complete-introduction-to-development">DEV-000: The Complete Introduction to Development</h1>
-<h2 id="what-is-this-course-about-what-can-you-get-out-of-it">What is this course about? What can you get out of it?</h2>
-<p>This course provides a complete introduction to programming, computers and software development and covers various topics such as:</p>
+<h1 id="memory-use-cases-stack-and-heap-basic-memory-management">Memory Use Cases, Stack and Heap: Basic Memory Management</h1>
+<p>In the previous section,
+we learned that in the abstraction of ISAs,
+the "state" of a program is completely represented by the registers and the memory
+(this is not entirely true, but you don't need to worry about that for now).
+That is, their contents completely determines the behavior of a program.
+And, since the memory is much, much larger than the registers,
+it is the primary storage where a program stores its state.</p>
+<p>However, ISAs didn't provide any guidance to how that memory should be used.
+Although this adds flexibility, it adds complexity as well.
+Typically, programs would need to know which memory address stores what value;
+if it assumes that a certain address stores a certain value,
+but that address was actually overwritten by a previous instructions,
+it will not work as expected.</p>
+<p>As software applications gets larger and larger,
+it becomes harder and harder to track which address stores what value manually,
+and to make sure that memory reading and writing works properly.
+This is called the problem of memory management.</p>
+<p>To address this problem systematically,
+people have proposed many different models of "how to use memory",
+such as ownership, automatic garbage collection, RAII (Resource Allocation Is Initialization), etc.
+We won't describe all of them here,
+but we will describe the shared concepts that almost all of them use or build upon.
+These concepts are memory use cases, stack and heap.</p>
+<p>It is important to note that these concepts are often abstracted away and don't show up explicitly in higher level languages,
+especially those with garbage collectors such as Python.
+However, understanding these concepts provides a good foundation of understanding how a program gets run at a low-level
+(same with ISAs).</p>
+<h2 id="memory-use-cases">Memory Use Cases</h2>
+<p><strong>Memory use cases</strong> helps to answer the question: for a certain piece of memory
+(i.e., spots in memory corresponding to a set of memory addresses),
+at a certain period of time,
+what are the ways that it should be used?
+I.e., <strong>what is this piece of memory for, at each point in time</strong>?</p>
+<div class="admonition note">
+<p class="admonition-title">Memory Use Cases as Abstractions</p>
+<p>If you recall the definition of abstraction from the previous module,
+you'll find that memory use cases are abstractions as well:
+a memory use case defines what something (the memory) is
+(something you can use for a certain use case during a certain period of time)
+to someone (the programmer), disregarding all the irrelevant details.</p>
+</div>
+<p>Although it seems like an obvious idea,
+memory use cases alone helps to solve a lot of problems in memory management,
+as it clearly states what "should" and "shouldn't" be done to a memory address.</p>
+<p>Before defining the use case of a piece of memory,
+programmers would stare at a piece of memory and just don't know what to do with it:
+<em>Can I write data to it? What is the value stored here?
+Is it just some random bytes I can overwrite, or meaningful contents I should keep?
+Will any instruction later make use of this piece of memory?
+If I want to store some long-lasting thing here, will it get overwritten at some point?</em>
+As a program gets larger, it becomes harder and harder to answer these questions,
+as that requires looking at every instruction in the program and see what it does with the memory.</p>
+<p>Memory use cases makes it much easier.
+After knowing the use case of a piece of memory,
+developers can have some assumptions about the valid ways to use it and what would happen if it's used in certain ways.
+For example, the developer may think:
+"<em>Okay, at this point, this piece of memory does not hold anything important,
+so I can write whatever I want to it.
+However, after operation A finishes,
+operation B would use this memory to store it's records,
+and anything I write here will be overwritten,
+so I gotta make sure that I don't read this piece of memory after operation B starts.</em>"</p>
+<h3 id="some-terms-associated-with-memory-use-cases">Some Terms Associated With Memory Use Cases</h3>
+<p>Below describes some terms associated with memory use cases,
+which you're likely to encounter in the developer's world.</p>
+<h4 id="allocate">Allocate</h4>
+<p>To "allocate" a piece of memory means to find a piece of "free" memory
+(i.e., a piece of memory that nobody is using)
+and purpose it for some use cases.
+After a piece of memory is allocated for some use case,
+it is considered not okay to use it for anything else.</p>
+<p>For example, in computer programs, it is common to allocate memory to store data, such as someone's birthday.</p>
+<h4 id="deallocate">Deallocate</h4>
+<p>To "deallocate" a piece of memory means to mark the end of the current use case (whatever it is) associated with it.
+After a piece of memory is deallocated, it is considered okay to be repurposed for any other use case,
+and not okay to use it for the previous use case.</p>
+<p>For example, if a piece of memory is currently storing someone's birthday and it's deallocated,
+it is then okay to use it to store the result of <span class="arithmatex">\(153 \times 13251\)</span>, etc.</p>
+<div class="admonition info">
+<p class="admonition-title">The term "deallocate" is sometimes used synonymously with "free", or "destroy".</p>
+</div>
+<h2 id="stack-heap">Stack &amp; Heap</h2>
+<p>Building on the concept of memory use cases,
+<strong>stack</strong> and <strong>heap</strong> are two special pieces of memory that creates a more well-defined model for memory management.
+Stack and heap are not for specific memory use cases (such as storing someone's birthday);
+rather, they are "pools" from which memory can be allocated in a well-defined way.</p>
+<p>You can think of the stack and heap as both being existent for the whole lifetime of a program.</p>
+<div class="admonition note">
+<p class="admonition-title">Stack &amp; Heap as Data Structures</p>
+<p>Stack and heap are also names for data structures.
+While they share some similarities with the memory objects introduced here,
+they are not the same things.</p>
+<p>For clarification between the "stack memory object" and the "stack data structure",
+the former is usually referred to as "stack memory", while the latter just "stack".
+Similarly, the "heap memory object" and the "heap data structure" are usually referred to as "heap memory" and just "heap".</p>
+</div>
+<h3 id="stack">Stack</h3>
+<p>In terms of memory use cases,
+the stack is a special, typically smaller piece of memory which is used to store (roughly)
+"things that are small and need to be quickly accessed".</p>
+<p>Stack is Last-In-First-Out <strong>(LIFO) ordered</strong>,
+meaning that when you allocate memory from it,
+the newly allocated memory is on top of (i.e., its address always precede or follows)
+the last piece of previously allocated memory.
+Similarly, when you deallocate memory from it,
+the top most piece of memory is deallocated first.</p>
+<p><img alt="stack" src="../res/stack.png" /></p>
+<p>Why is stack good for "things that are small and need to be quickly accessed"?</p>
+<p>Since the stack is usually small,
+it can only store small things.
+On the other hand, stack is good for things that need to be quickly accessed because it's ordered:
+as long as you know the sizes of the things after the thing you want to access,
+and the memory address of the top of the stack (i.e., the address of the last thing on the stack),
+you can easily compute the memory address of the thing you want to access and access it.
+In compiled languages such as C++,
+such memory address calculations are typically done statically at compile time,
+which means when the program is run,
+you get the address of anything you want to access on the stack with
+(almost) no calculations at all
+(for now, you don't need to understand how this works;
+just keep in mind that accessing things on the stack is easy and fast).</p>
+<div class="admonition info">
+<p class="admonition-title">Fun Fact</p>
+<p>Stack is small and its size is often fixed during a program's lifetime;
+when you try to use more memory than the stack can provide,
+you trigger an exception called "<strong>stack overflow</strong>",
+which happens to be the name of a <a href="https://stackoverflow.com/">platform</a>
+on which developers talk about program errors and their fixes.</p>
+</div>
+<h3 id="heap">Heap</h3>
+<p>In terms of memory use cases,
+the heap is a special, typically larger piece of memory which is used to store (roughly)
+"large, long-lasting things".
+Heap is typically much larger than the stack.</p>
+<p>Heap is <strong>unordered</strong>, which makes it harder both to allocate and access memory compared to stack.
+In stack, memory is always allocated on the top;
+in heap, however, you would have to first find a free piece of memory, then allocate it;
+when you want to access something,
+you must know its memory address, or you will have a very hard time finding it on the heap.</p>
+<p><img alt="heap" src="../res/heap.png" /></p>
+<p>In computer programs,
+a typical combination is to store something really large on the heap,
+but keep its memory address on the stack.
+This way, you can store large things (like databases, cuz the heap is large)
+but also access them relatively quickly (cuz the stack is fast).</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In this section,
+we talked about the basic models for memory management,
+which are memory use cases, stack and heap.</p>
+<p>The key takeaways:</p>
 <ul>
-<li>Programming Languages</li>
-<li>Terminal &amp; Unix</li>
-<li>Concurrency</li>
-<li>Software Design &amp; Project Development</li>
-<li>Computer Hardware Fundamentals</li>
-<li>AI Aided Development &amp; AI Application Development</li>
+<li><strong>Memory use cases</strong> defines what a piece of memory is for at each point in time.</li>
+<li>The <strong>stack</strong> is a small, ordered piece of memory which is fast and easy to access and allocate memory from.</li>
+<li>The <strong>heap</strong> is a unordered piece of memory. Compared to stack, it is slower to allocate memory from the heap,
+but the heap is much larger than the stack.</li>
 </ul>
-<p>After learning this course, you should be ready to develop large projects with hundreds of thousands of lines of code. And, you will have a good understanding of the fundamental concepts, design choices and tradeoffs that underlies the developer's world. You won't get to know every language, every framework and every piece of syntax; but you will know where to look for answers, what you should checkout and how to solve problems with Google and ChatGPT.</p>
-<p><strong>The course is NOT complete yet; new sections are being added continuously.</strong></p>
-<h2 id="who-might-find-this-course-helpful">Who might find this course helpful?</h2>
-<p>This tutorial is for those who:</p>
+<h2 id="ai-prompt-samples">AI Prompt Samples</h2>
+<p>If you're interested in the topics of this section,
+feel free to consult and AI such as ChatGPT for more information.</p>
+<p>Some sample prompts to get you started:</p>
 <ul>
-<li>Are completely new to computers and want to learn programming;</li>
-<li>Already have some familiarity with programming and wish to learn more and become a "true developer".</li>
+<li>Please explain the difference between stack and heap memory.</li>
 </ul>
-<h2 id="how-to-learn-programming-and-development">How to learn programming and development?</h2>
-<p>Although this course aims to provide a broad overview of the developer's world, it is by no means a "look-no-further" course, and simply browsing through the course contents will not make you a good developer.</p>
-<p>Development is not only a skill but also a quality, and a mindset as well. To truly master programming and development, coding is indispensable.</p>
-<p>As such, you should do a lot of coding and practice as you follow along with the course. As for me, I would recommend learning a framework such as Unity or Flutter so that you can create "exciting things" (such as games and apps) as you learn to code and find coding more fun.</p>
-<p>With the advent of GPTs, programming languages (and basically anything) have become much easier to learn. As long as you know what you're looking for, you can always find the answer easily by consulting GPT (most of the time). Therefore, this course does not include a tutorial for any specific language; it only introduces the common concepts that are found in almost all programming languages, and you're encouraged to learn how those concepts maps to specific syntax in different programming languages by Googling or asking GPTs.</p>
-<p>Personally, I believe that harnessing the power of AI is a very important skill for developers in the 21st century, and I would encourage you to use GPT for anything you can imagine, either for debugging, illustrating programming concepts or recommending frameworks and libraries.</p>
-<h2 id="what-is-the-right-way-to-take-this-course">What is the right way to take this course?</h2>
-<p>This course is organized into modules.
-For those completely new to programming and development,
-it is recommended to learn each module in order,
-so that you can get a complete and systematic understanding of the developer's world.</p>
-<p>However, the modules are not strictly dependent on each other,
-so if you already have some experience,
-or if you're only interested in certain aspects of development,
-feel free to find the modules that interest you the most and skip the rest.</p>
-<h2 id="next-steps">Next Steps</h2>
-<p>Take a look at the <a href="outline/">course outline</a> and pick a module to start with!</p>
 
 
 
@@ -959,15 +1197,31 @@ feel free to find the modules that interest you the most and skip the rest.</p>
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="../isa/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Registers, Memory and Instructions: Instruction Set Architectures">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Registers, Memory and Instructions: Instruction Set Architectures
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="outline/" class="md-footer__link md-footer__link--next" aria-label="Next: Course Outline">
+          <a href="../conclusion/" class="md-footer__link md-footer__link--next" aria-label="Next: Conclusion">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Course Outline
+                Conclusion
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1001,12 +1255,12 @@ feel free to find the modules that interest you the most and skip the rest.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

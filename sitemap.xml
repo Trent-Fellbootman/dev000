@@ -2,52 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://TODO/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://TODO/outline/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://TODO/abstract-computer/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2023-12-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TODO/abstract-computer/conclusion/</loc>
+         <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://TODO/abstract-computer/isa/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2023-12-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TODO/abstract-computer/memory-use-cases-stack-heap/</loc>
+         <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://TODO/abstract-computer/why-abstraction/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://TODO/developer-mindset/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://TODO/developer-mindset/abstraction/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://TODO/developer-mindset/conclusion/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://TODO/developer-mindset/hierarchy/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://TODO/developer-mindset/standards/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
