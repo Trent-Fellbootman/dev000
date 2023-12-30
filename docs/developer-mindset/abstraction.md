@@ -9,6 +9,8 @@ Abstraction helps to manage the complexity of real world systems, to break down 
 Generally speaking, "to abstract" roughly means **"to define what something is to someone, disregarding all irrelevant information",
 and that definition ("what something is") is called an abstraction**.
 
+!!! Note "Abstractions are sometimes called "semantics" synonymously."
+
 Notice that some people may define "abstraction" differently,
 such as "the abstract nature that is common to multiple entities".
 Here, I'm splitting that definition into two parts:
