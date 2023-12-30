@@ -54,6 +54,24 @@ they are used as the building blocks of larger programs.
 By composing these simple instructions (called "programming"),
 one can create programs that do virtually anything.
 
+!!! info "Why do we need registers?"
+
+    You might wonder why we need registers at all:
+    both registers and memory serve as the "state" of a program,
+    so why can't we use memory exclusively?
+    After all, registers can only store very limited amount of data,
+    while memory is much larger.
+
+    The answer relates to how computer hardwares work.
+    Although registers are small, they are very fast;
+    on the contrary, memory is large but also slow (compared to registers).
+    As a result, the typical practice is to store the data that needs to be accessed frequently in registers,
+    and the rest of the data in memory.
+
+    This is a good example of how ISAs are close to hardware,
+    and as you can see, although abstractions are "general and abstract characteristics",
+    they typically depend on and reflect the underlying objects which they apply to.
+
 ## How are computer programs run?
 
 Imagine a person with a pencil holding a notebook.
@@ -94,23 +112,19 @@ graph TD
 
 </div>
 
-!!! info "Why do we need registers?"
+!!! info "What if there are multiple programs?"
 
-    You might wonder why we need registers at all:
-    both registers and memory serve as the "state" of a program,
-    so why can't we use memory exclusively?
-    After all, registers can only store very limited amount of data,
-    while memory is much larger.
+    You may have wondered, what if there are multiple programs running on the same computer?
+    Since they use the same piece of memory, won't they interfere with each other?
+    And, how are they executed? Are they executed one by one or at the same time?
 
-    The answer relates to how computer hardwares work.
-    Although registers are small, they are very fast;
-    on the contrary, memory is large but also slow (compared to registers).
-    As a result, the typical practice is to store the data that needs to be accessed frequently in registers,
-    and the rest of the data in memory.
+    The short answer is, the operating system provides another layer of abstraction which eliminates all these concerns.
+    In simple words, the operation system "virtualizes" the computer hardware and
+    creates the illusion of multiple, independent computers running at the same time.
+    each program is allocated such a "virtual" computer of its own;
+    in the program's view, there is nobody else on this computer, so no interference at all.
 
-    This is a good example of how ISAs are close to hardware,
-    and as you can see, although abstractions are "general and abstract characteristics",
-    they typically depend on and reflect the underlying objects which they apply to.
+    How the operation system creates that illusion, though, is out of scope of this section.
 
 ## Conclusion
 
@@ -130,5 +144,20 @@ Congratulations, you now understand how computer hardware works!
 Real world computer hardwares are much more complicated than ISAs,
 but for now, ISAs are a good approximation to the real hardware.
 
-Next, we will introduce stack and heap,
-which are two concepts built upon ISAs and found in most low-level programming languages like C/C++ and Rust.
+Next, we will introduce some higher level abstractions that
+build upon ISAs and are found in most low-level programming languages like C/C++ and Rust.
+
+## AI Prompt Samples
+
+If you want to learn more about the topics in this section,
+feel free to consult an AI such as ChatGPT.
+
+Here are some sample prompts to get you started:
+
+- Can you briefly describe the ARM architecture, as well as its instructions?
+- Can you give an example ARM assembly code and explain what it's doing?
+- What are the differences between CISC and RISC?
+- How do Instruction Set Architectures compare to a Turing machine?
+Why are there no registers in a Turing machine?
+Why are there registers in ISAs?
+- What are the most popular Instruction Set Architectures nowadays?

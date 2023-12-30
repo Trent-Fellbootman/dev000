@@ -77,3 +77,4 @@ nav:
     - Introduction: abstract-computer/index.md
     - abstract-computer/why-abstraction.md
     - abstract-computer/isa.md
+    - abstract-computer/memory-use-cases-stack-heap.md
