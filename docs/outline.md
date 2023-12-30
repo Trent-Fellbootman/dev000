@@ -4,7 +4,7 @@ Note: Some modules are not available yet.
 The names of available modules are shown as links,
 while unavailable modules are shown as plain text.
 
-## [Module 0: The Developer's Mindset](developer-mindset/index.md)
+## [Module 0: The Developer&#39;s Mindset](developer-mindset/index.md)
 
 This module covers the fundamental concepts that underlies all aspect of the developer's world, such as abstraction and hierarchy.
 
@@ -22,8 +22,8 @@ Prerequisite Modules:
 
 This module explains how a computer is abstracted to developers. Topics include:
 
-- Memory address, stack, heap, etc.
-- How a program gets run: compilation, linking, etc.
+- Instruction Set Architectures (ISAs).
+- Memory use cases, stack and heap.
 
 ## Module 2: Programming Languages
 
