@@ -79,3 +79,5 @@ nav:
     - abstract-computer/isa.md
     - abstract-computer/memory-use-cases-stack-heap.md
     - abstract-computer/conclusion.md
+  - "Module 2: Programming Languages":
+    - Introduction: programming-languages/intro.md
