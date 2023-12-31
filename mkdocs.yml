@@ -81,3 +81,4 @@ nav:
     - abstract-computer/conclusion.md
   - "Module 2: Programming Languages":
     - Introduction: programming-languages/intro.md
+    - programming-languages/overview.md
