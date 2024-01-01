@@ -1,73 +1,507 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://TODO/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/"/>
     </url>
     <url>
-         <loc>https://TODO/outline/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/outline/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/outline/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/outline/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/outline/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/outline/"/>
     </url>
     <url>
-         <loc>https://TODO/abstract-computer/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/abstract-computer/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/"/>
     </url>
     <url>
-         <loc>https://TODO/abstract-computer/conclusion/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/abstract-computer/conclusion/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/conclusion/"/>
     </url>
     <url>
-         <loc>https://TODO/abstract-computer/isa/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/abstract-computer/isa/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/isa/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/isa/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/isa/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/isa/"/>
     </url>
     <url>
-         <loc>https://TODO/abstract-computer/memory-use-cases-stack-heap/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/abstract-computer/memory-use-cases-stack-heap/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/memory-use-cases-stack-heap/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/memory-use-cases-stack-heap/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/memory-use-cases-stack-heap/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/memory-use-cases-stack-heap/"/>
     </url>
     <url>
-         <loc>https://TODO/abstract-computer/why-abstraction/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/abstract-computer/why-abstraction/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/why-abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/why-abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/why-abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/why-abstraction/"/>
     </url>
     <url>
-         <loc>https://TODO/developer-mindset/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/developer-mindset/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/"/>
     </url>
     <url>
-         <loc>https://TODO/developer-mindset/abstraction/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/developer-mindset/abstraction/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/abstraction/"/>
     </url>
     <url>
-         <loc>https://TODO/developer-mindset/conclusion/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/developer-mindset/conclusion/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/conclusion/"/>
     </url>
     <url>
-         <loc>https://TODO/developer-mindset/hierarchy/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/developer-mindset/hierarchy/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/hierarchy/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/hierarchy/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/hierarchy/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/hierarchy/"/>
     </url>
     <url>
-         <loc>https://TODO/developer-mindset/standards/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/developer-mindset/standards/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/standards/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/standards/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/standards/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/standards/"/>
     </url>
     <url>
-         <loc>https://TODO/programming-languages/intro/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/programming-languages/intro/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/programming-languages/intro/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/programming-languages/intro/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/programming-languages/intro/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/programming-languages/intro/"/>
     </url>
     <url>
-         <loc>https://TODO/programming-languages/overview/</loc>
-         <lastmod>2024-01-01</lastmod>
-         <changefreq>daily</changefreq>
+        <loc>https://TODO/programming-languages/overview/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/programming-languages/overview/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/programming-languages/overview/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/programming-languages/overview/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/programming-languages/overview/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/outline/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/outline/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/outline/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/outline/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/outline/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/abstract-computer/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/abstract-computer/conclusion/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/conclusion/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/abstract-computer/isa/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/isa/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/isa/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/isa/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/isa/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/abstract-computer/memory-use-cases-stack-heap/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/memory-use-cases-stack-heap/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/memory-use-cases-stack-heap/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/memory-use-cases-stack-heap/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/memory-use-cases-stack-heap/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/abstract-computer/why-abstraction/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/why-abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/why-abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/why-abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/why-abstraction/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/developer-mindset/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/developer-mindset/abstraction/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/abstraction/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/developer-mindset/conclusion/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/conclusion/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/developer-mindset/hierarchy/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/hierarchy/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/hierarchy/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/hierarchy/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/hierarchy/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/developer-mindset/standards/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/standards/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/standards/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/standards/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/standards/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/programming-languages/intro/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/programming-languages/intro/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/programming-languages/intro/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/programming-languages/intro/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/programming-languages/intro/"/>
+    </url>
+    <url>
+        <loc>https://TODO/zh/programming-languages/overview/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/programming-languages/overview/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/programming-languages/overview/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/programming-languages/overview/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/programming-languages/overview/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/outline/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/outline/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/outline/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/outline/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/outline/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/abstract-computer/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/abstract-computer/conclusion/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/conclusion/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/abstract-computer/isa/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/isa/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/isa/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/isa/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/isa/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/abstract-computer/memory-use-cases-stack-heap/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/memory-use-cases-stack-heap/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/memory-use-cases-stack-heap/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/memory-use-cases-stack-heap/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/memory-use-cases-stack-heap/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/abstract-computer/why-abstraction/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/why-abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/why-abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/why-abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/why-abstraction/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/developer-mindset/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/developer-mindset/abstraction/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/abstraction/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/developer-mindset/conclusion/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/conclusion/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/developer-mindset/hierarchy/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/hierarchy/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/hierarchy/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/hierarchy/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/hierarchy/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/developer-mindset/standards/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/standards/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/standards/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/standards/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/standards/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/programming-languages/intro/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/programming-languages/intro/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/programming-languages/intro/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/programming-languages/intro/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/programming-languages/intro/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ru/programming-languages/overview/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/programming-languages/overview/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/programming-languages/overview/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/programming-languages/overview/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/programming-languages/overview/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/outline/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/outline/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/outline/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/outline/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/outline/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/abstract-computer/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/abstract-computer/conclusion/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/conclusion/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/abstract-computer/isa/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/isa/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/isa/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/isa/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/isa/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/abstract-computer/memory-use-cases-stack-heap/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/memory-use-cases-stack-heap/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/memory-use-cases-stack-heap/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/memory-use-cases-stack-heap/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/memory-use-cases-stack-heap/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/abstract-computer/why-abstraction/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/abstract-computer/why-abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/abstract-computer/why-abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/abstract-computer/why-abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/abstract-computer/why-abstraction/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/developer-mindset/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/developer-mindset/abstraction/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/abstraction/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/abstraction/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/developer-mindset/conclusion/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/conclusion/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/conclusion/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/developer-mindset/hierarchy/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/hierarchy/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/hierarchy/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/hierarchy/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/hierarchy/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/developer-mindset/standards/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/developer-mindset/standards/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/developer-mindset/standards/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/developer-mindset/standards/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/developer-mindset/standards/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/programming-languages/intro/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/programming-languages/intro/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/programming-languages/intro/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/programming-languages/intro/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/programming-languages/intro/"/>
+    </url>
+    <url>
+        <loc>https://TODO/ja/programming-languages/overview/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://TODO/ja/programming-languages/overview/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://TODO/programming-languages/overview/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://TODO/ru/programming-languages/overview/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://TODO/zh/programming-languages/overview/"/>
     </url>
 </urlset>

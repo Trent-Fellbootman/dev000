@@ -1,0 +1,1812 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Complete Introduction to Development">
+      
+      
+        <meta name="author" content="Trent Fellbootman">
+      
+      
+        <link rel="canonical" href="https://TODO/ru/programming-languages/overview/">
+      
+      
+        <link rel="prev" href="../intro/">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
+    
+    
+      
+        <title>Programming Languages: A High Level Overview - DEV-000</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.45e1311d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#programming-languages-a-high-level-overview" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../../" title="DEV-000" class="md-header__button md-logo" aria-label="DEV-000" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DEV-000
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Programming Languages: A High Level Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Выберите язык">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../programming-languages/overview/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../zh/programming-languages/overview/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="ru" class="md-select__link">
+              Русский
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ja/programming-languages/overview/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Trent-Fellbootman/dev000" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Trent-Fellbootman/dev000
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developer-mindset/" class="md-tabs__link">
+          
+  
+  Module 0: The Developer's Mindset
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../abstract-computer/" class="md-tabs__link">
+          
+  
+  Module 1: The Abstract Computer
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../intro/" class="md-tabs__link">
+          
+  
+  Module 2: Programming Languages
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="DEV-000" class="md-nav__button md-logo" aria-label="DEV-000" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    DEV-000
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Trent-Fellbootman/dev000" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Trent-Fellbootman/dev000
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DEV-000: The Complete Introduction to Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DEV-000 Course Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Module 0: The Developer's Mindset
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Module 0: The Developer's Mindset
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module 0: The Developer's Mindset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/abstraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abstraction: The Developer's Way of Thinking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/hierarchy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hierarchy: A Way to Manage Complexity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/standards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standards: Facilitating Interactions Between Entities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Заключение
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Module 1: The Abstract Computer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Module 1: The Abstract Computer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abstract-computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module 1: The Abstract Computer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abstract-computer/why-abstraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Abstract Computer: Why do we need it?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abstract-computer/isa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Registers, Memory and Instructions: Instruction Set Architectures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abstract-computer/memory-use-cases-stack-heap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Memory Use Cases, Stack and Heap: Basic Memory Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abstract-computer/conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Module 2: Programming Languages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Module 2: Programming Languages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module 2: Programming Languages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Programming Languages: A High Level Overview
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Programming Languages: A High Level Overview
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-programming-languages-why-do-we-need-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are programming languages? Why do we need them?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-general-taxonomy-of-programming-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      The General Taxonomy of Programming Languages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The General Taxonomy of Programming Languages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#execution-model-compiled-vs-interpreted" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution Model: Compiled v.s. Interpreted
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Execution Model: Compiled v.s. Interpreted">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compiled-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compiled Languages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreted-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreted Languages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hybrid-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hybrid Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hybrid Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#just-in-time-jit-compilation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Just-In-Time (JIT) Compilation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intermediate-language-il-and-virtual-machine-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intermediate Language (IL) and Virtual Machine (VM)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming-paradigms-stateful-vs-stateless" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming Paradigms: Stateful v.s. Stateless
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming Paradigms: Stateful v.s. Stateless">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stateful-programming-paradigms-object-oriented-programming-oop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stateful Programming Paradigms &amp; Object Oriented Programming (OOP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stateless-programming-paradigms-functional-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stateless Programming Paradigms &amp; Functional Programming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming-paradigms-and-programming-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming Paradigms and Programming Languages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-purpose-languages-vs-domain-specific-languages-dsls" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Purpose Languages v.s. Domain Specific Languages (DSLs)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General Purpose Languages v.s. Domain Specific Languages (DSLs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-purpose-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Purpose Languages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-specific-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain Specific Languages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-programming-languages-why-do-we-need-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are programming languages? Why do we need them?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-general-taxonomy-of-programming-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      The General Taxonomy of Programming Languages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The General Taxonomy of Programming Languages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#execution-model-compiled-vs-interpreted" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution Model: Compiled v.s. Interpreted
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Execution Model: Compiled v.s. Interpreted">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compiled-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compiled Languages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreted-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreted Languages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hybrid-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hybrid Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hybrid Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#just-in-time-jit-compilation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Just-In-Time (JIT) Compilation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intermediate-language-il-and-virtual-machine-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intermediate Language (IL) and Virtual Machine (VM)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming-paradigms-stateful-vs-stateless" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming Paradigms: Stateful v.s. Stateless
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming Paradigms: Stateful v.s. Stateless">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stateful-programming-paradigms-object-oriented-programming-oop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stateful Programming Paradigms &amp; Object Oriented Programming (OOP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stateless-programming-paradigms-functional-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stateless Programming Paradigms &amp; Functional Programming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming-paradigms-and-programming-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming Paradigms and Programming Languages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-purpose-languages-vs-domain-specific-languages-dsls" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Purpose Languages v.s. Domain Specific Languages (DSLs)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General Purpose Languages v.s. Domain Specific Languages (DSLs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-purpose-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Purpose Languages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-specific-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain Specific Languages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/en/programming-languages/overview.md" title="Редактировать страницу" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="programming-languages-a-high-level-overview">Programming Languages: A High Level Overview</h1>
+<p>In this section, we are going to talk about
+the purpose of programming languages and their general taxonomy.</p>
+<h2 id="what-are-programming-languages-why-do-we-need-them">What are programming languages? Why do we need them?</h2>
+<p>Generally speaking,
+a programming language is
+<strong>an abstraction of computers, designed to
+make designing, representing, building and understanding computer programs easier for beings with a human-like mindset</strong>.</p>
+<p>Notice that programming languages are sometimes defined in a more liberal way, counting in assembly languages as well;
+in this module, however, we define "programming language" to include only modern, "human-oriented" programming languages
+such as C/C++, Python, Rust, Java, JavaScript, etc.;
+we do not include languages that are not meant for use by humans,
+such as assembly languages and binary machine codes.</p>
+<p>Recall from the previous module that the lowest level
+(closest to hardware) abstraction of a computer is an Instruction Set Architecture (ISA),
+but programming with ISAs is very unintuitive for humans.
+As a result, people decided to build higher-level abstractions that are easier to understand and use;
+this is exactly what programming languages are for.</p>
+<p>Since programming languages are high-level abstractions designed to be human-friendly,
+their programming models are typically far away from the actual computer hardware (compared to ISAs).
+For example, registers, a hardware detail found in almost every ISA, is abstracted away in almost every programming language.</p>
+<div class="admonition info">
+<p class="admonition-title">About registers</p>
+<p>In modern CPUs, registers defined in ISAs are typically not actual hardware components,
+but they are not just abstractions either.</p>
+<p>There are "physical registers" in CPUs.
+However, they do not map to ISA-defined "architectural registers" directly.
+Instead, the typical case is that there are many more physical registers than architectural registers;
+the latter are mapped to the former in a many-to-many way at run-time via a technique called "register renaming".</p>
+</div>
+<p>Here are some commonly found concepts in programming languages,
+compared with their "lower-level implementations" in ISAs (which are still abstractions over hardware):</p>
+<table>
+<thead>
+<tr>
+<th>Programming Language Concept</th>
+<th>ISA Implementation</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>variable/constant</td>
+<td>a chunk of memory which holds data</td>
+<td>A "thing", like the string "Hello, World!", number 1.22, or a tree of data</td>
+</tr>
+<tr>
+<td>function</td>
+<td>typically a chunk of memory which holds ISA instructions (in compiled languages)</td>
+<td>A tool which can do a certain thing</td>
+</tr>
+<tr>
+<td>struct</td>
+<td>not present at run-time (in compiled languages)</td>
+<td>a definition for structured data, like "a student struct has name, age, and scores"</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-general-taxonomy-of-programming-languages">The General Taxonomy of Programming Languages</h2>
+<p>There are a large number of programming languages at present;
+each of them has its own features, abstractions, tradeoffs and is fit for a specific set of use cases;
+however, there are some commonalities between them,
+and programming languages can be generally divided into large groups from multiple perspectives.</p>
+<p>In this subsection, we will talk about some of the common ways to categorize programming languages,
+and the general characteristics of languages in each category.</p>
+<div class="admonition info">
+<p class="admonition-title">The term "tradeoff"</p>
+<p>"Tradeoff" is a basic concept in both software and hardware development.
+Generally speaking, it means<strong>to "trade" (sacrifice) the quality in one aspect for that in another</strong>.</p>
+<p>For example, many programming languages (like Python) sacrifice speed and hardware efficiency for ease of use;
+others like C/C++, on the other hand, sacrifice ease of use and learning for better control over hardware and faster execution.</p>
+</div>
+<h3 id="execution-model-compiled-vs-interpreted">Execution Model: Compiled v.s. Interpreted</h3>
+<p>One common way to categorize programming languages is by the execution model,
+which can be either "compiled", "interpreted" or a hybrid between the two.</p>
+<h4 id="compiled-languages">Compiled Languages</h4>
+<p>Recall from the previous section that
+the run-time (i.e., the time when a program is run)
+execution of virtually every computer programs boils down to
+executing ISA-defined instructions on the hardware.</p>
+<p>However, programming languages are designed for humans, not computer hardware;
+so there has to be some way to convert software written in a programming language into machine-executable code,
+either before or when the program is run.</p>
+<p><strong>Compiled languages</strong> choose the former.
+In a compiled language, code that a developer writes (to form a full program or part of a program) in a programming language
+is converted into machine-executable code by a piece of software called the <strong>"compiler"</strong>,
+before the program is run.
+Then, that software application in machine code form can run on hardware directly.</p>
+<div style="text-align: center;">
+
+<pre class="mermaid"><code>graph TD
+
+    subgraph developer-side
+        source-code --&gt;|compile| machine-code
+    end
+
+    subgraph user-side
+        machine-code --&gt;|executes-on| hardware
+    end</code></pre>
+
+</div>
+
+<p>There are some terms associated with compiled languages:</p>
+<ul>
+<li><strong>Source code</strong>: Code that a developer writes in a programming language.</li>
+<li><strong>Machine code</strong>: Code that can run on hardware directly.</li>
+<li><strong>Compilation</strong>: The process of converting source code into machine code.</li>
+<li><strong>Compiled application</strong>: A piece of software that has been compiled (from source code), typically in machine-code form and can run on hardware directly.</li>
+<li><strong>Binary executable</strong>: Since machine code is usually in binary form (e.g., 001100101010111000110),
+  compiled applications that can run on hardware directly are often referred to as "binary executables".</li>
+<li><strong>Compile</strong>: The verb form of "compilation".</li>
+<li><strong>Compiler</strong>: A piece of software that does compilation.</li>
+<li><strong>Compile-time</strong>: The time when the compilation is performed.</li>
+<li><strong>Run-time</strong>: The time when the program is run.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Decompilation</p>
+<p>You might wonder whether it is possible to convert machine code back to source code.
+Yes, that is indeed possible.
+Such a process is called<strong>decompilation</strong>,
+and there are a lot of <strong>decompilers</strong> out there which do decompilation.</p>
+</div>
+<p>The advantages of compiled languages are:</p>
+<ul>
+<li>Fast and hardware-efficient:
+  The biggest advantage of compiled languages is that they are fast and hardware-efficient.
+  The process of compilation makes sure that
+  <strong>every instruction in the compiled application does useful job in the most efficient way possible</strong>.
+  Many people would awe at the the wide range of optimizations that modern compilers can do,
+  from identifying and eliminating useless code in the source code,
+  to "rewriting" source code in a way that works better with the hardware.
+  Additionally, since compiled applications interface with the hardware directly
+  without introducing an intermediate layer (as in the case of interpreted languages),
+  they run much faster and use much less memory.</li>
+<li>(Sometimes) better bug-extermination:
+  In many cases (such as with variable types, as we'll introduce later),
+  the static nature of compiled languages means that many errors in the source code
+  can be detected at compile time, rather than resulting in glitches that users experience at run time.</li>
+</ul>
+<p>The disadvantages:</p>
+<ul>
+<li>(Typically) harder to learn and use:
+  Since compiled languages are typically closer to hardware,
+  it takes more efforts to learn them.
+  It is usually harder to use them as well,
+  as being close to hardware means that you have to manage many things (especially memory) yourself,
+  instead of delegating that responsibility to a piece of software (as with most interpreted languages).
+  In addition, it often takes more code to write the same application in a compiled language than in an interpreted one.</li>
+<li>Less flexibility:
+  The static nature of compiled languages means it is harder to do certain things with it,
+  such as modifying the type of a variable at run-time.</li>
+<li>Hardware specific: Since machine code is the closest abstraction to hardware,
+  and that different operating systems typically have different binary executable formats,
+  compiled applications are usually unable to run on multiple operating systems,
+  or on hardware implementing different ISAs.
+  For example, applications compiled for Windows cannot run on Linux or macOS;
+  PC applications targeting x86 ISA cannot run on smartphones which typically implement the ARM ISA.</li>
+</ul>
+<p>Some popular compiled languages:</p>
+<ul>
+<li>C/C++: Although created many, many years ago, C/C++ is still one of the most popular compiled languages in the world.
+  It offers the most control over hardware and unrivaled performance (if used in the right way).
+  However, it has a steeper learning curve,
+  and memory management is notoriously hard
+  (can be relieved by using stuff like smart pointers and RAII though).</li>
+<li>Rust: A modern, relatively new programming language.
+  It is one of the most difficult-to-learn languages in the world,
+  but once you get familiar with it, you will benefit a lot from its memory safety guarantees,
+  as well as its modern syntax and design which make it very intuitive and concise.</li>
+</ul>
+<h4 id="interpreted-languages">Interpreted Languages</h4>
+<p>Different from compiled languages,
+interpreted languages choose to actually "execute" source code at run-time using a special piece of software called an <strong>"interpreter"</strong>.
+An interpreter reads in each "high-level" instruction in the source code and executes it.</p>
+<div style="text-align: center;">
+
+<pre class="mermaid"><code>
+graph TD
+
+    subgraph developer-side
+        source-code
+    end
+
+    subgraph user-side
+        source-code --&gt;|interpreted-by| interpreter --&gt;|runs-on| hardware
+    end</code></pre>
+
+</div>
+
+<p>From one perspective, you can think that the source code gets executed by a "virtual hardware" (the interpreter) that understands it directly;
+from another perspective, however, since the execution of an interpreter ultimately boils down to machine code,
+you can think that the source code is converted to machine code by the interpreter dynamically at run-time.</p>
+<p>For example, consider the following Python code:</p>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">125</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">137</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The result of </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> times </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Even if you have no experience with programming,
+the code above should be straightforward to understand:
+it multiplies 125 and 137, then prints the result to the console
+(i.e., the terminal from which the code is executed).</p>
+<p>How is that code executed by the interpreter?
+Well, the interpreter actually reads and executes each line:</p>
+<ol>
+<li>The first line <code>a = 125</code> is executed by allocating a piece of memory, naming it to <code>a</code> and writing 125 to it;</li>
+<li>Similar thing happens when executing the second line <code>b = 137</code>.</li>
+<li>The third line <code>c = a * b</code> is executed by reading the pieces of memory previously named to <code>a</code> and <code>b</code>,
+   multiplying them together and writing the result to an allocated piece of memory named to <code>c</code>.</li>
+<li>The fourth line <code>print(f"The result of {a} times {b} is {c}")</code> is executed by reading <code>a</code>, <code>b</code> and <code>c</code>,
+   then printing them to the console.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>The explanation above is not entirely correct in terms of what really happens on hardware.
+The actual execution of Python code is a complex process,
+considering how the interpreter "understands" source code,
+and the fact that the execution engine of the Python interpreter,
+namely the Python Virtual Machine,
+is a stack based system.</p>
+<p>But for now, don't worry too much about the hardware details;
+the explanation above provides a good illustration of the abstraction that interpreted languages provide.</p>
+</div>
+<p>The advantages of interpreted languages are:</p>
+<ul>
+<li>Their dynamic nature allows more flexibility in code.
+  For example, Python allows you to change the type of a variable (e.g., from an integer to a string) at run-time,
+  which is usually prohibited in compiled languages.</li>
+<li>They are often much easier to learn and use.
+  The interpreter provides a more human-friendly abstraction of computers which makes programming much easier.
+  Writing the same software in an interpreted language typically results in much shorter source code than in a compiled language.
+  Also, in interpreted languages, you typically do not need to manage memory manually;
+  the interpreter handles that for you.</li>
+<li>Better cross-platform and cross-ISA compatibility:
+  Since the interpreter offers another layer of abstraction to computer hardware,
+  software written in interpreted language can run on any computer with an interpreter for that language,
+  regardless of its ISA and operating system.</li>
+</ul>
+<p>The disadvantages:</p>
+<ul>
+<li>Slow and hardware-inefficient.
+  Obviously, it is slower to read in, parse, and "simulate the execution" of each line of source by the interpreter,
+  compared to executing compiled machine code directly.
+  In reality, Python code can be anywhere from 20x to 200x slower than equivalent C++ code.</li>
+<li>(Sometimes) harder to debug:
+  The flexibility of interpreted languages also means they are harder to debug sometimes.
+  In the extreme case, all errors in interpreted languages are run-time errors,
+  because there is no compile-time analysis of the source code.
+  If there is a bug in an app that happens 1 in 1000 times,
+  there is a good chance that it's not spotted when developing the app,
+  but incurs a run-time error when an unlucky user opens it.</li>
+</ul>
+<h4 id="hybrid-techniques">Hybrid Techniques</h4>
+<p>Except for the "pure" compiled/interpreted languages introduced above,
+there are a few technologies that blur the boundary between them:</p>
+<h5 id="just-in-time-jit-compilation">Just-In-Time (JIT) Compilation</h5>
+<p>This technology allows parts of the source code to be compiled at run-time.</p>
+<p>JIT compilation offers a few advantages:</p>
+<ul>
+<li>The program can run on any computer with a JIT compiler installed.</li>
+<li>JIT is often faster than interpreted languages, since the JIT compiler compiles the source code to machine code.</li>
+<li>The JIT compiler can sometimes find more available optimizations than the "static compilers" of compiled languages,
+  because it can access the run-time states of the programs.</li>
+</ul>
+<h5 id="intermediate-language-il-and-virtual-machine-vm">Intermediate Language (IL) and Virtual Machine (VM)</h5>
+<p>Some languages supports compiling the source code to an intermediate representation
+that is neither human-readable nor hardware-executable.
+At run-time, such an intermediate representation is executed by a piece of software called the <strong>"virtual machine"</strong>
+(not to be confused with virtual machines in which you can install operating systems).
+The most well-known example of this is Java and its bytecode representation.</p>
+<p>Such a technique offers a tradeoff between speed and cross-platform compatibility:
+since the source code is compiled to intermediate representation,
+the compiler is able to do some compile-time optimizations;
+and, the introduction of the virtual machine allows the intermediate representation
+to be executed on any computer with the virtual machine installed.</p>
+<p>It is important to note that the intermediate representation is <strong>not</strong> designed to be human readable,
+as it is expected to be generated by the compiler, not written by the human developers.</p>
+<h3 id="programming-paradigms-stateful-vs-stateless">Programming Paradigms: Stateful v.s. Stateless</h3>
+<p>Another way to categorize programming languages is by their <strong>programming paradigms</strong>.
+Basically, a "programming paradigm" is a mental model to design and understand computer programs,
+or you can think of it as an abstraction of computers.
+Most programming languages allow you to use different programming paradigms to build software,
+but some of them encourage certain paradigms.</p>
+<p>Generally speaking, there are two big families of programming paradigms: stateful and stateless.</p>
+<h4 id="stateful-programming-paradigms-object-oriented-programming-oop">Stateful Programming Paradigms &amp; Object Oriented Programming (OOP)</h4>
+<p>Stateful programming paradigms employ the idea of <strong>states</strong>,
+and are often equivalent to "object oriented programming" in modern days.</p>
+<p>A <strong>state</strong> is something that can change during the execution of a program and influence its behavior.
+Typically, these <strong>states</strong> are saved in chunks of memory allocated to a program.
+It is important to note that in a stateful programming paradigm,
+the behavior of a program depends on not only the inputs but also the states;
+the program output can be different even if the inputs are the same.</p>
+<p>For example, consider a simple application with a button and a saved number.
+The number starts at 0; each time the button is pressed, the number is incremented by 1
+and displayed on screen.
+In this case, that "number" is the state of the program,
+as it changes when the button is pressed and influences what is displayed on screen.</p>
+<p>The following diagram illustrates the programming model of a stateful paradigm:</p>
+<div style="text-align: center;">
+
+<pre class="mermaid"><code>graph TD
+
+    input --&gt;|changes| program-state
+    input --&gt;|influences| program-behavior
+    program-state --&gt;|influences| program-behavior</code></pre>
+
+</div>
+
+<h4 id="stateless-programming-paradigms-functional-programming">Stateless Programming Paradigms &amp; Functional Programming</h4>
+<p>Stateless programming paradigms generally tend to abstract a computer program as <strong>functions</strong> (mathematical sense)
+that transform inputs to outputs without any side effects;
+the use of states is usually discouraged.
+Stateless programming paradigms are usually referred to as "<strong>functional programming</strong>".</p>
+<p>For example, consider a program that calculates the age difference between two people.
+In a functional programming paradigm, such a process can be abstracted as the following diagram:</p>
+<div style="text-align: center;">
+
+<pre class="mermaid"><code>flowchart LR
+
+    person-A([person-A])
+    person-B([person-B])
+
+    person-A-age([person-A-age])
+    person-B-age([person-B-age])
+
+    output([output])
+
+    person-A --&gt; get-age --&gt; person-A-age
+    person-B --&gt; get-age --&gt; person-B-age
+    person-A-age --&gt; calculate-age-difference
+    person-B-age --&gt; calculate-age-difference
+    calculate-age-difference --&gt; output</code></pre>
+
+</div>
+
+<p>As you can see, the <strong>only</strong> job of each step of the processing
+(either <code>get-age</code> or <code>calculate-age-difference</code>)
+is to transform its input to its output;
+there is no side effects (e.g., printing something to the screen or changing the contents of a piece of memory),
+and the same input always results in the same output.
+There is no state that influences the program's behavior in addition to program inputs.</p>
+<h4 id="programming-paradigms-and-programming-languages">Programming Paradigms and Programming Languages</h4>
+<p>Different programming paradigms have different advantages and disadvantages.
+For example, functional programming allows developers to understand the behavior of a program more easily
+(the behavior of a stateful program is more unpredictable, especially in the case of concurrency,
+as it depends on both the inputs and the states),
+while stateful programming paradigms are more powerful in terms of what programs you can build with it.</p>
+<p>As a result, most software applications employ different programming paradigms in different aspects,
+instead of using one paradigm exclusively.
+One common practice is to design the high-level structure of a program as stateful objects
+(i.e., things with states),
+then employ functional programming in implementing the functionalities of those objects.</p>
+<p>Similarly, most modern programming languages support multiple paradigms.
+However, some of them may encourage one paradigm or another by design.</p>
+<p>For example, some programming languages supporting the stateful paradigm / object oriented programming are:</p>
+<ul>
+<li>Java: Java is one of the most popular language designed for object oriented programming (OOP).</li>
+<li>C/C++: C/C++ is a multi-paradigm language with good feature support for OOP.</li>
+<li>Python: Python is also a multi-paradigm language.</li>
+<li>Rust: Rust is a multi-paradigm language that encourages functional programming,
+  but it supports OOP as well.</li>
+</ul>
+<p>Some programming languages supporting the stateless paradigm / functional programming are:</p>
+<ul>
+<li>LISP: LISP is one of the oldest programming languages.
+  It has a peculiar design that encourages what is called functional programming in the modern days.</li>
+<li>Rust: As mentioned before, Rust is a multi-paradigm language that primarily encourages functional programming.</li>
+<li>Python: As mentioned before, Python is also a multi-paradigm language with no strong inclination to either functional programming or OOP.</li>
+</ul>
+<h3 id="general-purpose-languages-vs-domain-specific-languages-dsls">General Purpose Languages v.s. Domain Specific Languages (DSLs)</h3>
+<p>The third way to categorize programming languages is by the areas they apply to.
+Programming languages can be categorized into two large groups in this way:
+<strong>general purpose</strong> languages and <strong>domain specific languages (DSLs)</strong>.</p>
+<h4 id="general-purpose-languages">General Purpose Languages</h4>
+<p>General purpose languages are programming languages designed for general use.
+I.e., those you can use to build software for any task.
+Most of the languages we've mentioned before fall into this category,
+including C/C++, Python, Rust and Java.</p>
+<h4 id="domain-specific-languages">Domain Specific Languages</h4>
+<p>Domain Specific Languages (DSLs) are languages designed for specific fields,
+like mathematics, database operations, data analysis and artificial intelligence.
+Strictly speaking, a lot of DSLs do not match the definition of programming languages introduced in this section,
+because they are not designed to build software;
+however, if you generalize the definition of programming languages into
+"an abstraction or a model that makes it easy to do certain things",
+then DSLs do fit with this definition.</p>
+<p>Some examples of DSLs:</p>
+<ul>
+<li>SQL: SQL is a DSL designed for database operations.</li>
+<li>Mermaid: Mermaid is a DSL that allows you to efficiently represent graphs, flowcharts, mindmaps, etc., in textual form.</li>
+<li>Slint: Slint is a UI (User Interface, like buttons, windows and slide bars) framework which provides a DSL to represent UI elements.</li>
+<li>Bash: Bash can be thought of as a DSL that makes it easier to do things on the terminal.</li>
+<li>MATLAB: MATLAB is a popular DSL for mathematics and supports various mathematical concepts and operations like matrix and matrix inversion.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Fun Fact (Opinion): Developer's Review</p>
+<p>Personally, I feel it's a miracle that MATLAB remains to be one of the most popular languages,
+considering its hideous IDE, archaic syntax and anti-human design
+(such as indexing arrays from 1 using braces, while everyone else uses 0 and square brackets).</p>
+<p>Although MATLAB was the first language I learned seriously,
+it is now my least favorite and least-used language.
+I would strongly discourage any new developer to use MATLAB as his/her primary language,
+and strongly encourage current MATLAB users to switch to Python,
+both for their own good and for the development of the open-source community.</p>
+</div>
+<h2 id="conclusion">Conclusion</h2>
+<p>In this section, we discussed what programming languages are and their general taxonomy.</p>
+<p>Generally speaking, a programming language is <strong>an abstraction of computers, designed to
+make designing, representing, building and understanding computer programs easier for beings with a human-like mindset</strong>.</p>
+<p>Programming languages can be categorized in 3 different ways:</p>
+<ol>
+<li>By execution model:</li>
+<li>Compiled Languages: Source code compiled to machine code before program execution.</li>
+<li>Interpreted Languages: Interpreter executes source code directly.</li>
+<li>Hybridization techniques: Just-In-Time (JIT) Compilation and Intermediate Language (IL) &amp; virtual machines.</li>
+<li>By programming paradigm:</li>
+<li>Stateful paradigm &amp; Object Oriented Programming (OOP): Program include states which modify its behavior in addition to inputs.</li>
+<li>Stateless paradigm &amp; Functional Programming: Program abstracted as functions that transform inputs to outputs without any side effects;
+     use of states is discouraged or prohibited.</li>
+<li>By applicable fields:</li>
+<li>General Purpose Languages: Programming languages that can be used to build virtually any program for anything.</li>
+<li>Domain Specific Languages (DSLs): Programming languages designed for specific fields.</li>
+</ol>
+<p>Congratulations!
+You now have a high-level understanding of programming languages.
+Next, we'll take a look at the common abstractions and ideas found in almost every modern, general purpose language.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
+        
+          
+          <a href="../intro/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Module 2: Programming Languages">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              <div class="md-ellipsis">
+                Module 2: Programming Languages
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

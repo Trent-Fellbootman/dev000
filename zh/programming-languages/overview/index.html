@@ -1,0 +1,1754 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Complete Introduction to Development">
+      
+      
+        <meta name="author" content="Trent Fellbootman">
+      
+      
+        <link rel="canonical" href="https://TODO/zh/programming-languages/overview/">
+      
+      
+        <link rel="prev" href="../intro/">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
+    
+    
+      
+        <title>编程语言：一个高层次概述 - DEV-000</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.45e1311d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../" title="DEV-000" class="md-header__button md-logo" aria-label="DEV-000" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DEV-000
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              编程语言：一个高层次概述
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../programming-languages/overview/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ru/programming-languages/overview/" hreflang="ru" class="md-select__link">
+              Русский
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ja/programming-languages/overview/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Trent-Fellbootman/dev000" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Trent-Fellbootman/dev000
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developer-mindset/" class="md-tabs__link">
+          
+  
+  Module 0: The Developer's Mindset
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../abstract-computer/" class="md-tabs__link">
+          
+  
+  Module 1: The Abstract Computer
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../intro/" class="md-tabs__link">
+          
+  
+  Module 2: Programming Languages
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="DEV-000" class="md-nav__button md-logo" aria-label="DEV-000" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    DEV-000
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Trent-Fellbootman/dev000" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Trent-Fellbootman/dev000
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DEV-000：开发的完全介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DEV-000 课程结构
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Module 0: The Developer's Mindset
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Module 0: The Developer's Mindset
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模块 0: 开发者思维方式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/abstraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    抽象：开发者的思维方式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/hierarchy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    层次结构：管理复杂性的一种方法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/standards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    标准：促进实体之间的互动
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-mindset/conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    结论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Module 1: The Abstract Computer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Module 1: The Abstract Computer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abstract-computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模块 1：抽象计算机
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abstract-computer/why-abstraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    抽象计算机：我们为什么需要它？
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abstract-computer/isa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    寄存器、内存和指令：指令集体系结构
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abstract-computer/memory-use-cases-stack-heap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    内存用例、堆栈和堆：基本内存管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abstract-computer/conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    结论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Module 2: Programming Languages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Module 2: Programming Languages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模块2：编程语言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    编程语言：一个高层次概述
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    编程语言：一个高层次概述
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是编程语言？为什么我们需要它们？
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="什么是编程语言？为什么我们需要它们？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于寄存器
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      编程语言的通用分类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      执行模型：编译 vs. 解释
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="执行模型：编译 vs. 解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译语言
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      解释语言
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      混合技术
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="混合技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jit-compilation" class="md-nav__link">
+    <span class="md-ellipsis">
+      即时编译（JIT Compilation）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ilvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      中间语言（IL）和虚拟机（VM）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      编程范式：有状态 vs. 无状态
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="编程范式：有状态 vs. 无状态">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oop" class="md-nav__link">
+    <span class="md-ellipsis">
+      有状态编程范式 &amp; 面向对象编程 (OOP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      无状态编程范式 &amp; 函数式编程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      编程范式和编程语言
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-dsls" class="md-nav__link">
+    <span class="md-ellipsis">
+      通用编程语言 vs. 领域特定语言 (DSLs)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="通用编程语言 vs. 领域特定语言 (DSLs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      通用编程语言
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      领域特定语言
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      结论
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是编程语言？为什么我们需要它们？
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="什么是编程语言？为什么我们需要它们？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于寄存器
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      编程语言的通用分类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      执行模型：编译 vs. 解释
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="执行模型：编译 vs. 解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译语言
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      解释语言
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      混合技术
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="混合技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jit-compilation" class="md-nav__link">
+    <span class="md-ellipsis">
+      即时编译（JIT Compilation）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ilvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      中间语言（IL）和虚拟机（VM）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      编程范式：有状态 vs. 无状态
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="编程范式：有状态 vs. 无状态">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oop" class="md-nav__link">
+    <span class="md-ellipsis">
+      有状态编程范式 &amp; 面向对象编程 (OOP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      无状态编程范式 &amp; 函数式编程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      编程范式和编程语言
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-dsls" class="md-nav__link">
+    <span class="md-ellipsis">
+      通用编程语言 vs. 领域特定语言 (DSLs)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="通用编程语言 vs. 领域特定语言 (DSLs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      通用编程语言
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      领域特定语言
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      结论
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/zh/programming-languages/overview.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="_1">编程语言：一个高层次概述</h1>
+<p>在本部分中，我们将讨论编程语言的目的和它们的一般分类。</p>
+<h2 id="_2">什么是编程语言？为什么我们需要它们？</h2>
+<p>一般来说，编程语言是计算机的抽象，旨在使设计、表示、构建和理解计算机程序更容易理解。</p>
+<p>注意，编程语言有时以更宽泛的方式定义，将汇编语言也计算在内；
+但在本模块中，我们将<strong>"编程语言"</strong>定义为仅包含现代、"面向人类"的编程语言，如 C/C++、Python、Rust、Java、JavaScript 等；
+我们不包括那些不适用于人类使用的语言，如汇编语言和二进制机器码。</p>
+<p>回想一下，上个模块中提到的计算机最低层（最接近硬件）的抽象是指令集架构（ISA），
+但使用 ISA 进行编程对于人类来说非常不直观。
+因此，人们决定构建更高层次的抽象，使之更容易理解和使用；
+这正是编程语言存在的目的。</p>
+<p>由于编程语言是面向人类友好的高级抽象，
+它们的编程模型通常远离实际计算机硬件（与 ISA 相比）。
+例如，几乎每个 ISA 都有的寄存器在几乎所有编程语言中都抽象了出来。</p>
+<h3 id="_3">关于寄存器</h3>
+<p>在现代 CPU 中，ISA 中定义的寄存器通常不是实际的硬件组件，但它们也不仅仅是抽象。</p>
+<p>CPU 中确实存在 "物理寄存器"。
+然而，它们并不直接映射到 ISA 定义的 "体系结构寄存器"。
+典型情况是，物理寄存器比体系结构寄存器多得多；
+后者通过一种称为 "寄存器重命名" 的技术在运行时以多对多的方式映射到前者。</p>
+<p>编程语言中常见的一些概念与 ISA 中的 "低级实现" 相比如下：</p>
+<table>
+<thead>
+<tr>
+<th>编程语言概念</th>
+<th>ISA 实现</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>变量/常量</td>
+<td>保存数据的一块内存</td>
+<td>表示 "事物"，如字符串 "Hello, World!"、数字 1.22 或者树形数据</td>
+</tr>
+<tr>
+<td>函数</td>
+<td>一般是保存 ISA 指令的内存块（在编译语言中）</td>
+<td>能够完成某种任务的工具</td>
+</tr>
+<tr>
+<td>结构体</td>
+<td>在编译语言中没有直接的表现（在运行时）</td>
+<td>结构化数据的定义，比如 "一个学生结构体具有姓名、年龄和成绩"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">编程语言的通用分类</h3>
+<p>目前有许多编程语言；
+每种语言都有自己的特点、抽象和权衡，并适用于特定的一组用例；
+然而，它们之间存在一些共同点，
+可以从多个角度将编程语言分为几个大类。</p>
+<p>在本小节中，我们将讨论一些常见的编程语言分类方法以及各类别语言的一般特点。</p>
+<h3 id="vs">执行模型：编译 vs. 解释</h3>
+<p>将编程语言分类的一种常见方法是通过执行模型，
+执行模型可以是 "编译"，"解释" 或者二者之间的混合。</p>
+<h4 id="_5">编译语言</h4>
+<p>从上个部分中我们了解到，
+几乎每个计算机程序在运行时（即程序运行时）的执行都归结为在硬件上执行 ISA 定义的指令。</p>
+<p>然而，编程语言是为人类设计的，而不是为计算机硬件设计的；
+因此，必须有一种方法将用编程语言编写的软件转换为机器可执行代码，
+无论是在程序运行之前还是运行时。</p>
+<p><strong>编译语言</strong>选择前者。
+在编译语言中，开发人员用编程语言编写的代码（以形成完整的程序或程序的一部分）
+在运行程序之前通过称为<strong>"编译器"</strong>的软件将其转换为机器可执行代码。
+然后，该机器代码形式的软件应用程序可以直接在硬件上运行。</p>
+<p>编译语言有一些与之相关的术语：</p>
+<ul>
+<li><strong>源代码</strong>：开发人员用编程语言编写的代码。</li>
+<li><strong>机器代码</strong>：可以直接在硬件上运行的代码。</li>
+<li><strong>编译</strong>：将源代码转换为机器代码的过程。</li>
+<li><strong>已编译的应用程序</strong>：已经经过编译（从源代码），通常以机器代码形式，并且可以直接在硬件上运行的软件。</li>
+<li><strong>二进制可执行文件</strong>：由于机器代码通常以二进制形式存在（例如，001100101010111000110），
+可以直接在硬件上运行的编译应用程序通常称为 "二进制可执行文件"。</li>
+<li><strong>编译</strong>：“编译”这个动作的动词形式。</li>
+<li><strong>编译器</strong>：执行编译的软件。</li>
+<li><strong>编译时</strong>：编译执行的时间。</li>
+<li><strong>运行时</strong>：程序运行的时间。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">反编译</p>
+<p>你可能想知道是否可能将机器代码转换回源代码。
+是的，确实可以。
+这个过程称为<strong>反编译</strong>，
+有很多<strong>反编译器</strong>可以进行反编译。</p>
+</div>
+<p>编译语言的优点有：</p>
+<ul>
+<li>快速且高效：
+编译语言最大的优势是它们运行速度快且硬件高效。
+编译过程确保<strong>编译应用程序中的每个指令都以最高效的方式执行有用的操作</strong>。
+许多人对现代编译器可以执行的广泛优化范围感到惊讶，
+从识别和消除源代码中无用的部分，
+到以与硬件更好配合的方式 "重写" 源代码。
+此外，由于编译应用程序与硬件直接进行交互
+而不引入中间层（与解释语言相比），
+它们运行速度更快，内存占用更少。</li>
+<li>（有时）更好的错误排除：
+在许多情况下（例如变量类型，我们将在后面介绍），
+编译语言的静态特性意味着可以在编译时检测到源代码中的许多错误，
+而不是在运行时导致用户遇到故障。</li>
+</ul>
+<p>缺点包括：</p>
+<ul>
+<li>（通常）学习和使用难度较大：
+由于编译语言通常更接近硬件，
+学习它们需要更大的努力。
+使用它们也通常更难，
+因为与硬件接近意味着您必须自己管理许多东西（特别是内存），
+而不是将这个责任委托给一些软件（大多数解释语言）。
+此外，用编译语言编写相同的应用程序通常需要更多的代码。</li>
+<li>较低的灵活性：
+编译语言的静态特性意味着在其中执行某些操作较为困难，
+例如在运行时修改变量的类型。</li>
+<li>硬件特定：由于机器代码是最接近硬件的抽象，
+并且不同操作系统通常具有不同的二进制可执行文件格式，
+通常无法在多个操作系统上运行编译的应用程序
+或在实现不同 ISA 的硬件上运行。
+例如，为 Windows 编译的应用程序无法在 Linux 或 macOS 上运行；
+针对 x86 ISA 的 PC 应用程序无法在通常实现 ARM ISA 的智能手机上运行。</li>
+</ul>
+<p>一些常用的编译语言有：</p>
+<ul>
+<li>C/C++：尽管创建于很多年前，C/C++ 仍然是全球最流行的编译语言之一。
+它提供了对硬件的极致控制和无与伦比的性能（如果以正确的方式使用）。
+然而，它的学习曲线更陡峭，
+并且内存管理极具挑战（但使用智能指针和 RAII 等东西可以减轻这种情况）。</li>
+<li>Rust：一种现代、相对较新的编程语言。
+它是世界上最难学的语言之一，
+但一旦熟悉它，您将从其内存安全保证以及其现代的语法和设计中受益匪浅，这使其非常直观和简洁。</li>
+</ul>
+<h4 id="_6">解释语言</h4>
+<p>与编译语言不同，解释语言选择使用一个名为<strong>"解释器"</strong>的特殊软件
+在运行时实际 "执行" 源代码。
+解释器会读取源代码中的每个 "高级" 指令并执行它。</p>
+<p>从一个角度来看，您可以认为源代码是由 "理解它的虚拟硬件"（解释器）直接执行的；
+从另一个角度来看，由于解释器的执行最终归结为机器代码，
+您可以认为源代码在运行时由解释器动态地转换为机器代码。</p>
+<p>例如，考虑以下 Python 代码：</p>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">125</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">137</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The result of </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> times </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>即使您没有编程经验，上述代码应该很容易理解：
+它将 125 和 137 相乘，然后将结果打印到控制台（即执行代码的终端）。</p>
+<p>该代码如何由解释器执行？
+解释器实际上会读取并执行每一行：</p>
+<ol>
+<li>第一行 <code>a = 125</code> 通过分配一块内存，将其命名为 <code>a</code> 并将 125 写入其中来执行。</li>
+<li>执行第二行 <code>b = 137</code> 时，会进行类似的操作。</li>
+<li>执行第三行 <code>c = a * b</code> 时，会先读取之前命名为 <code>a</code> 和 <code>b</code> 的内存块，
+然后将它们相乘，将结果写入命名为 <code>c</code> 的已分配内存块中。</li>
+<li>执行第四行 <code>print(f"The result of {a} times {b} is {c}")</code> 时，会读取 <code>a</code>、<code>b</code> 和 <code>c</code>，
+然后将它们打印到控制台。</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">注意</p>
+<p>以上的解释在硬件上的实际发生情况并不完全正确。
+Python 代码的实际执行是一个复杂的过程，
+考虑到解释器 "理解" 源代码的方式以及 Python 解释器的执行引擎（即 Python 虚拟机）是一个基于栈的系统。</p>
+<p>但是现在，不必对硬件细节过于担忧；
+上面的解释提供了关于解释语言提供的抽象的良好说明。</p>
+</div>
+<p>解释语言的优点有：</p>
+<ul>
+<li>其动态特性允许在代码中进行更大的灵活性。
+例如，Python 允许您在运行时更改变量的类型（例如，从整数更改为字符串），
+这在编译语言中通常是被禁止的。</li>
+<li>它们通常更容易学习和使用。
+解释器提供了一种更人性化的计算机抽象，使编程更容易。
+在解释语言中编写相同的软件通常会导致比编译语言更短的源代码。
+并且在解释语言中，通常无需手动管理内存；解释器会为您处理。</li>
+<li>更好的跨平台和跨 ISA 兼容性：
+由于解释器为计算机硬件提供了另一层抽象，
+使用解释语言编写的软件可以在安装了该语言解释器的任何计算机上运行，
+而无论其 ISA 和操作系统如何。</li>
+</ul>
+<p>缺点包括：</p>
+<ul>
+<li>运行速度慢且硬件效率低下。
+显然，解释器读取、解析和 "模拟执行" 源代码行比直接执行编译后的机器代码慢得多。
+实际上，Python 代码可以比等价的 C++ 代码慢 20 倍到 200 倍。</li>
+<li>（有时）更难调试：
+解释语言的灵活性也意味着有时更难调试它们。
+在极端情况下，解释语言中的所有错误都是运行时错误，
+因为没有对源代码进行编译时分析。
+如果一个应用程序中存在 1/1000 的严重错误，
+那么在开发该应用程序时很可能无法发现该错误，
+而在不幸的用户打开它时会导致运行时错误。</li>
+</ul>
+<h4 id="_7">混合技术</h4>
+<p>除了前面介绍的 "纯" 编译语言/解释语言之外，
+还有一些技术模糊了二者之间的界限：</p>
+<h5 id="jit-compilation">即时编译（JIT Compilation）</h5>
+<p>这项技术允许在运行时编译部分源代码。</p>
+<p>JIT 编译提供了一些优势：</p>
+<ul>
+<li>该程序可以在安装了 JIT 编译器的任何计算机上运行。</li>
+<li>JIT 常常比解释性语言更快，因为 JIT 编译器会将源代码编译为机器代码。</li>
+<li>JIT 编译器有时可以发现比编译语言的 "静态编译器" 更多的可用优化项，
+因为它可以访问程序的运行时状态。</li>
+</ul>
+<h5 id="ilvm">中间语言（IL）和虚拟机（VM）</h5>
+<p>一些语言支持将源代码编译为既非人类可读也非硬件可执行的<strong>中间表示</strong>。
+在运行时，该中间表示由一种称为<strong>"虚拟机"</strong>的软件执行
+（请勿将其与可安装操作系统的虚拟机混淆）。
+这种方法最著名的示例是 Java 和它的字节码表示。</p>
+<p>这种技术在速度和跨平台兼容性方面提供了一种权衡：
+由于源代码被编译为中间表示，
+编译器可以进行一些编译时优化；
+而且，引入虚拟机使中间表示能够在安装了虚拟机的任何计算机上执行。</p>
+<p>需要注意的是，中间表示<strong>并不</strong>设计为人类可读，
+因为它被期望由编译器生成，而不是由人类开发者编写。</p>
+<h3 id="vs_1">编程范式：有状态 vs. 无状态</h3>
+<p>将编程语言分类的另一种方法是根据它们的<strong>编程范式</strong>。
+基本上，<strong>"编程范式"</strong> 是一种用于设计和理解计算机程序的思维模式，
+或者您可以将其视为计算机的抽象。
+大多数编程语言允许您使用不同的编程范式来构建软件，
+但其中一些语言可能鼓励某些范式。</p>
+<p>一般来说，编程范式有两个主要的大类：有状态和无状态。</p>
+<h4 id="oop">有状态编程范式 &amp; 面向对象编程 (OOP)</h4>
+<p>有状态编程范式采用了<strong>状态</strong>的概念，
+通常与现代的 "面向对象编程" 等效。</p>
+<p><strong>状态</strong>是程序执行过程中会发生变化并影响其行为的东西。
+通常，这些<strong>状态</strong>保存在为程序分配的内存块中。
+需要注意的是，在有状态编程范式中，程序的行为取决于输入和状态，
+即使输入相同，程序的输出也可能不同。</p>
+<p>例如，考虑一个简单的应用程序，有一个按钮和一个保存的数字。
+数字从 0 开始；每次按下按钮时，数字加 1，然后显示在屏幕上。
+在这种情况下，“数字”是程序的状态，
+因为它在按钮被按下时发生变化，并影响屏幕上的显示内容。</p>
+<p>下面的图表说明了有状态编程范式的编程模型：</p>
+<pre class="mermaid"><code>graph TD
+
+    input --&gt;|changes| program-state
+    input --&gt;|influences| program-behavior
+    program-state --&gt;|influences| program-behavior</code></pre>
+<h4 id="_8">无状态编程范式 &amp; 函数式编程</h4>
+<p>无状态编程范式通常以（数学意义上的）<strong>函数</strong>的形式（将输入转换为输出，无任何副作用）来抽象计算机程序；
+通常不鼓励或禁止使用状态。
+无状态编程范式通常称为<strong>"函数式编程"</strong>。</p>
+<p>例如，考虑一个计算两个人之间年龄差的程序。
+在函数式编程范式中，这样的过程可以抽象为以下图表：</p>
+<pre class="mermaid"><code>flowchart LR
+
+    person-A([person-A])
+    person-B([person-B])
+
+    person-A-age([person-A-age])
+    person-B-age([person-B-age])
+
+    output([output])
+
+    person-A --&gt; get-age --&gt; person-A-age
+    person-B --&gt; get-age --&gt; person-B-age
+    person-A-age --&gt; calculate-age-difference
+    person-B-age --&gt; calculate-age-difference
+    calculate-age-difference --&gt; output</code></pre>
+<p>正如您所看到的，处理的每个步骤（无论是 <code>get-age</code> 还是 <code>calculate-age-difference</code>）
+的<strong>唯一</strong>任务都是将其输入转换为输出；
+没有副作用（例如，向屏幕打印内容或更改内存块的内容），
+相同的输入总是产生相同的输出。
+除了程序输入之外，不存在影响程序行为的状态。</p>
+<h4 id="_9">编程范式和编程语言</h4>
+<p>不同的编程范式具有不同的优点和缺点。
+例如，函数式编程使开发人员更易于理解程序的行为
+（有状态程序的行为更不可预测，特别是在并发时，
+因为它取决于输入和状态），
+而有状态的编程范式在构建程序方面更强大。</p>
+<p>因此，大多数软件应用在不同方面使用不同的编程范式，
+而不是仅使用一种范式。
+一种常见的做法是将程序的高级结构设计为具有状态的对象
+（即具有状态的东西），
+然后利用函数式编程来实现这些对象的功能。</p>
+<p>同样，大多数现代编程语言支持多种编程范式。
+然而，其中一些语言可能通过设计鼓励或偏向某一种范式。</p>
+<p>例如，支持有状态范式/面向对象编程的一些编程语言：</p>
+<ul>
+<li>Java：Java 是一种设计用于面向对象编程（OOP）的最流行语言之一。</li>
+<li>C/C++：C/C++ 是一种多范式语言，对于面向对象编程有很好的支持。</li>
+<li>Python：Python 也是一种多范式语言。</li>
+<li>Rust：Rust 是一种多范式语言，主要鼓励函数式编程，
+但也支持面向对象编程。</li>
+</ul>
+<p>支持无状态范式/函数式编程的一些编程语言：</p>
+<ul>
+<li>LISP：LISP 是最早的编程语言之一。
+它具有鼓励现代称为函数式编程的概念的独特设计。</li>
+<li>Rust：如前所述，Rust 是主要鼓励函数式编程的多范式语言。</li>
+<li>Python：如前所述，Python 也是一种多范式语言，没有对函数式编程或面向对象编程有很强的偏向。</li>
+</ul>
+<h3 id="vs-dsls">通用编程语言 vs. 领域特定语言 (DSLs)</h3>
+<p>第三种将编程语言分类的方式是根据适用领域。
+可以将编程语言分为两大类别：<strong>通用编程语言</strong>和<strong>领域特定语言 (DSLs)</strong>。</p>
+<h4 id="_10">通用编程语言</h4>
+<p>通用编程语言是为广泛用途而设计的编程语言。
+也就是说，您可以使用它们来构建任何任务的软件。
+我们之前提到的大多数语言都属于这个类别，包括 C/C++、Python、Rust 和 Java。</p>
+<h4 id="_11">领域特定语言</h4>
+<p>领域特定语言（Domain Specific Languages，DSLs）是为特定领域而设计的语言，
+如数学、数据库操作、数据分析和人工智能。
+严格来说，许多 DSL 并不符合本节中介绍的编程语言定义，
+因为它们不是为构建软件而设计的；
+但是，如果您把编程语言的定义概括为
+"一种使某些事情更容易做到的抽象或模型"，
+那么 DSLs 就符合这个定义。</p>
+<p>一些 DSL 示例：</p>
+<ul>
+<li>SQL：SQL 是为数据库操作而设计的 DSL。</li>
+<li>Mermaid：Mermaid 是一种 DSL，允许您以文本形式高效地表示图形、流程图、思维导图等。</li>
+<li>Slint：Slint 是一个 UI（用户界面，如按钮、窗口和滑动条）框架，提供了一种表示 UI 元素的 DSL。</li>
+<li>Bash：Bash 可以被视为一种使在终端上进行各种操作更容易的 DSL。</li>
+<li>MATLAB：MATLAB 是一种流行的用于数学的 DSL，支持各种数学概念和操作，如矩阵和矩阵求逆等。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">有趣事实（个人观点）：开发者评价</p>
+<p>个人而言，我认为MATLAB依然是最流行的语言之一，真是个奇迹，
+考虑到它那可怕的集成开发环境、上古的语法和反人类的设计
+（比如使用小括号来从1开始索引数组，而其他人都使用0和方括号）。</p>
+<p>尽管MATLAB是我认真学习的第一种语言，
+但现在它是我最不喜欢和最少使用的语言。
+我强烈不建议新的开发者将MATLAB作为他/她的主要语言，
+并鼓励当前使用MATLAB的用户切换到Python，
+这对他们自己和开源社区的发展都有好处。</p>
+</div>
+<h2 id="_12">结论</h2>
+<p>在本节中，我们讨论了编程语言的概念以及它们的一般分类。</p>
+<p>一般来说，编程语言是<strong>计算机的抽象，旨在使设计、表示、构建和理解计算机程序更容易理解</strong>。</p>
+<p>编程语言可以根据以下 3 种方式进行分类：</p>
+<ol>
+<li>执行模型分类：<ul>
+<li>编译语言：源代码在程序执行之前被编译为机器代码。</li>
+<li>解释语言：解释器直接执行源代码。</li>
+<li>混合技术：即时编译（JIT Compilation）和中间语言（IL）与虚拟机（VM）。</li>
+</ul>
+</li>
+<li>编程范式分类：<ul>
+<li>有状态范式和面向对象编程 (OOP)：程序包含具有状态的对象，除了输入之外，还会修改其行为。</li>
+<li>无状态范式和函数式编程：程序被抽象为将输入转换为输出的函数，无副作用，不使用状态。</li>
+</ul>
+</li>
+<li>适用领域分类：<ul>
+<li>通用编程语言：可用于构建几乎任何任务的编程语言。</li>
+<li>领域特定语言 (DSLs)：针对特定领域而设计的编程语言。</li>
+</ul>
+</li>
+</ol>
+<p>恭喜！您现在对编程语言有了一个高层次的了解。
+接下来，我们将详细了解几乎所有现代通用语言中都存在的常见抽象和思想。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../intro/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 模块2：编程语言">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                模块2：编程语言
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
