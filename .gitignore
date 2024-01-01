@@ -3,3 +3,6 @@
 # IDE
 .idea/
 .obsidian/
+
+# Internationalizations
+/docs/zh
