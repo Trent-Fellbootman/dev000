@@ -26,7 +26,7 @@
     
     
       
-        <title>Registers, Memory and Instructions: Instruction Set Architectures - DEV-000</title>
+        <title>レジスタ、メモリ、命令: 命令セットアーキテクチャ - DEV-000</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#registers-memory-and-instructions-instruction-set-architectures" class="md-skip">
+        <a href="#_1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Registers, Memory and Instructions: Instruction Set Architectures
+              レジスタ、メモリ、命令: 命令セットアーキテクチャ
             
           </span>
         </div>
@@ -517,7 +517,7 @@
         
   
   <span class="md-ellipsis">
-    Module 0: The Developer's Mindset
+    モジュール0：開発者のマインドセット
   </span>
   
 
@@ -538,7 +538,7 @@
         
   
   <span class="md-ellipsis">
-    Abstraction: The Developer's Way of Thinking
+    抽象化：開発者の考え方
   </span>
   
 
@@ -559,7 +559,7 @@
         
   
   <span class="md-ellipsis">
-    Hierarchy: A Way to Manage Complexity
+    ヒエラルキー：複雑さを管理する一つの方法
   </span>
   
 
@@ -722,7 +722,7 @@
           
   
   <span class="md-ellipsis">
-    Registers, Memory and Instructions: Instruction Set Architectures
+    レジスタ、メモリ、命令: 命令セットアーキテクチャ
   </span>
   
 
@@ -733,7 +733,7 @@
         
   
   <span class="md-ellipsis">
-    Registers, Memory and Instructions: Instruction Set Architectures
+    レジスタ、メモリ、命令: 命令セットアーキテクチャ
   </span>
   
 
@@ -755,27 +755,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#registers-memory-and-instructions-the-most-generally-applicable-abstraction-of-computers" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Registers, Memory and Instructions: The Most Generally-Applicable Abstraction of Computers
+      レジスタ、メモリ、命令: コンピュータに最も広範に適用される抽象化
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-are-computer-programs-run" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      How are computer programs run?
+      コンピュータプログラムはどのように実行されるのですか？
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusion
+      結論
     </span>
   </a>
   
@@ -966,27 +966,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#registers-memory-and-instructions-the-most-generally-applicable-abstraction-of-computers" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Registers, Memory and Instructions: The Most Generally-Applicable Abstraction of Computers
+      レジスタ、メモリ、命令: コンピュータに最も広範に適用される抽象化
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-are-computer-programs-run" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      How are computer programs run?
+      コンピュータプログラムはどのように実行されるのですか？
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusion
+      結論
     </span>
   </a>
   
@@ -1016,7 +1016,7 @@
                   
 
   
-    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/en/abstract-computer/isa.md" title="編集" class="md-content__button md-icon">
+    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/ja/abstract-computer/isa.md" title="編集" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1024,104 +1024,93 @@
   
 
 
-<h1 id="registers-memory-and-instructions-instruction-set-architectures">Registers, Memory and Instructions: Instruction Set Architectures</h1>
-<p>Instruction Set Architectures (ISAs) are the lowest-level abstractions for computers.
-ISAs are designed to be as close to hardware as possible,
-while being general enough to be applicable to the majority of computers.
-As such, ISAs are extremely human-unfriendly and
-few developers actually code with them directly,
-and higher level programming languages tend to abstract computers in a way completely different to ISAs.
-However, understanding ISAs provides a good starting point to understanding how computer hardware works,
-and it helps to explain a lot of design choices in higher-level programming languages and software applications,
-which is why they're introduced here.</p>
-<p>There exist multiple different ISAs, such as x86, ARM, MIPS and RISC-V.
-Each of them is designed a little bit differently
-(or quite differently, as in the case with CISC and RISC architecture families),
-but there are some concepts that are shared across almost all of them.
-These concepts are the fundamental abstraction that applies to almost all computer hardwares,
-and are covered in this section.</p>
-<h2 id="registers-memory-and-instructions-the-most-generally-applicable-abstraction-of-computers">Registers, Memory and Instructions: The Most Generally-Applicable Abstraction of Computers</h2>
-<p>Virtually all ISAs employ the following concepts:</p>
+<h1 id="_1">レジスタ、メモリ、命令: 命令セットアーキテクチャ</h1>
+<p>命令セットアーキテクチャ (ISA) は、コンピュータの最も低レベルの抽象化です。
+ISAは、可能な限りハードウェアに近いように設計されていますが、
+多くの場合、実際にはISAを直接コードする開発者はほとんどおらず、
+より高レベルのプログラミング言語は通常、ISAとは異なる方法でコンピュータを抽象化します。
+ただし、ISAの理解はコンピュータハードウェアの動作の理解の出発点となり、
+高レベルのプログラミング言語やソフトウェアアプリケーションの設計上の多くの選択肢の説明にも役立ちますので、
+ここで紹介されています。</p>
+<p>x86、ARM、MIPS、RISC-VなどのさまざまなISAが存在します。
+それぞれが少しずつ異なる (またはCISC アーキテクチャファミリーの場合はかなり異なる) が、
+それらに共通するいくつかの概念も存在します。
+これらの概念は、ほとんどすべてのコンピュータハードウェアに適用される基本的な抽象化であり、
+このセクションではそれについて説明します。</p>
+<h2 id="_2">レジスタ、メモリ、命令: コンピュータに最も広範に適用される抽象化</h2>
+<p>ほぼすべてのISAは、次の概念を使用しています。</p>
 <ul>
-<li>There is a finite set of <strong>registers</strong> where you can hold data.</li>
-<li>There is a (virtually infinite) <strong>memory</strong> where you can hold more data.
-Each location in the memory can hold some data,
-and has an <strong>address</strong> associated with it;
-you use that address to access the data stored in that location.</li>
-<li>There is a "processor" that supports executing a finite set of <strong>instructions</strong> which modify the registers or memory in some way.</li>
-<li>Instructions are stored in memory and executed in order;</li>
-<li>There is a special register (usually called the "<strong>program counter</strong>", or "<strong>PC</strong>")
-that holds an address in memory;
-at each point in time, the "processor" reads the data at that memory address,
-interprets that data as an instruction, executes it, then updates the PC in some way.</li>
+<li>データを保持するための有限な数の <strong>レジスタ</strong> が存在します。</li>
+<li>より多くのデータを保持するための（仮想的に無限の） <strong>メモリ</strong> が存在します。
+メモリの各位置にはデータを保持することができ、
+それには関連付けられた <strong>アドレス</strong> があります。
+データにアクセスするためにそのアドレスが使用されます。</li>
+<li>レジスタまたはメモリをいくつかの方法で変更する有限なセットの <strong>命令</strong> を実行する "プロセッサ" がサポートされています。</li>
+<li>命令はメモリに格納され、順番に実行されます。</li>
+<li>特別なレジスタ（通常は "<strong>プログラムカウンタ (PC)</strong>" または "<strong>PC</strong>" と呼ばれる）があり、
+そのレジスタはメモリ内のアドレスを保持します。
+各時点で、"プロセッサ"はそのメモリアドレスのデータを読み取り、そのデータを命令と解釈して実行し、その後、PCをいくつかの方法で更新します。</li>
 </ul>
-<p>There are several important things to notice in the above concepts:</p>
+<p>上記の概念にはいくつか重要な点があります。</p>
 <ul>
-<li>Compared to memory, registers can only hold very limited amount of data.
-In most ISAs, the number of registers is less than 100,
-and the total amount of data that can be held in all registers is unlikely to exceed 1 megabyte (MB).
-On the contrary, memory is much larger: modern computers typically have anywhere from 4 to hundreds of gigabytes (GBs) of memory;
-even cell phones typically have 4 or more gigabytes of memory.</li>
-<li>What a computer will do starting from a specific point in time
-is completely determined by the data held in the registers (including the PC) and the memory.
-You can think of the registers and the memory as the "<strong>state</strong>" of a program;
-that state completely determines the program's behavior.</li>
-<li>The instructions supported by an ISA are generally very simple operations
-(CISC, or "Complex Instruction Set Computers", which is a family of ISAs support more complex instructions,
-but their functionalities are still extremely limited compared to complete computer programs),
-such as "add up the data in register 5 and register 11, and store the result into register 0",
-"load the value at memory address 122 to register 1", or "move the PC 40 memory addresses forward".
-These instructions are not complete computer programs;
-they are used as the building blocks of larger programs.
-By composing these simple instructions (called "programming"),
-one can create programs that do virtually anything.</li>
+<li>レジスタはメモリと比べて非常に限られた量のデータしか保持できません。
+ほとんどのISAでは、レジスタの数は100未満であり、
+レジスタ全体で保持できるデータの総量は1メガバイト（MB）を超えることはありません。
+対照的に、メモリははるかに大きいです。
+モダンなコンピュータは通常、4から数百ギガバイト（GB）のメモリを搭載しています。
+携帯電話でも通常、4ギガバイト以上のメモリが搭載されています。</li>
+<li>特定の時点からはじまるコンピュータの動作は、
+レジスタ（PCを含む）とメモリに格納されたデータによって完全に決まります。
+レジスタとメモリをプログラムの "<strong>状態 (state)</strong>" と考えることができます。
+その状態によってプログラムの動作が完全に決まります。</li>
+<li>ISAでサポートされる命令は一般に非常に単純な操作です。
+(CISC、または "複雑な命令セットコンピュータ" とは、より複雑な命令をサポートする一群のISAですが、
+それらの機能は完全なコンピュータプログラムと比較しても非常に限定されています）。
+例えば、「レジスタ5とレジスタ11のデータを合計し、その結果をレジスタ0に格納する」、
+「メモリアドレス122の値をレジスタ1に読み込む」、または「PCを40メモリアドレス分進める」などです。
+これらの命令は完全なコンピュータプログラムではありません。
+これらはより大きなプログラムの構成要素として使用されます。
+これらの単純な命令（プログラミングと呼ばれる）を組み合わせることで、ほとんど何でもできるプログラムを作成できます。</li>
 </ul>
 <div class="admonition info">
-<p class="admonition-title">Why do we need registers?</p>
-<p>You might wonder why we need registers at all:
-both registers and memory serve as the "state" of a program,
-so why can't we use memory exclusively?
-After all, registers can only store very limited amount of data,
-while memory is much larger.</p>
-<p>The answer relates to how computer hardwares work.
-Although registers are small, they are very fast;
-on the contrary, memory is large but also slow (compared to registers).
-As a result, the typical practice is to store the data that needs to be accessed frequently in registers,
-and the rest of the data in memory.</p>
-<p>This is a good example of how ISAs are close to hardware,
-and as you can see, although abstractions are "general and abstract characteristics",
-they typically depend on and reflect the underlying objects which they apply to.</p>
+<p class="admonition-title">なぜレジスタが必要なのですか？</p>
+<p>レジスタがなぜ必要なのか疑問に思うかもしれません。
+レジスタとメモリの両方がプログラムの "状態" の役割を果たすので、なぜメモリだけを使用できないのでしょうか？
+レジスタは非常に限られた量のデータしか格納できませんが、非常に高速です。
+一方、メモリは大きいが、レジスタに比べて遅いです（レジスタに比べて遅い）。
+その結果、頻繁にアクセスする必要のあるデータをレジスタに保持し、残りのデータをメモリに格納するのが一般的な方法です。</p>
+<p>これはISAがハードウェアに近い例です。
+一般的に、抽象化は "一般的で抽象的な特性" ですが、
+それらは通常、適用される基になるオブジェクトに依存し反映されます。</p>
 </div>
 <div class="admonition info">
-<p class="admonition-title">Other ISAs</p>
-<p>Although what is introduced here is applicable to the vast majority of ISAs,
-there are ISAs that abstract computers differently.
-For example, <a href="https://webassembly.org/">WebAssembly (WASM)</a>
-is a stack-based architecture which does not have registers.</p>
+<p class="admonition-title">その他のISA</p>
+<p>ここで紹介されている内容は、ほとんどのISAに適用できますが、
+コンピュータを異なる方法で抽象化するISAも存在します。
+例えば、<a href="https://webassembly.org/">WebAssembly（WASM）</a> は、レジスタを持たないスタックベースのアーキテクチャです。</p>
 </div>
-<h2 id="how-are-computer-programs-run">How are computer programs run?</h2>
-<p>Imagine a person with a pencil holding a notebook.
-At the beginning, the notebook is on a certain page;
-then, at each point in time, the person reads a page,
-does something (either do some calculations and memorize the result, or write something to another page)
-according to what that page says, changes to another page, and the same process goes on.</p>
-<p>That is a good analogy of how a program gets run on a computer:
-the person is the processor; the notebook is the memory,
-and the person's brain memory is the registers.</p>
-<p>As mentioned before, ISAs only support a very limited number of instructions
-with very limited functionalities;
-those instructions serve as the building blocks for larger software applications.
-<strong>Virtually every software application boils down to a large number (from hundreds to millions) of ISA instructions
-when it gets run on the computer hardware</strong>.
-Basically, the way programs run, as defined by the ISAs, is like the following:</p>
+<h2 id="_3">コンピュータプログラムはどのように実行されるのですか？</h2>
+<p>ペンでノートブックを持っている人を想像してください。
+最初は、ノートブックはあるページにあります。
+それから、それぞれの時間点で、人はページを読み、
+そのページで何かを行います（計算を行い、結果を覚えたり、別のページに何かを書いたり）。
+それには、そのページに書かれているように行動し、別のページに移動し、同じプロセスを続けます。</p>
+<p>これは、プログラムがコンピュータで実行される方法の良い例です。
+人とはプロセッサで、ノートブックとはメモリであり、
+人の脳の記憶はレジスタです。</p>
+<p>前述のように、ISAは非常に限られた数の限定機能の命令のみをサポートします。
+これらの命令は、より複雑なソフトウェアアプリケーションの構築要素として機能します。
+<strong>ほぼすべてのソフトウェアアプリケーションは、コンピュータハードウェア上で実行される際には、
+数百から数百万の単純なISA命令に分解されます。</strong>
+基本的に、ISAで定義されるプログラムの実行方法は以下のようなものです：</p>
 <ol>
-<li>At the beginning, the memory and registers are initialized to some values.
-Typically there is a special segment in the memory which holds all the instructions;
-the instructions held in that segment are the "program".</li>
-<li>At each point in time, the processor reads an ISA-defined instruction at the memory address specified by the PC,
-executes it (either do some calculation and write the result to a register, or write some data to a certain memory address, etc.),
-and updates the PC (usually to the memory address of the next instruction, but could also be somewhere else).</li>
-<li>This process is repeated until the program is finished.</li>
+<li>最初に、メモリとレジスタはいくつかの値で初期化されます。
+通常、メモリにはすべての命令が格納されている特別なセグメントがあります。
+そのセグメントに格納された命令が「プログラム」です。</li>
+<li>各時点で、プロセッサはPCで指定されたメモリアドレスのISA定義命令を読み取り、実行します。
+（計算を行い、結果をレジスタに書き込むか、特定のメモリアドレスにデータを書き込むなど）。
+そして、PCを更新します（通常は次の命令のメモリアドレスになりますが、他の場所にもなりえます）。</li>
+<li>このプロセスは、プログラムが終了するまで繰り返されます。</li>
 </ol>
 <div style="text-align: center;">
 
@@ -1135,45 +1124,42 @@ and updates the PC (usually to the memory address of the next instruction, but c
 </div>
 
 <div class="admonition info">
-<p class="admonition-title">What if there are multiple programs?</p>
-<p>You may have wondered, what if there are multiple programs running on the same computer?
-Since they use the same piece of memory, won't they interfere with each other?
-And, how are they executed? Are they executed one by one or at the same time?</p>
-<p>The short answer is, the operating system provides another layer of abstraction which eliminates all these concerns.
-In simple words, the operation system "virtualizes" the computer hardware and
-creates the illusion of multiple, independent computers running at the same time.
-each program is allocated such a "virtual" computer of its own;
-in the program's view, there is nobody else on this computer, so no interference at all.</p>
-<p>How the operation system creates that illusion, though, is out of scope of this section.</p>
+<p class="admonition-title">複数のプログラムがある場合はどうなるのですか？</p>
+<p>同じコンピュータ上で複数のプログラムが実行される場合、何が起こるのでしょうか？
+同じメモリ領域を使用するため、お互いに干渉しませんか？
+そして、それらはどのように実行されるのですか？ 一つずつ順番に実行されるのですか？同時に実行されるのですか？</p>
+<p>簡単に答えると、オペレーティングシステムはこれらすべての問題を解決する別の抽象化レイヤーを提供します。
+単純に言えば、オペレーティングシステムはコンピュータハードウェアを仮想化し、
+同時に複数の独立したコンピュータが実行されているかのような錯覚を作り出します。
+各プログラムにはそれぞれ独自の「仮想」コンピュータが割り当てられます。
+プログラムの視点では、このコンピュータには他の誰もいないため、干渉はありません。</p>
+<p>ただし、オペレーティングシステムがどのようにその錯覚を作り出しているかは、本節の範囲外です。</p>
 </div>
-<h2 id="conclusion">Conclusion</h2>
-<p>In this section, we talked about the lowest-level abstractions of computers: Instruction Set Architectures (ISAs).
-Compared to other abstractions of computers, such as higher-level programming languages,
-ISAs are closer to the hardware but also less human-friendly.
-Although developers typically use completely different abstractions when programming,
-understanding ISAs provides a good foundation of understanding how computers work.</p>
-<p>Virtually all ISAs have a set of <strong>registers</strong>, a <strong>memory</strong> and define a set of supported, simple <strong>instructions</strong>.
-One special register is called the <strong>program counter (PC)</strong>.
-The way a program runs is basically "<strong>fetch instruction at PC - execute instruction - update PC - repeat</strong>".
-ISA instructions serve as building blocks for more complex software applications;
-<strong>virtually every software application boils down to a large number of simple ISA instructions when it gets run on the hardware</strong>.</p>
-<p>Congratulations, you now understand how computer hardware works!
-Real world computer hardwares are much more complicated than ISAs,
-but for now, ISAs are a good approximation to the real hardware.</p>
-<p>Next, we will introduce some higher level abstractions that
-build upon ISAs and are found in most low-level programming languages like C/C++ and Rust.</p>
+<h2 id="_4">結論</h2>
+<p>このセクションでは、コンピュータの最も低レベルの抽象化である命令セットアーキテクチャ（ISA）について説明しました。
+高レベルのプログラミング言語など、他のコンピュータの抽象化と比較して、ISAはハードウェアに近く、同時に人間にとってはより使いにくいです。
+しかし、開発者は通常、異なる抽象化を使用してプログラミングを行いますが、
+ISAの理解はコンピュータの動作の理解の良い基盤となります。</p>
+<p>ほぼすべてのISAには、一連の <strong>レジスタ</strong>、<strong>メモリ</strong>、およびサポートされた単純な <strong>命令</strong> があります。
+1つの特別なレジスタは、 <strong>プログラムカウンタ (PC)</strong> と呼ばれます。
+プログラムの実行方法は基本的に "<strong>PCの指す命令を取得して実行し、PCを更新し、繰り返す</strong>" というものです。
+ISAの命令は、より複雑なソフトウェアアプリケーションの構築要素として機能します。
+<strong>ほぼすべてのソフトウェアアプリケーションは、ハードウェア上で実行される際には、数多くの単純なISA命令に分解されます</strong>。</p>
+<p>おめでとうございます、コンピュータハードウェアの動作原理が理解できました!
+実際のコンピュータハードウェアはISAよりも複雑ですが、これで十分な近似です。</p>
+<p>次に、C/C++ や Rust などのほとんどの低レベルプログラミング言語で見られる
+ISAに基づく高レベルの抽象化について紹介します。</p>
 <h2 id="ai-prompt-samples">AI Prompt Samples</h2>
-<p>If you want to learn more about the topics in this section,
-feel free to consult an AI such as ChatGPT.</p>
-<p>Here are some sample prompts to get you started:</p>
+<p>このセクションのトピックについてさらに学びたい場合は、ChatGPTなどのAIに相談してみてください。</p>
+<p>始めるためのいくつかのサンプルプロンプトを紹介します：</p>
 <ul>
-<li>Can you briefly describe the ARM architecture, as well as its instructions?</li>
-<li>Can you give an example ARM assembly code and explain what it's doing?</li>
-<li>What are the differences between CISC and RISC?</li>
-<li>How do Instruction Set Architectures compare to a Turing machine?
-Why are there no registers in a Turing machine?
-Why are there registers in ISAs?</li>
-<li>What are the most popular Instruction Set Architectures nowadays?</li>
+<li>ARM アーキテクチャを簡単に説明して、その命令について説明できますか？</li>
+<li>ARM アセンブリコードの例を示して、その動作について説明してください。</li>
+<li>CISC と RISC の違いは何ですか？</li>
+<li>命令セットアーキテクチャはチューリングマシンとどのように比較されますか？
+チューリングマシンにはレジスタがないのはなぜですか？
+ISAにはレジスタがあるのはなぜですか？</li>
+<li>現在、最も人気のある命令セットアーキテクチャは何ですか？</li>
 </ul>
 
 

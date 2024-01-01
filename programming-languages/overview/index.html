@@ -1366,7 +1366,7 @@ and the general characteristics of languages in each category.</p>
 <div class="admonition info">
 <p class="admonition-title">The term "tradeoff"</p>
 <p>"Tradeoff" is a basic concept in both software and hardware development.
-Generally speaking, it means<strong>to "trade" (sacrifice) the quality in one aspect for that in another</strong>.</p>
+Generally speaking, it means <strong>to "trade" (sacrifice) the quality in one aspect for that in another</strong>.</p>
 <p>For example, many programming languages (like Python) sacrifice speed and hardware efficiency for ease of use;
 others like C/C++, on the other hand, sacrifice ease of use and learning for better control over hardware and faster execution.</p>
 </div>
@@ -1407,7 +1407,7 @@ Then, that software application in machine code form can run on hardware directl
 <li><strong>Compilation</strong>: The process of converting source code into machine code.</li>
 <li><strong>Compiled application</strong>: A piece of software that has been compiled (from source code), typically in machine-code form and can run on hardware directly.</li>
 <li><strong>Binary executable</strong>: Since machine code is usually in binary form (e.g., 001100101010111000110),
-  compiled applications that can run on hardware directly are often referred to as "binary executables".</li>
+compiled applications that can run on hardware directly are often referred to as "binary executables".</li>
 <li><strong>Compile</strong>: The verb form of "compilation".</li>
 <li><strong>Compiler</strong>: A piece of software that does compilation.</li>
 <li><strong>Compile-time</strong>: The time when the compilation is performed.</li>
@@ -1417,56 +1417,56 @@ Then, that software application in machine code form can run on hardware directl
 <p class="admonition-title">Decompilation</p>
 <p>You might wonder whether it is possible to convert machine code back to source code.
 Yes, that is indeed possible.
-Such a process is called<strong>decompilation</strong>,
+Such a process is called <strong>decompilation</strong>,
 and there are a lot of <strong>decompilers</strong> out there which do decompilation.</p>
 </div>
 <p>The advantages of compiled languages are:</p>
 <ul>
 <li>Fast and hardware-efficient:
-  The biggest advantage of compiled languages is that they are fast and hardware-efficient.
-  The process of compilation makes sure that
-  <strong>every instruction in the compiled application does useful job in the most efficient way possible</strong>.
-  Many people would awe at the the wide range of optimizations that modern compilers can do,
-  from identifying and eliminating useless code in the source code,
-  to "rewriting" source code in a way that works better with the hardware.
-  Additionally, since compiled applications interface with the hardware directly
-  without introducing an intermediate layer (as in the case of interpreted languages),
-  they run much faster and use much less memory.</li>
+The biggest advantage of compiled languages is that they are fast and hardware-efficient.
+The process of compilation makes sure that
+<strong>every instruction in the compiled application does useful job in the most efficient way possible</strong>.
+Many people would awe at the the wide range of optimizations that modern compilers can do,
+from identifying and eliminating useless code in the source code,
+to "rewriting" source code in a way that works better with the hardware.
+Additionally, since compiled applications interface with the hardware directly
+without introducing an intermediate layer (as in the case of interpreted languages),
+they run much faster and use much less memory.</li>
 <li>(Sometimes) better bug-extermination:
-  In many cases (such as with variable types, as we'll introduce later),
-  the static nature of compiled languages means that many errors in the source code
-  can be detected at compile time, rather than resulting in glitches that users experience at run time.</li>
+In many cases (such as with variable types, as we'll introduce later),
+the static nature of compiled languages means that many errors in the source code
+can be detected at compile time, rather than resulting in glitches that users experience at run time.</li>
 </ul>
 <p>The disadvantages:</p>
 <ul>
 <li>(Typically) harder to learn and use:
-  Since compiled languages are typically closer to hardware,
-  it takes more efforts to learn them.
-  It is usually harder to use them as well,
-  as being close to hardware means that you have to manage many things (especially memory) yourself,
-  instead of delegating that responsibility to a piece of software (as with most interpreted languages).
-  In addition, it often takes more code to write the same application in a compiled language than in an interpreted one.</li>
+Since compiled languages are typically closer to hardware,
+it takes more efforts to learn them.
+It is usually harder to use them as well,
+as being close to hardware means that you have to manage many things (especially memory) yourself,
+instead of delegating that responsibility to a piece of software (as with most interpreted languages).
+In addition, it often takes more code to write the same application in a compiled language than in an interpreted one.</li>
 <li>Less flexibility:
-  The static nature of compiled languages means it is harder to do certain things with it,
-  such as modifying the type of a variable at run-time.</li>
+The static nature of compiled languages means it is harder to do certain things with it,
+such as modifying the type of a variable at run-time.</li>
 <li>Hardware specific: Since machine code is the closest abstraction to hardware,
-  and that different operating systems typically have different binary executable formats,
-  compiled applications are usually unable to run on multiple operating systems,
-  or on hardware implementing different ISAs.
-  For example, applications compiled for Windows cannot run on Linux or macOS;
-  PC applications targeting x86 ISA cannot run on smartphones which typically implement the ARM ISA.</li>
+and that different operating systems typically have different binary executable formats,
+compiled applications are usually unable to run on multiple operating systems,
+or on hardware implementing different ISAs.
+For example, applications compiled for Windows cannot run on Linux or macOS;
+PC applications targeting x86 ISA cannot run on smartphones which typically implement the ARM ISA.</li>
 </ul>
 <p>Some popular compiled languages:</p>
 <ul>
 <li>C/C++: Although created many, many years ago, C/C++ is still one of the most popular compiled languages in the world.
-  It offers the most control over hardware and unrivaled performance (if used in the right way).
-  However, it has a steeper learning curve,
-  and memory management is notoriously hard
-  (can be relieved by using stuff like smart pointers and RAII though).</li>
+It offers the most control over hardware and unrivaled performance (if used in the right way).
+However, it has a steeper learning curve,
+and memory management is notoriously hard
+(can be relieved by using stuff like smart pointers and RAII though).</li>
 <li>Rust: A modern, relatively new programming language.
-  It is one of the most difficult-to-learn languages in the world,
-  but once you get familiar with it, you will benefit a lot from its memory safety guarantees,
-  as well as its modern syntax and design which make it very intuitive and concise.</li>
+It is one of the most difficult-to-learn languages in the world,
+but once you get familiar with it, you will benefit a lot from its memory safety guarantees,
+as well as its modern syntax and design which make it very intuitive and concise.</li>
 </ul>
 <h4 id="interpreted-languages">Interpreted Languages</h4>
 <p>Different from compiled languages,
@@ -1506,9 +1506,9 @@ Well, the interpreter actually reads and executes each line:</p>
 <li>The first line <code>a = 125</code> is executed by allocating a piece of memory, naming it to <code>a</code> and writing 125 to it;</li>
 <li>Similar thing happens when executing the second line <code>b = 137</code>.</li>
 <li>The third line <code>c = a * b</code> is executed by reading the pieces of memory previously named to <code>a</code> and <code>b</code>,
-   multiplying them together and writing the result to an allocated piece of memory named to <code>c</code>.</li>
+multiplying them together and writing the result to an allocated piece of memory named to <code>c</code>.</li>
 <li>The fourth line <code>print(f"The result of {a} times {b} is {c}")</code> is executed by reading <code>a</code>, <code>b</code> and <code>c</code>,
-   then printing them to the console.</li>
+then printing them to the console.</li>
 </ol>
 <div class="admonition info">
 <p class="admonition-title">Note</p>
@@ -1524,31 +1524,31 @@ the explanation above provides a good illustration of the abstraction that inter
 <p>The advantages of interpreted languages are:</p>
 <ul>
 <li>Their dynamic nature allows more flexibility in code.
-  For example, Python allows you to change the type of a variable (e.g., from an integer to a string) at run-time,
-  which is usually prohibited in compiled languages.</li>
+For example, Python allows you to change the type of a variable (e.g., from an integer to a string) at run-time,
+which is usually prohibited in compiled languages.</li>
 <li>They are often much easier to learn and use.
-  The interpreter provides a more human-friendly abstraction of computers which makes programming much easier.
-  Writing the same software in an interpreted language typically results in much shorter source code than in a compiled language.
-  Also, in interpreted languages, you typically do not need to manage memory manually;
-  the interpreter handles that for you.</li>
+The interpreter provides a more human-friendly abstraction of computers which makes programming much easier.
+Writing the same software in an interpreted language typically results in much shorter source code than in a compiled language.
+Also, in interpreted languages, you typically do not need to manage memory manually;
+the interpreter handles that for you.</li>
 <li>Better cross-platform and cross-ISA compatibility:
-  Since the interpreter offers another layer of abstraction to computer hardware,
-  software written in interpreted language can run on any computer with an interpreter for that language,
-  regardless of its ISA and operating system.</li>
+Since the interpreter offers another layer of abstraction to computer hardware,
+software written in interpreted language can run on any computer with an interpreter for that language,
+regardless of its ISA and operating system.</li>
 </ul>
 <p>The disadvantages:</p>
 <ul>
 <li>Slow and hardware-inefficient.
-  Obviously, it is slower to read in, parse, and "simulate the execution" of each line of source by the interpreter,
-  compared to executing compiled machine code directly.
-  In reality, Python code can be anywhere from 20x to 200x slower than equivalent C++ code.</li>
+Obviously, it is slower to read in, parse, and "simulate the execution" of each line of source by the interpreter,
+compared to executing compiled machine code directly.
+In reality, Python code can be anywhere from 20x to 200x slower than equivalent C++ code.</li>
 <li>(Sometimes) harder to debug:
-  The flexibility of interpreted languages also means they are harder to debug sometimes.
-  In the extreme case, all errors in interpreted languages are run-time errors,
-  because there is no compile-time analysis of the source code.
-  If there is a bug in an app that happens 1 in 1000 times,
-  there is a good chance that it's not spotted when developing the app,
-  but incurs a run-time error when an unlucky user opens it.</li>
+The flexibility of interpreted languages also means they are harder to debug sometimes.
+In the extreme case, all errors in interpreted languages are run-time errors,
+because there is no compile-time analysis of the source code.
+If there is a bug in an app that happens 1 in 1000 times,
+there is a good chance that it's not spotted when developing the app,
+but incurs a run-time error when an unlucky user opens it.</li>
 </ul>
 <h4 id="hybrid-techniques">Hybrid Techniques</h4>
 <p>Except for the "pure" compiled/interpreted languages introduced above,
@@ -1560,7 +1560,7 @@ there are a few technologies that blur the boundary between them:</p>
 <li>The program can run on any computer with a JIT compiler installed.</li>
 <li>JIT is often faster than interpreted languages, since the JIT compiler compiles the source code to machine code.</li>
 <li>The JIT compiler can sometimes find more available optimizations than the "static compilers" of compiled languages,
-  because it can access the run-time states of the programs.</li>
+because it can access the run-time states of the programs.</li>
 </ul>
 <h5 id="intermediate-language-il-and-virtual-machine-vm">Intermediate Language (IL) and Virtual Machine (VM)</h5>
 <p>Some languages supports compiling the source code to an intermediate representation
@@ -1658,12 +1658,12 @@ However, some of them may encourage one paradigm or another by design.</p>
 <li>C/C++: C/C++ is a multi-paradigm language with good feature support for OOP.</li>
 <li>Python: Python is also a multi-paradigm language.</li>
 <li>Rust: Rust is a multi-paradigm language that encourages functional programming,
-  but it supports OOP as well.</li>
+but it supports OOP as well.</li>
 </ul>
 <p>Some programming languages supporting the stateless paradigm / functional programming are:</p>
 <ul>
 <li>LISP: LISP is one of the oldest programming languages.
-  It has a peculiar design that encourages what is called functional programming in the modern days.</li>
+It has a peculiar design that encourages what is called functional programming in the modern days.</li>
 <li>Rust: As mentioned before, Rust is a multi-paradigm language that primarily encourages functional programming.</li>
 <li>Python: As mentioned before, Python is also a multi-paradigm language with no strong inclination to either functional programming or OOP.</li>
 </ul>
@@ -1696,7 +1696,7 @@ then DSLs do fit with this definition.</p>
 <p class="admonition-title">Fun Fact (Opinion): Developer's Review</p>
 <p>Personally, I feel it's a miracle that MATLAB remains to be one of the most popular languages,
 considering its hideous IDE, archaic syntax and anti-human design
-(such as indexing arrays from 1 using braces, while everyone else uses 0 and square brackets).</p>
+(such as indexing arrays from 1 using braces, while everyone else uses 0 and brackets).</p>
 <p>Although MATLAB was the first language I learned seriously,
 it is now my least favorite and least-used language.
 I would strongly discourage any new developer to use MATLAB as his/her primary language,
@@ -1709,17 +1709,23 @@ both for their own good and for the development of the open-source community.</p
 make designing, representing, building and understanding computer programs easier for beings with a human-like mindset</strong>.</p>
 <p>Programming languages can be categorized in 3 different ways:</p>
 <ol>
-<li>By execution model:</li>
+<li>By execution model:<ul>
 <li>Compiled Languages: Source code compiled to machine code before program execution.</li>
 <li>Interpreted Languages: Interpreter executes source code directly.</li>
 <li>Hybridization techniques: Just-In-Time (JIT) Compilation and Intermediate Language (IL) &amp; virtual machines.</li>
-<li>By programming paradigm:</li>
+</ul>
+</li>
+<li>By programming paradigm:<ul>
 <li>Stateful paradigm &amp; Object Oriented Programming (OOP): Program include states which modify its behavior in addition to inputs.</li>
 <li>Stateless paradigm &amp; Functional Programming: Program abstracted as functions that transform inputs to outputs without any side effects;
-     use of states is discouraged or prohibited.</li>
-<li>By applicable fields:</li>
+use of states is discouraged or prohibited.</li>
+</ul>
+</li>
+<li>By applicable fields:<ul>
 <li>General Purpose Languages: Programming languages that can be used to build virtually any program for anything.</li>
 <li>Domain Specific Languages (DSLs): Programming languages designed for specific fields.</li>
+</ul>
+</li>
 </ol>
 <p>Congratulations!
 You now have a high-level understanding of programming languages.
