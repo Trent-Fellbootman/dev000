@@ -83,16 +83,17 @@ extra_javascript:
 extra:
   alternate:
     - name: English
-      link: /en/
+      # workaround for Github Pages
+      link: /dev000/
       lang: en
     - name: 简体中文
-      link: /zh/
+      link: /dev000/zh/
       lang: zh
     - name: Русский
-      link: /ru/
+      link: /dev000/ru/
       lang: ru
     - name: 日本語
-      link: /ja/
+      link: /dev000/ja/
       lang: ja
 
 nav:

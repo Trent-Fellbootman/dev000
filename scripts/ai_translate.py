@@ -28,6 +28,8 @@ Notice that, if there are special "developer" terms
 (like "abstractions", or "compiler", sometimes but not always in bold face),
 you should not only translate but also provide the original English properly,
 e.g., "compiler" --> "编译器（compiler）".
+
+Note, "ja" is not the code for Chinese!
 """
 
     # Stream parameter set to True for incremental output
