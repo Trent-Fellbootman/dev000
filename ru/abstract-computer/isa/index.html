@@ -26,7 +26,7 @@
     
     
       
-        <title>Registers, Memory and Instructions: Instruction Set Architectures - DEV-000</title>
+        <title>Регистры, память и инструкции: наборы команд инструкций - DEV-000</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#registers-memory-and-instructions-instruction-set-architectures" class="md-skip">
+        <a href="#_1" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Registers, Memory and Instructions: Instruction Set Architectures
+              Регистры, память и инструкции: наборы команд инструкций
             
           </span>
         </div>
@@ -722,7 +722,7 @@
           
   
   <span class="md-ellipsis">
-    Registers, Memory and Instructions: Instruction Set Architectures
+    Регистры, память и инструкции: наборы команд инструкций
   </span>
   
 
@@ -733,7 +733,7 @@
         
   
   <span class="md-ellipsis">
-    Registers, Memory and Instructions: Instruction Set Architectures
+    Регистры, память и инструкции: наборы команд инструкций
   </span>
   
 
@@ -755,36 +755,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#registers-memory-and-instructions-the-most-generally-applicable-abstraction-of-computers" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Registers, Memory and Instructions: The Most Generally-Applicable Abstraction of Computers
+      Регистры, память и инструкции: наиболее общие абстракции компьютеров
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-are-computer-programs-run" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      How are computer programs run?
+      Как выполняются компьютерные программы?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusion
+      Заключение
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ai-prompt-samples" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      AI Prompt Samples
+      Примеры вопросов для ИИ
     </span>
   </a>
   
@@ -966,36 +966,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#registers-memory-and-instructions-the-most-generally-applicable-abstraction-of-computers" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Registers, Memory and Instructions: The Most Generally-Applicable Abstraction of Computers
+      Регистры, память и инструкции: наиболее общие абстракции компьютеров
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-are-computer-programs-run" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      How are computer programs run?
+      Как выполняются компьютерные программы?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusion
+      Заключение
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ai-prompt-samples" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      AI Prompt Samples
+      Примеры вопросов для ИИ
     </span>
   </a>
   
@@ -1016,7 +1016,7 @@
                   
 
   
-    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/en/abstract-computer/isa.md" title="Редактировать страницу" class="md-content__button md-icon">
+    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/ru/abstract-computer/isa.md" title="Редактировать страницу" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1024,104 +1024,63 @@
   
 
 
-<h1 id="registers-memory-and-instructions-instruction-set-architectures">Registers, Memory and Instructions: Instruction Set Architectures</h1>
-<p>Instruction Set Architectures (ISAs) are the lowest-level abstractions for computers.
-ISAs are designed to be as close to hardware as possible,
-while being general enough to be applicable to the majority of computers.
-As such, ISAs are extremely human-unfriendly and
-few developers actually code with them directly,
-and higher level programming languages tend to abstract computers in a way completely different to ISAs.
-However, understanding ISAs provides a good starting point to understanding how computer hardware works,
-and it helps to explain a lot of design choices in higher-level programming languages and software applications,
-which is why they're introduced here.</p>
-<p>There exist multiple different ISAs, such as x86, ARM, MIPS and RISC-V.
-Each of them is designed a little bit differently
-(or quite differently, as in the case with CISC and RISC architecture families),
-but there are some concepts that are shared across almost all of them.
-These concepts are the fundamental abstraction that applies to almost all computer hardwares,
-and are covered in this section.</p>
-<h2 id="registers-memory-and-instructions-the-most-generally-applicable-abstraction-of-computers">Registers, Memory and Instructions: The Most Generally-Applicable Abstraction of Computers</h2>
-<p>Virtually all ISAs employ the following concepts:</p>
+<h1 id="_1">Регистры, память и инструкции: наборы команд инструкций</h1>
+<p>Наборы команд инструкций (Instruction Set Architectures, ISA) являются наименее абстрактными структурами для компьютеров. ISA разработаны так, чтобы быть как можно ближе к аппаратному обеспечению, при этом пригодными для применения к большинству компьютеров. Поэтому ISA крайне неудобны для использования разработчиками напрямую, и высокоуровневые языки программирования, как правило, абстрагируют компьютеры совершенно по-другому. Однако понимание ISA является хорошей отправной точкой для понимания работы аппаратного обеспечения компьютера, и это помогает объяснить множество выборов проектирования в языках программирования более высокого уровня и программных приложениях, именно поэтому они представлены здесь.</p>
+<p>Существуют несколько различных ISA, таких как x86, ARM, MIPS и RISC-V. Каждый из них разработан немного по-разному (или совсем по-разному, как в случае с семействами архитектур CISC и RISC), но некоторые концепции общие для почти всех из них. Эти концепции являются фундаментальной абстракцией, применимой к практически всем компьютерным железам, и они рассматриваются в этом разделе.</p>
+<h2 id="_2">Регистры, память и инструкции: наиболее общие абстракции компьютеров</h2>
+<p>Практически все ISA используют следующие концепции:</p>
 <ul>
-<li>There is a finite set of <strong>registers</strong> where you can hold data.</li>
-<li>There is a (virtually infinite) <strong>memory</strong> where you can hold more data.
-Each location in the memory can hold some data,
-and has an <strong>address</strong> associated with it;
-you use that address to access the data stored in that location.</li>
-<li>There is a "processor" that supports executing a finite set of <strong>instructions</strong> which modify the registers or memory in some way.</li>
-<li>Instructions are stored in memory and executed in order;</li>
-<li>There is a special register (usually called the "<strong>program counter</strong>", or "<strong>PC</strong>")
-that holds an address in memory;
-at each point in time, the "processor" reads the data at that memory address,
-interprets that data as an instruction, executes it, then updates the PC in some way.</li>
+<li>Существует конечный набор <strong>регистров</strong>, в которых можно хранить данные.</li>
+<li>Существует (практически бесконечная) <strong>память</strong>, в которой можно хранить больше данных. Каждому месту в памяти присвоен <strong>адрес</strong>, и с его помощью можно получить доступ к данным, хранящимся в этом месте.</li>
+<li>Существует "процессор", который поддерживает выполнение конечного набора <strong>инструкций</strong>, которые каким-то образом изменяют регистры или память.</li>
+<li>Инструкции хранятся в памяти и выполняются по порядку.</li>
+<li>Есть особый регистр (обычно называемый "<strong>счетчик программы</strong>" или "<strong>PC</strong>"), который хранит адрес в памяти; на каждом шаге "процессор" читает данные по этому адресу памяти, интерпретирует эти данные как инструкцию, выполняет ее, а затем обновляет регистр PC каким-то образом.</li>
 </ul>
-<p>There are several important things to notice in the above concepts:</p>
+<p>В приведенных выше концепциях есть несколько важных моментов:</p>
 <ul>
-<li>Compared to memory, registers can only hold very limited amount of data.
-In most ISAs, the number of registers is less than 100,
-and the total amount of data that can be held in all registers is unlikely to exceed 1 megabyte (MB).
-On the contrary, memory is much larger: modern computers typically have anywhere from 4 to hundreds of gigabytes (GBs) of memory;
-even cell phones typically have 4 or more gigabytes of memory.</li>
-<li>What a computer will do starting from a specific point in time
-is completely determined by the data held in the registers (including the PC) and the memory.
-You can think of the registers and the memory as the "<strong>state</strong>" of a program;
-that state completely determines the program's behavior.</li>
-<li>The instructions supported by an ISA are generally very simple operations
-(CISC, or "Complex Instruction Set Computers", which is a family of ISAs support more complex instructions,
-but their functionalities are still extremely limited compared to complete computer programs),
-such as "add up the data in register 5 and register 11, and store the result into register 0",
-"load the value at memory address 122 to register 1", or "move the PC 40 memory addresses forward".
-These instructions are not complete computer programs;
-they are used as the building blocks of larger programs.
-By composing these simple instructions (called "programming"),
-one can create programs that do virtually anything.</li>
+<li>По сравнению с памятью регистры могут хранить только очень ограниченное количество данных. В большинстве ISA число регистров менее 100, и общее количество данных, которые можно хранить во всех регистрах, не превышает 1 мегабайт (МБ). В отличие от этого, память гораздо больше: современные компьютеры обычно имеют от 4 до сотен гигабайт (ГБ) оперативной памяти; даже мобильные телефоны обычно имеют 4 или более гигабайта памяти.</li>
+<li>То, что компьютер будет делать, начиная с определенного момента времени, полностью определяется данными, которые содержатся в регистрах (включая PC) и памяти. Регистры и память можно рассматривать как "<strong>состояние</strong>" программы; это состояние полностью определяет поведение программы.</li>
+<li>Инструкции, поддерживаемые ISA, обычно представляют из себя очень простые операции (семейство ISA CISC, или "Complex Instruction Set Computers", поддерживает более сложные инструкции, но их функциональность все равно крайне ограничена по сравнению с полноценными компьютерными программами), такие как "сложить данные в регистре 5 и регистре 11 и сохранить результат в регистре 0", "загрузить значение по адресу памяти 122 в регистр 1" или "переместить PC на 40 ячеек памяти вперед". Эти инструкции являются не полноценными компьютерными программами; они служат в качестве строительных блоков для более крупных программ. С помощью составления этих простых инструкций (называемого "программированием") можно создать программы, которые делают практически что угодно.</li>
 </ul>
 <div class="admonition info">
-<p class="admonition-title">Why do we need registers?</p>
-<p>You might wonder why we need registers at all:
-both registers and memory serve as the "state" of a program,
-so why can't we use memory exclusively?
-After all, registers can only store very limited amount of data,
-while memory is much larger.</p>
-<p>The answer relates to how computer hardwares work.
-Although registers are small, they are very fast;
-on the contrary, memory is large but also slow (compared to registers).
-As a result, the typical practice is to store the data that needs to be accessed frequently in registers,
-and the rest of the data in memory.</p>
-<p>This is a good example of how ISAs are close to hardware,
-and as you can see, although abstractions are "general and abstract characteristics",
-they typically depend on and reflect the underlying objects which they apply to.</p>
+<p class="admonition-title">Зачем нам нужны регистры?</p>
+<p>Возможно, вас интересует, зачем нам вообще нужны регистры:
+ведь как регистры, так и память служат "состоянием" программы,
+почему бы тогда не использовать исключительно память?
+Ведь регистры могут хранить только очень ограниченное количество данных,
+в то время как память гораздо больше.</p>
+<p>Ответ связан с тем, как работает аппаратное обеспечение компьютеров.
+Несмотря на то, что регистры малы, они очень быстрые;
+наоборот, память большая, но также медленная (по сравнению с регистрами).
+В результате типичной практикой является хранение данных, к которым необходимо часто обращаться, в регистрах, а остальных данных - в памяти.</p>
+<p>Это хороший пример того, насколько ISA близки к аппаратному обеспечению,
+и, как видите, хотя абстракции являются "общими и абстрактными характеристиками",
+они обычно зависят от и отражают базовые объекты, к которым они применяются.</p>
 </div>
 <div class="admonition info">
-<p class="admonition-title">Other ISAs</p>
-<p>Although what is introduced here is applicable to the vast majority of ISAs,
-there are ISAs that abstract computers differently.
-For example, <a href="https://webassembly.org/">WebAssembly (WASM)</a>
-is a stack-based architecture which does not have registers.</p>
+<p class="admonition-title">Другие ISA</p>
+<p>Хотя то, что здесь представлено, применимо к подавляющему большинству ISA,
+есть ISA, которые представляют компьютеры по-другому.
+Например, <a href="https://webassembly.org/">WebAssembly (WASM)</a>
+является стековой архитектурой, не имеющей регистров.</p>
 </div>
-<h2 id="how-are-computer-programs-run">How are computer programs run?</h2>
-<p>Imagine a person with a pencil holding a notebook.
-At the beginning, the notebook is on a certain page;
-then, at each point in time, the person reads a page,
-does something (either do some calculations and memorize the result, or write something to another page)
-according to what that page says, changes to another page, and the same process goes on.</p>
-<p>That is a good analogy of how a program gets run on a computer:
-the person is the processor; the notebook is the memory,
-and the person's brain memory is the registers.</p>
-<p>As mentioned before, ISAs only support a very limited number of instructions
-with very limited functionalities;
-those instructions serve as the building blocks for larger software applications.
-<strong>Virtually every software application boils down to a large number (from hundreds to millions) of ISA instructions
-when it gets run on the computer hardware</strong>.
-Basically, the way programs run, as defined by the ISAs, is like the following:</p>
+<h2 id="_3">Как выполняются компьютерные программы?</h2>
+<p>Представьте себе человека с карандашом, держащего в руках тетрадь.
+В начале тетради находится определенная страница;
+затем, на каждом шаге, человек читает страницу,
+делает что-то (либо производит вычисления и запоминает результат, либо пишет что-то на другую страницу) в соответствии с тем, что говорит эта страница, переходит на другую страницу, и тот же процесс повторяется.</p>
+<p>Это хорошая аналогия того, как программа выполняется на компьютере:
+человек - это процессор; тетрадь - память;
+а память человека - регистры.</p>
+<p>Как уже упоминалось, ISA поддерживает только очень ограниченное количество инструкций
+с очень ограниченными функциональными возможностями;
+эти инструкции служат строительными блоками для более сложных программного обеспечения.
+<strong>Практически все программные приложения сводятся к большому количеству (от сотен до миллионов) простых инструкций ISA при выполнении на аппаратном обеспечении компьютера</strong>.
+Практически все программное обеспечение разбивается на следующие этапы:</p>
 <ol>
-<li>At the beginning, the memory and registers are initialized to some values.
-Typically there is a special segment in the memory which holds all the instructions;
-the instructions held in that segment are the "program".</li>
-<li>At each point in time, the processor reads an ISA-defined instruction at the memory address specified by the PC,
-executes it (either do some calculation and write the result to a register, or write some data to a certain memory address, etc.),
-and updates the PC (usually to the memory address of the next instruction, but could also be somewhere else).</li>
-<li>This process is repeated until the program is finished.</li>
+<li>В начале память и регистры инициализируются некоторыми значениями. Обычно есть особый сегмент в памяти, который содержит все инструкции; инструкции, содержащиеся в этом сегменте, составляют "программу".</li>
+<li>На каждом шаге процессор читает инструкцию, определенную ISA, по адресу памяти, указанному в PC, выполняет ее (либо производит вычисление и записывает результат в регистр, либо записывает данные в определенный адрес памяти и т. д.), и обновляет регистр PC (обычно на адрес следующей инструкции, но также может быть и в другом месте).</li>
+<li>Этот процесс повторяется, пока программа не завершится.</li>
 </ol>
 <div style="text-align: center;">
 
@@ -1135,45 +1094,43 @@ and updates the PC (usually to the memory address of the next instruction, but c
 </div>
 
 <div class="admonition info">
-<p class="admonition-title">What if there are multiple programs?</p>
-<p>You may have wondered, what if there are multiple programs running on the same computer?
-Since they use the same piece of memory, won't they interfere with each other?
-And, how are they executed? Are they executed one by one or at the same time?</p>
-<p>The short answer is, the operating system provides another layer of abstraction which eliminates all these concerns.
-In simple words, the operation system "virtualizes" the computer hardware and
-creates the illusion of multiple, independent computers running at the same time.
-each program is allocated such a "virtual" computer of its own;
-in the program's view, there is nobody else on this computer, so no interference at all.</p>
-<p>How the operation system creates that illusion, though, is out of scope of this section.</p>
+<p class="admonition-title">Что, если есть несколько программ?</p>
+<p>Возможно, вы задаетесь вопросом, что, если на одном компьютере работает несколько программ?
+Ведь они используют один и тот же участок памяти, не мешают ли они друг другу?
+И как они выполняются? Выполняются ли они одна за другой или одновременно?</p>
+<p>Короткий ответ заключается в том, что операционная система обеспечивает еще один уровень абстракции, который устраняет все эти проблемы.
+Проще говоря, операционная система "виртуализирует" аппаратное обеспечение компьютера и создает иллюзию работы множества независимых компьютеров одновременно.
+Каждой программе выделяется свой такой "виртуальный" компьютер;
+в представлении программы на этом компьютере никого другого нет, поэтому никаких помех.</p>
+<p>Как операционная система создает эту иллюзию, выходит за рамки этого раздела.</p>
 </div>
-<h2 id="conclusion">Conclusion</h2>
-<p>In this section, we talked about the lowest-level abstractions of computers: Instruction Set Architectures (ISAs).
-Compared to other abstractions of computers, such as higher-level programming languages,
-ISAs are closer to the hardware but also less human-friendly.
-Although developers typically use completely different abstractions when programming,
-understanding ISAs provides a good foundation of understanding how computers work.</p>
-<p>Virtually all ISAs have a set of <strong>registers</strong>, a <strong>memory</strong> and define a set of supported, simple <strong>instructions</strong>.
-One special register is called the <strong>program counter (PC)</strong>.
-The way a program runs is basically "<strong>fetch instruction at PC - execute instruction - update PC - repeat</strong>".
-ISA instructions serve as building blocks for more complex software applications;
-<strong>virtually every software application boils down to a large number of simple ISA instructions when it gets run on the hardware</strong>.</p>
-<p>Congratulations, you now understand how computer hardware works!
-Real world computer hardwares are much more complicated than ISAs,
-but for now, ISAs are a good approximation to the real hardware.</p>
-<p>Next, we will introduce some higher level abstractions that
-build upon ISAs and are found in most low-level programming languages like C/C++ and Rust.</p>
-<h2 id="ai-prompt-samples">AI Prompt Samples</h2>
-<p>If you want to learn more about the topics in this section,
-feel free to consult an AI such as ChatGPT.</p>
-<p>Here are some sample prompts to get you started:</p>
+<h2 id="_4">Заключение</h2>
+<p>В этом разделе мы рассмотрели наиболее основные абстракции компьютеров: наборы команд инструкций (ISA).
+По сравнению с другими абстракциями компьютеров, такими как языки программирования более высокого уровня,
+ISA ближе к аппаратному обеспечению, но менее удобны для людей.
+Хотя разработчики обычно используют совершенно другие абстракции при программировании,
+понимание ISA является хорошей основой для понимания работы компьютеров.</p>
+<p>Практически все ISA имеют наборы <strong>регистров</strong>, <strong>память</strong> и определяют набор поддерживаемых простых <strong>инструкций</strong>.
+Одним из специальных регистров является <strong>счетчик программы (PC)</strong>.
+Программа выполняется следующим образом: "<strong>извлечение инструкции по адресу PC - выполнение инструкции - обновление PC - повтор</strong>".
+Инструкции ISA служат строительными блоками для более сложных программного обеспечения;
+<strong>практически все программное обеспечение разбивается на большое количество простых инструкций ISA при выполнении на аппаратном обеспечении</strong>.</p>
+<p>Поздравляю, теперь вы понимаете, как работает компьютерное аппаратное обеспечение!
+На самом деле, реальные компьютерные аппаратные средства намного сложнее, чем ISA,
+но на данный момент ISA являются хорошим приближением к реальному аппаратному обеспечению.</p>
+<p>Далее мы рассмотрим некоторые более высокоуровневые абстракции,
+которые строятся на основе ISA и присутствуют в большинстве языков программирования более низкого уровня, таких как C/C++ и Rust.</p>
+<h2 id="_5">Примеры вопросов для ИИ</h2>
+<p>Если вы хотите узнать больше о темах, рассмотренных в этом разделе,
+вы можете обратиться к ИИ, такому как ChatGPT.</p>
+<p>Вот несколько примеров запросов для начала:</p>
 <ul>
-<li>Can you briefly describe the ARM architecture, as well as its instructions?</li>
-<li>Can you give an example ARM assembly code and explain what it's doing?</li>
-<li>What are the differences between CISC and RISC?</li>
-<li>How do Instruction Set Architectures compare to a Turing machine?
-Why are there no registers in a Turing machine?
-Why are there registers in ISAs?</li>
-<li>What are the most popular Instruction Set Architectures nowadays?</li>
+<li>Можете ли вы кратко описать архитектуру ARM, а также ее инструкции?</li>
+<li>Можете ли вы привести примеры кода на ассемблере ARM и объяснить, что он делает?</li>
+<li>Каковы различия между CISC и RISC?</li>
+<li>Как сравниваются наборы команд инструкций с машиной Тьюринга?
+Почему в машине Тьюринга нет регистров? Почему в ISA есть регистры?</li>
+<li>Какие сейчас популярные наборы команд инструкций?</li>
 </ul>
 
 
