@@ -26,7 +26,7 @@
     
     
       
-        <title>The Abstract Computer: Why do we need it? - DEV-000</title>
+        <title>The Abstract Computer: なぜ必要なのか？ - DEV-000</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-abstract-computer-why-do-we-need-it" class="md-skip">
+        <a href="#the-abstract-computer" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The Abstract Computer: Why do we need it?
+              The Abstract Computer: なぜ必要なのか？
             
           </span>
         </div>
@@ -426,7 +426,7 @@
         
   
   <span class="md-ellipsis">
-    DEV-000: The Complete Introduction to Development
+    DEV-000: プログラミングへの完全なイントロダクション
   </span>
   
 
@@ -447,7 +447,7 @@
         
   
   <span class="md-ellipsis">
-    DEV-000 Course Structure
+    Outline
   </span>
   
 
@@ -671,7 +671,7 @@
         
   
   <span class="md-ellipsis">
-    Module 1: The Abstract Computer
+    モジュール1：抽象コンピュータ
   </span>
   
 
@@ -701,7 +701,7 @@
           
   
   <span class="md-ellipsis">
-    The Abstract Computer: Why do we need it?
+    The Abstract Computer: なぜ必要なのか？
   </span>
   
 
@@ -712,7 +712,7 @@
         
   
   <span class="md-ellipsis">
-    The Abstract Computer: Why do we need it?
+    The Abstract Computer: なぜ必要なのか？
   </span>
   
 
@@ -734,9 +734,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-need-for-standardization" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      The Need for Standardization
+      標準化の必要性
     </span>
   </a>
   
@@ -792,7 +792,7 @@
         
   
   <span class="md-ellipsis">
-    Memory Use Cases, Stack and Heap: Basic Memory Management
+    メモリ使用ケース、スタックおよびヒープ：基本的なメモリ管理
   </span>
   
 
@@ -813,7 +813,7 @@
         
   
   <span class="md-ellipsis">
-    Conclusion
+    結論
   </span>
   
 
@@ -883,7 +883,7 @@
         
   
   <span class="md-ellipsis">
-    Module 2: Programming Languages
+    モジュール2：プログラミング言語
   </span>
   
 
@@ -904,7 +904,7 @@
         
   
   <span class="md-ellipsis">
-    Programming Languages: A High Level Overview
+    プログラミング言語：高レベル概要
   </span>
   
 
@@ -948,9 +948,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-need-for-standardization" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      The Need for Standardization
+      標準化の必要性
     </span>
   </a>
   
@@ -980,7 +980,7 @@
                   
 
   
-    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/en/abstract-computer/why-abstraction.md" title="編集" class="md-content__button md-icon">
+    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/ja/abstract-computer/why-abstraction.md" title="編集" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -988,46 +988,16 @@
   
 
 
-<h1 id="the-abstract-computer-why-do-we-need-it">The Abstract Computer: Why do we need it?</h1>
-<p>Before learning any programming language,
-the first important idea to have in mind is that,
-except for extremely limited cases,
-<strong>developers always code for abstraction of computers
-and never target specific computer hardware</strong>.
-If you code in high-level languages like Python,
-you target abstract computers;
-if you code in lower-level languages like C,
-you target abstract computers;
-even if you write machine code directly
-(machine code are binary sequences like 00111001010100111 which,
-although barely readable for humans,
-can run directly on computer hardware),
-you are still targeting abstract computers.</p>
-<p>Why is this?
-Why do we need an extra layer of abstraction?
-Wouldn't it be simpler to code for hardware directly?
-There are two rationales behind abstract computers, as I will explain below.</p>
-<h2 id="the-need-for-standardization">The Need for Standardization</h2>
-<p>As reflected in the <a href="../../developer-mindset/standards/#an-example-of-standards">example of ISA</a> (Instruction Set Architecture)
-provided in the previous module,
-having a shared abstraction (a standard) across computers
-allows the same software to run on different hardwares,
-and the same hardware to run different applications.
-That is, the significance of abstraction is that it is shared across different computers and software applications.</p>
-<p>Without such a shared abstraction,
-software applications target specific computer hardwares directly,
-which means one software application can only run on one type of hardware,
-e.g., one specific CPU model like Intel Core i7 12700H.
-If we want to support different computers, we would have to code the software for each of them.
-Conversely, a computer can only run the software applications that specific targets it.
-As you can see, without a shared abstraction,
-software development is extremely difficult and unproductive,
-and the functionality of computers is extremely limited.</p>
-<p>By targeting <strong>abstraction</strong> of computers, however, things become much easier:
-as long as the computer share the abstraction which an application targets,
-the application runs on that computer;
-<strong>all computers that share the same abstraction will be able to run any software application that targets that abstraction</strong>,
-as illustrated below:</p>
+<h1 id="the-abstract-computer">The Abstract Computer: なぜ必要なのか？</h1>
+<p>どんなプログラミング言語を学ぶ前に、まず頭の中に持っておくべき重要な考え方は、非常に限定的な場合を除いて、<strong>開発者は常にコンピュータの抽象をコード化し、特定のコンピュータハードウェアをターゲットにすることはありません</strong>。Pythonのような高レベルの言語でコードを書く場合、抽象的なコンピュータをターゲットにします。Cのような低レベルの言語でコードを書く場合でも、抽象的なコンピュータをターゲットにします。直接機械語を書く場合でも（機械語は00111001010100111のようなバイナリのシーケンスであり、人間にはほとんど読めませんが、コンピュータハードウェア上で直接実行できます）、抽象的なコンピュータをターゲットにします。</p>
+<p>なぜそうなのでしょうか？
+なぜ追加の抽象のレイヤーが必要なのでしょうか？
+ハードウェアに直接コードを書く方がシンプルではないでしょうか？
+抽象的なコンピュータに関しては、以下で2つの理論的根拠を説明します。</p>
+<h2 id="_1">標準化の必要性</h2>
+<p>以前のモジュールで提供された ISA（命令セットアーキテクチャ）の<a href="../../developer-mindset/standards/#an-example-of-standards">例</a>を反映して、異なるコンピュータ間で共有される抽象（標準）を持つことで、同じソフトウェアが異なるハードウェア上で実行され、同じハードウェアが異なるアプリケーションを実行できます。つまり、抽象の重要な点は、異なるコンピュータとソフトウェアアプリケーション間で共有されるという点です。</p>
+<p>このような共有の抽象がない場合、ソフトウェアアプリケーションは特定のコンピュータハードウェアを直接ターゲットします。つまり、1つのソフトウェアアプリケーションが1つのハードウェアタイプ、例えばIntel Core i7 12700Hのような特定のCPUモデルでしか実行できません。異なるコンピュータをサポートするためには、ソフトウェアをそれぞれのコンピュータのためにコード化する必要があります。逆に、コンピュータはそれを特定するソフトウェアアプリケーションのみを実行できます。共有の抽象がない場合は、ソフトウェア開発が非常に困難で非効率であり、コンピュータの機能も非常に制限されています。</p>
+<p>しかし、<strong>抽象</strong>のターゲットとしてコンピュータを指定すると、非常に簡単になります。アプリケーションがターゲットとする抽象を共有しているコンピュータで実行できます。<strong>同じ抽象を共有するすべてのコンピュータは、その抽象をターゲットとする任意のソフトウェアアプリケーションを実行できます</strong>。以下のように示されています。</p>
 <div style="text-align: center;">
 
 <pre class="mermaid"><code>%%{init: { "flowchart": { "curve": "linear" } } }%%
@@ -1043,26 +1013,10 @@ ISA --&gt; Computer-3</code></pre>
 
 </div>
 
-<p>For now, you can think of the lowest-level abstract computers as being Instruction Set Architectures (ISAs),
-which are standards that define what operations a computer must support,
-such as math operations like addition and multiplication.
-At present, there are hundreds or even thousands of CPU models,
-but there are only a few ISA families.
-The most ubiquitous ISA family is x86 and is supported on almost every laptop and PC
-(except for newer generation Macs).
-In this case, targeting a shared abstraction (like x86) can be thousands of times more productive than coding for each specific hardware.</p>
+<p>現時点では、最も低レベルの抽象コンピュータは、命令セットアーキテクチャ（ISA）として考えることができます。ISAは、コンピュータがサポートする操作（加算や乗算などの数学操作など）を定義する標準です。現在、数百、数千のCPUモデルが存在しますが、わずかなISAファミリーしかありません。最も普及しているISAファミリーはx86であり、ほとんどのノートパソコンやPC（新しい世代のMacを除く）でサポートされています。この場合、共有の抽象（x86など）をターゲットにすることは、特定のハードウェアに対して個別にコードを書くよりも何千倍も生産性が高いです。</p>
 <h2 id="abstraction-makes-coding-easier">Abstraction Makes Coding Easier</h2>
-<p>Instruction Set Architectures (ISAs) satisfy the need for standardization.
-However, very few developers actually write assembly code
-(i.e., code that uses ISA-defined operations directly)
-or machine code
-(i.e., binary code defined by the ISA standard which can run on hardware directly).
-in modern days.
-The reason is, ISAs are the lowest level of abstraction
-which interface with hardware directly.
-As a result, it is barely human-readable,
-and it is very difficult to code large, complex applications with it.
-An example of assembly code (x86) might look like this:</p>
+<p>命令セットアーキテクチャ（ISA）は標準化の必要性を満たします。しかし、現代では、実際にアセンブリ言語（つまり、ISAによって定義された操作を直接使用するコード）や機械語（つまり、ISA標準で定義されたバイナリコードで、ハードウェア上で直接実行できるコード）を書く開発者は非常に少ないです。</p>
+<p>その理由は、ISAがハードウェアと直接インターフェースする最も低い抽象のレベルです。その結果、ほとんど人間が読み取れず、大規模で複雑なアプリケーションをコーディングすることは非常に困難です。以下は、アセンブリ言語（x86）の例です（現在は理解する必要はありませんが）。</p>
 <div class="language-asm highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">push</span><span class="w">   </span><span class="nv">%rbp</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nf">mov</span><span class="w">    </span><span class="nv">%rsp</span><span class="p">,</span><span class="nv">%rbp</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nf">lea</span><span class="w">    </span><span class="mi">0xe4c</span><span class="p">(</span><span class="nv">%rip</span><span class="p">),</span><span class="nv">%rax</span>
@@ -1078,16 +1032,10 @@ An example of assembly code (x86) might look like this:</p>
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nf">pop</span><span class="w">    </span><span class="nv">%rbp</span>
 </span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nf">ret</span>
 </span></code></pre></div>
-<p>(complete disassembly is omitted for brevity; this only shows the most crucial part of the code)</p>
-<p>The function of the above code is to print "Hello World" to your computer's screen,
-but you don't need to understand how it does that.
-The key takeaway is that, coding for an ISA directly is anti-human.</p>
-<p>As a result, developers need higher-level abstractions
-that allow them to design, build and understand complex software systems with ease.
-Roughly speaking, those abstractions are exactly what higher-level programming languages are.
-For example, the above assembly code looks like the following in C++,
-which is a popular low-level programming languages
-(again, no need to understand what it's doing right now):</p>
+<p>（簡潔さのために完全な逆アセンブルは省略されており、このコードの最も重要な部分のみを示しています）</p>
+<p>上記のコードの機能は、"Hello World"をコンピュータの画面に表示することですが、どのように表示されるかを理解する必要はありません。重要な点は、ISAに直接コーディングすることは人間には向いていないということです。</p>
+<p>そのため、開発者は、複雑なソフトウェアシステムを簡単に設計、構築、理解するためのより高レベルの抽象が必要です。おおよそ言えば、それらの抽象はまさに高レベルのプログラミング言語です。
+例えば、上記のアセンブリコードは、人気のある低レベルのプログラミング言語であるC++では以下のように見えます（今は何をしているかを理解する必要はありません）。</p>
 <div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -1095,24 +1043,11 @@ which is a popular low-level programming languages
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>And the code that does the same thing looks like the following in Python,
-which is a higher-level programming language:</p>
+<p>同じことを行うPythonのコードは、以下のようになります（高レベルのプログラミング言語です）。</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<p>As you can see, coding for higher level abstractions (programming languages)
-makes coding much easier.
-However, programming languages are not independent of each other,
-and they are not monolithic pieces;
-there are many abstractions that are shared across multiple programming languages.
-For example, almost all programming languages have the concept of variables and structs;
-low-level programming languages like C/C++ and Rust typically have the abstraction of stack and heap;
-object-oriented or multi-paradigm languages like C++, Java and Dart usually have the concept of classes, objects and interfaces.
-There is no need to understand what these words mean for now though,
-as we'll illustrate them in later sections and modules.</p>
-<p>Congratulations!
-You have learned about abstract computers and the rationales behind them.
-Next, we'll take a look at the lowest-level abstraction of computers
-which is shared across all Instruction Set Architectures (ISAs).</p>
+<p>見てわかるように、より高レベルの抽象（プログラミング言語）をターゲットにしてコーディングすると、コーディングがはるかに簡単になります。ただし、プログラミング言語は互いに独立せず、単体のピースではありません。プログラミング言語間で共有される多くの抽象があります。たとえば、ほとんどのプログラミング言語には変数と構造体の概念があります。C/C++やRustのような低レベルのプログラミング言語には、スタックとヒープという抽象があります。C++、Java、Dartのようなオブジェクト指向やマルチパラダイムの言語には、クラス、オブジェクト、インターフェースの概念が通常あります。ただし、これらの用語が何を意味するのかを理解する必要はありません。後のセクションとモジュールで説明します。</p>
+<p>おめでとうございます！抽象的なコンピュータとその背後にある理論的根拠について学びました。次は、すべての命令セットアーキテクチャ（ISA）で共有される最も低レベルの抽象を見ていきます。</p>
 
 
 
@@ -1144,7 +1079,7 @@ which is shared across all Instruction Set Architectures (ISAs).</p>
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="前: Module 1: The Abstract Computer">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="前: モジュール1：抽象コンピュータ">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1154,7 +1089,7 @@ which is shared across all Instruction Set Architectures (ISAs).</p>
                 前
               </span>
               <div class="md-ellipsis">
-                Module 1: The Abstract Computer
+                モジュール1：抽象コンピュータ
               </div>
             </div>
           </a>
