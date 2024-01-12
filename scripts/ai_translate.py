@@ -21,6 +21,8 @@ def stream_translation(file_path: Path, language_code: str, silent: bool = True)
 </markdown>
 
 Please translate this markdown to {language_code} (that's an ISO language code).
+Notice that the label text contained in `mermaid` blocks also needs to be translated
+(but don't translate labels like A, B, C).
 Output the translated markdown ONLY and NOTHING ELSE.
 DO NOT INCLUDE <markdown> and </markdown>.
 

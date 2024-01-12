@@ -80,6 +80,9 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
+extra_css:
+  - stylesheets/extra.css
+
 extra:
   alternate:
     - name: English
@@ -116,3 +119,6 @@ nav:
   - "Module 2: Programming Languages":
     - programming-languages/intro.md
     - programming-languages/overview.md
+    - Common Concepts:
+      - programming-languages/common-concepts/intro.md
+      - programming-languages/common-concepts/variables.md
