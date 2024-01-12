@@ -71,13 +71,13 @@ therefore, the software is guaranteed to work properly.
 %%{init: { "flowchart": { "curve": "linear" } } }%%
 graph TD
 
-Software-1 --> ISA
-Software-2 --> ISA
-Software-3 --> ISA
+S1([Software-1]) --> I([ISA])
+S2([Software-2]) --> I
+S3([Software-3]) --> I
 
-ISA --> Computer-1
-ISA --> Computer-2
-ISA --> Computer-3
+I --> C1([Computer-1])
+I --> C2([Computer-2])
+I --> C3([Computer-3])
 ```
 
 </div>

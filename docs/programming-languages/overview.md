@@ -90,12 +90,12 @@ Then, that software application in machine code form can run on hardware directl
 ```mermaid
 graph TD
 
-    subgraph developer-side
-        source-code -->|compile| machine-code
+    subgraph Developer Side
+        S([source Code]) -->|compile| M([machine Code])
     end
 
-    subgraph user-side
-        machine-code -->|executes-on| hardware
+    subgraph User Side
+        M -->|executes on| H([hardware])
     end
 ```
 
@@ -181,12 +181,12 @@ An interpreter reads in each "high-level" instruction in the source code and exe
 
 graph TD
 
-    subgraph developer-side
-        source-code
+    subgraph Developer Side
+        S([source code])
     end
 
-    subgraph user-side
-        source-code -->|interpreted-by| interpreter -->|runs-on| hardware
+    subgraph User Side
+        S -->|interpreted by| I([interpreter]) -->|runs on| H([hardware])
     end
 ```
 
@@ -328,9 +328,9 @@ The following diagram illustrates the programming model of a stateful paradigm:
 ```mermaid
 graph TD
 
-    input -->|changes| program-state
-    input -->|influences| program-behavior
-    program-state -->|influences| program-behavior
+    I([input]) -->|changes| P([program state])
+    I -->|influences| B([program behavior])
+    P -->|influences| B
 ```
 
 </div>
@@ -350,19 +350,19 @@ In a functional programming paradigm, such a process can be abstracted as the fo
 ```mermaid
 flowchart LR
 
-    person-A([person-A])
-    person-B([person-B])
+    PA([person-A])
+    PB([person-B])
 
-    person-A-age([person-A-age])
-    person-B-age([person-B-age])
+    PAA([person-A-age])
+    PBA([person-B-age])
 
-    output([output])
+    O([output])
 
-    person-A --> get-age --> person-A-age
-    person-B --> get-age --> person-B-age
-    person-A-age --> calculate-age-difference
-    person-B-age --> calculate-age-difference
-    calculate-age-difference --> output
+    PA --> GA[get-age] --> PAA
+    PB --> GA --> PBA
+    PAA --> CAD[calculate-age-difference]
+    PBA --> CAD
+    CAD --> O
 ```
 
 </div>
