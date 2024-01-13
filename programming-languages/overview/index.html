@@ -18,6 +18,8 @@
         <link rel="prev" href="../intro/">
       
       
+        <link rel="next" href="../common-concepts/intro/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
@@ -49,6 +51,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1068,6 +1072,98 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Common Concepts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Common Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-concepts/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Concepts in Modern Programming Languages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-concepts/variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1390,12 +1486,12 @@ Then, that software application in machine code form can run on hardware directl
 
 <pre class="mermaid"><code>graph TD
 
-    subgraph developer-side
-        source-code --&gt;|compile| machine-code
+    subgraph Developer Side
+        S([source Code]) --&gt;|compile| M([machine Code])
     end
 
-    subgraph user-side
-        machine-code --&gt;|executes-on| hardware
+    subgraph User Side
+        M --&gt;|executes on| H([hardware])
     end</code></pre>
 
 </div>
@@ -1477,12 +1573,12 @@ An interpreter reads in each "high-level" instruction in the source code and exe
 <pre class="mermaid"><code>
 graph TD
 
-    subgraph developer-side
-        source-code
+    subgraph Developer Side
+        S([source code])
     end
 
-    subgraph user-side
-        source-code --&gt;|interpreted-by| interpreter --&gt;|runs-on| hardware
+    subgraph User Side
+        S --&gt;|interpreted by| I([interpreter]) --&gt;|runs on| H([hardware])
     end</code></pre>
 
 </div>
@@ -1600,9 +1696,9 @@ as it changes when the button is pressed and influences what is displayed on scr
 
 <pre class="mermaid"><code>graph TD
 
-    input --&gt;|changes| program-state
-    input --&gt;|influences| program-behavior
-    program-state --&gt;|influences| program-behavior</code></pre>
+    I([input]) --&gt;|changes| P([program state])
+    I --&gt;|influences| B([program behavior])
+    P --&gt;|influences| B</code></pre>
 
 </div>
 
@@ -1617,19 +1713,19 @@ In a functional programming paradigm, such a process can be abstracted as the fo
 
 <pre class="mermaid"><code>flowchart LR
 
-    person-A([person-A])
-    person-B([person-B])
+    PA([person-A])
+    PB([person-B])
 
-    person-A-age([person-A-age])
-    person-B-age([person-B-age])
+    PAA([person-A-age])
+    PBA([person-B-age])
 
-    output([output])
+    O([output])
 
-    person-A --&gt; get-age --&gt; person-A-age
-    person-B --&gt; get-age --&gt; person-B-age
-    person-A-age --&gt; calculate-age-difference
-    person-B-age --&gt; calculate-age-difference
-    calculate-age-difference --&gt; output</code></pre>
+    PA --&gt; GA[get-age] --&gt; PAA
+    PB --&gt; GA --&gt; PBA
+    PAA --&gt; CAD[calculate-age-difference]
+    PBA --&gt; CAD
+    CAD --&gt; O</code></pre>
 
 </div>
 
@@ -1776,6 +1872,22 @@ Next, we'll take a look at the common abstractions and ideas found in almost eve
             </div>
           </a>
         
+        
+          
+          <a href="../common-concepts/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Common Concepts in Modern Programming Languages">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Common Concepts in Modern Programming Languages
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     

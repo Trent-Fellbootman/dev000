@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -947,6 +949,98 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Common Concepts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Common Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming-languages/common-concepts/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Concepts in Modern Programming Languages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming-languages/common-concepts/variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1172,18 +1266,16 @@ and so on.</p>
 
 <pre class="mermaid"><code>graph TD
 
-Car
+A([Car]) --&gt; B([Car-Body])
+A --&gt; E([chassis])
+A --&gt; F([Wheels])
+A --&gt; C([Engine])
 
-Car --&gt; Car-Body
-Car --&gt; chassis
-Car --&gt; Wheels
-Car --&gt; Engine
+B --&gt; G([Doors])
+B --&gt; H([Windows])
 
-Car-Body --&gt; Doors
-Car-Body --&gt; Windows
-
-Engine --&gt; Gears
-Engine --&gt; Cylinders</code></pre>
+C --&gt; I([Gears])
+C --&gt; J([Cylinders])</code></pre>
 
 </div>
 
@@ -1196,21 +1288,19 @@ and its abstraction is the intersection of the natures of the children.</p>
 
 <pre class="mermaid"><code>graph TD
 
-Creatures
+A([Creatures]) --&gt; B([Plants])
 
-Creatures --&gt; Plants
+B --&gt; G([Trees])
 
-Plants --&gt; Trees
+B --&gt; H([Grass])
 
-Plants --&gt; Grass
+A --&gt; C([Animals])
 
-Creatures --&gt; Animals
+C --&gt; D([Insects])
 
-Animals --&gt; Insects
+C --&gt; E([Mammals])
 
-Animals --&gt; Mammals
-
-Mammals --&gt; Humans</code></pre>
+E --&gt; F([Humans])</code></pre>
 
 </div>
 

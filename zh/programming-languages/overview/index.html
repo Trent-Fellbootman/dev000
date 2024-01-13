@@ -18,13 +18,15 @@
         <link rel="prev" href="../intro/">
       
       
+        <link rel="next" href="../common-concepts/intro/">
+      
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
     
     
       
-        <title>编程语言：一个高层次概述 - DEV-000</title>
+        <title>编程语言：高级概述 - DEV-000</title>
       
     
     
@@ -49,6 +51,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -112,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              编程语言：一个高层次概述
+              编程语言：高级概述
             
           </span>
         </div>
@@ -578,7 +582,7 @@
         
   
   <span class="md-ellipsis">
-    标准：促进实体之间的互动
+    标准：促进实体间的交互
   </span>
   
 
@@ -853,7 +857,7 @@
           
   
   <span class="md-ellipsis">
-    编程语言：一个高层次概述
+    编程语言：高级概述
   </span>
   
 
@@ -864,7 +868,7 @@
         
   
   <span class="md-ellipsis">
-    编程语言：一个高层次概述
+    编程语言：高级概述
   </span>
   
 
@@ -888,45 +892,45 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      什么是编程语言？为什么我们需要它们？
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="什么是编程语言？为什么我们需要它们？">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      关于寄存器
+      什么是编程语言？为什么需要它们？
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       编程语言的通用分类
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="编程语言的通用分类">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#vs" class="md-nav__link">
     <span class="md-ellipsis">
-      执行模型：编译 vs. 解释
+      执行模型：编译型 vs 解释型
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="执行模型：编译 vs. 解释">
+    <nav class="md-nav" aria-label="执行模型：编译型 vs 解释型">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译型语言
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      编译语言
+      解释型语言
     </span>
   </a>
   
@@ -934,15 +938,6 @@
         
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      解释语言
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       混合技术
     </span>
@@ -952,18 +947,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#jit-compilation" class="md-nav__link">
+  <a href="#just-in-timejit" class="md-nav__link">
     <span class="md-ellipsis">
-      即时编译（JIT Compilation）
+      即时（Just-In-Time，JIT）编译
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ilvm" class="md-nav__link">
+  <a href="#intermediate-languageilvirtual-machinevm" class="md-nav__link">
     <span class="md-ellipsis">
-      中间语言（IL）和虚拟机（VM）
+      中间语言（Intermediate Language，IL）和虚拟机（Virtual Machine，VM）
     </span>
   </a>
   
@@ -980,19 +975,19 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vs_1" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      编程范式：有状态 vs. 无状态
+      编程范式：有状态与无状态
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="编程范式：有状态 vs. 无状态">
+    <nav class="md-nav" aria-label="编程范式：有状态与无状态">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#oop" class="md-nav__link">
     <span class="md-ellipsis">
-      有状态编程范式 &amp; 面向对象编程 (OOP)
+      有状态编程范式和面向对象编程（OOP）
     </span>
   </a>
   
@@ -1001,7 +996,7 @@
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      无状态编程范式 &amp; 函数式编程
+      无状态编程范式和函数式编程
     </span>
   </a>
   
@@ -1024,17 +1019,17 @@
           <li class="md-nav__item">
   <a href="#vs-dsls" class="md-nav__link">
     <span class="md-ellipsis">
-      通用编程语言 vs. 领域特定语言 (DSLs)
+      通用目的语言 vs 领域专用语言（DSLs）
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="通用编程语言 vs. 领域特定语言 (DSLs)">
+    <nav class="md-nav" aria-label="通用目的语言 vs 领域专用语言（DSLs）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      通用编程语言
+      通用目的语言
     </span>
   </a>
   
@@ -1043,7 +1038,7 @@
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      领域特定语言
+      领域专用语言
     </span>
   </a>
   
@@ -1071,6 +1066,98 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Common Concepts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Common Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-concepts/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    现代编程语言中的常见概念
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-concepts/variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    变量
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -1113,45 +1200,45 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      什么是编程语言？为什么我们需要它们？
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="什么是编程语言？为什么我们需要它们？">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      关于寄存器
+      什么是编程语言？为什么需要它们？
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       编程语言的通用分类
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="编程语言的通用分类">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#vs" class="md-nav__link">
     <span class="md-ellipsis">
-      执行模型：编译 vs. 解释
+      执行模型：编译型 vs 解释型
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="执行模型：编译 vs. 解释">
+    <nav class="md-nav" aria-label="执行模型：编译型 vs 解释型">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译型语言
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      编译语言
+      解释型语言
     </span>
   </a>
   
@@ -1159,15 +1246,6 @@
         
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      解释语言
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       混合技术
     </span>
@@ -1177,18 +1255,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#jit-compilation" class="md-nav__link">
+  <a href="#just-in-timejit" class="md-nav__link">
     <span class="md-ellipsis">
-      即时编译（JIT Compilation）
+      即时（Just-In-Time，JIT）编译
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ilvm" class="md-nav__link">
+  <a href="#intermediate-languageilvirtual-machinevm" class="md-nav__link">
     <span class="md-ellipsis">
-      中间语言（IL）和虚拟机（VM）
+      中间语言（Intermediate Language，IL）和虚拟机（Virtual Machine，VM）
     </span>
   </a>
   
@@ -1205,19 +1283,19 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vs_1" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      编程范式：有状态 vs. 无状态
+      编程范式：有状态与无状态
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="编程范式：有状态 vs. 无状态">
+    <nav class="md-nav" aria-label="编程范式：有状态与无状态">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#oop" class="md-nav__link">
     <span class="md-ellipsis">
-      有状态编程范式 &amp; 面向对象编程 (OOP)
+      有状态编程范式和面向对象编程（OOP）
     </span>
   </a>
   
@@ -1226,7 +1304,7 @@
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      无状态编程范式 &amp; 函数式编程
+      无状态编程范式和函数式编程
     </span>
   </a>
   
@@ -1249,17 +1327,17 @@
           <li class="md-nav__item">
   <a href="#vs-dsls" class="md-nav__link">
     <span class="md-ellipsis">
-      通用编程语言 vs. 领域特定语言 (DSLs)
+      通用目的语言 vs 领域专用语言（DSLs）
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="通用编程语言 vs. 领域特定语言 (DSLs)">
+    <nav class="md-nav" aria-label="通用目的语言 vs 领域专用语言（DSLs）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      通用编程语言
+      通用目的语言
     </span>
   </a>
   
@@ -1268,7 +1346,7 @@
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      领域特定语言
+      领域专用语言
     </span>
   </a>
   
@@ -1316,27 +1394,33 @@
   
 
 
-<h1 id="_1">编程语言：一个高层次概述</h1>
-<p>在本部分中，我们将讨论编程语言的目的和它们的一般分类。</p>
-<h2 id="_2">什么是编程语言？为什么我们需要它们？</h2>
-<p>一般来说，编程语言是计算机的抽象，旨在使设计、表示、构建和理解计算机程序更容易理解。</p>
-<p>注意，编程语言有时以更宽泛的方式定义，将汇编语言也计算在内；
-但在本模块中，我们将<strong>"编程语言"</strong>定义为仅包含现代、"面向人类"的编程语言，如 C/C++、Python、Rust、Java、JavaScript 等；
-我们不包括那些不适用于人类使用的语言，如汇编语言和二进制机器码。</p>
-<p>回想一下，上个模块中提到的计算机最低层（最接近硬件）的抽象是指令集架构（ISA），
-但使用 ISA 进行编程对于人类来说非常不直观。
-因此，人们决定构建更高层次的抽象，使之更容易理解和使用；
-这正是编程语言存在的目的。</p>
-<p>由于编程语言是面向人类友好的高级抽象，
-它们的编程模型通常远离实际计算机硬件（与 ISA 相比）。
-例如，几乎每个 ISA 都有的寄存器在几乎所有编程语言中都抽象了出来。</p>
-<h3 id="_3">关于寄存器</h3>
-<p>在现代 CPU 中，ISA 中定义的寄存器通常不是实际的硬件组件，但它们也不仅仅是抽象。</p>
-<p>CPU 中确实存在 "物理寄存器"。
-然而，它们并不直接映射到 ISA 定义的 "体系结构寄存器"。
-典型情况是，物理寄存器比体系结构寄存器多得多；
-后者通过一种称为 "寄存器重命名" 的技术在运行时以多对多的方式映射到前者。</p>
-<p>编程语言中常见的一些概念与 ISA 中的 "低级实现" 相比如下：</p>
+<h1 id="_1">编程语言：高级概述</h1>
+<p>在这一部分中，我们将讨论编程语言的目的以及它们的通用分类。</p>
+<h2 id="_2">什么是编程语言？为什么需要它们？</h2>
+<p>一般来说，<strong>编程语言是计算机的抽象，旨在使设计、表示、构建和理解计算机程序对人类更容易</strong>。</p>
+<p>注意，编程语言有时以更宽松的方式定义，包括汇编语言在内；
+然而，在本模块中，我们将"编程语言"定义为仅包括现代的、"面向人类"的编程语言，
+如 C/C++、Python、Rust、Java、JavaScript 等；
+我们不包括不适用于人类使用的语言，
+如汇编语言和二进制机器码。</p>
+<p>回顾一下前一模块，计算机的最低层（最接近硬件）的抽象是指令集体系结构 (Instruction Set Architecture，ISA)，
+但使用 ISA 进行编程对人类来说非常不直观。
+因此，人们决定构建更高级的易于理解和使用的抽象层次;
+这正是编程语言的用途。</p>
+<p>由于编程语言是为了方便人类而设计的高级抽象，
+因此它们的编程模型通常距离实际的计算机硬件（与 ISA 相比）远得多。
+例如，寄存器是几乎每个 ISA 中都可以找到的硬件细节，在几乎每个编程语言中都被抽象化掉。</p>
+<div class="admonition info">
+<p class="admonition-title">关于寄存器</p>
+<p>在现代 CPU 中，ISA 中定义的寄存器通常不是实际的硬件组件，
+但它们也不仅仅是抽象。</p>
+<p>CPU 中有"物理寄存器"。
+然而，它们不是直接映射到 ISA 定义的"体系结构寄存器"。
+相反，通常情况下，物理寄存器要比体系结构寄存器多得多；
+后者通过一种称为"寄存器重命名"的技术，在运行时以多对多的方式映射到前者。</p>
+</div>
+<p>编程语言中常见的一些概念如下，</p>
+<p>与其在硬件上的"较低级别实现"（仍然是对硬件的抽象）相比：</p>
 <table>
 <thead>
 <tr>
@@ -1348,324 +1432,384 @@
 <tbody>
 <tr>
 <td>变量/常量</td>
-<td>保存数据的一块内存</td>
-<td>表示 "事物"，如字符串 "Hello, World!"、数字 1.22 或者树形数据</td>
+<td>保存数据的内存块</td>
+<td>像字符串 "Hello, World!"、数字 1.22 或数据树这样的"东西"</td>
 </tr>
 <tr>
 <td>函数</td>
-<td>一般是保存 ISA 指令的内存块（在编译语言中）</td>
-<td>能够完成某种任务的工具</td>
+<td>通常是保存 ISA 指令的内存块（在编译语言中）</td>
+<td>能够执行某个特定任务的工具</td>
 </tr>
 <tr>
 <td>结构体</td>
-<td>在编译语言中没有直接的表现（在运行时）</td>
-<td>结构化数据的定义，比如 "一个学生结构体具有姓名、年龄和成绩"</td>
+<td>在编译语言中不会存在于运行时</td>
+<td>结构化数据的定义，如 "学生结构体包含姓名、年龄和分数"</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_4">编程语言的通用分类</h3>
-<p>目前有许多编程语言；
-每种语言都有自己的特点、抽象和权衡，并适用于特定的一组用例；
-然而，它们之间存在一些共同点，
-可以从多个角度将编程语言分为几个大类。</p>
-<p>在本小节中，我们将讨论一些常见的编程语言分类方法以及各类别语言的一般特点。</p>
-<h3 id="vs">执行模型：编译 vs. 解释</h3>
-<p>将编程语言分类的一种常见方法是通过执行模型，
-执行模型可以是 "编译"，"解释" 或者二者之间的混合。</p>
-<h4 id="_5">编译语言</h4>
-<p>从上个部分中我们了解到，
-几乎每个计算机程序在运行时（即程序运行时）的执行都归结为在硬件上执行 ISA 定义的指令。</p>
-<p>然而，编程语言是为人类设计的，而不是为计算机硬件设计的；
-因此，必须有一种方法将用编程语言编写的软件转换为机器可执行代码，
-无论是在程序运行之前还是运行时。</p>
-<p><strong>编译语言</strong>选择前者。
-在编译语言中，开发人员用编程语言编写的代码（以形成完整的程序或程序的一部分）
-在运行程序之前通过称为<strong>"编译器"</strong>的软件将其转换为机器可执行代码。
-然后，该机器代码形式的软件应用程序可以直接在硬件上运行。</p>
-<p>编译语言有一些与之相关的术语：</p>
+<h2 id="_3">编程语言的通用分类</h2>
+<p>目前存在大量的编程语言；
+每种编程语言都有自己的特点、抽象和权衡，适用于特定的用例集；
+但是它们之间有一些共同之处，
+从多个角度来看，编程语言可以一般地划分为多个大类。</p>
+<p>在本小节中，我们将讨论一些常见的分类编程语言的方法，
+以及每个类别中语言的一般特征。</p>
+<div class="admonition info">
+<p class="admonition-title">术语 "权衡"</p>
+<p>"权衡"是软件和硬件开发中的一个基本概念。
+一般来说，它表示<strong>在一方面"交换"（牺牲）质量以获得另一方面的质量</strong>。</p>
+<p>例如，许多编程语言（如 Python）为了使用的简单性而牺牲了速度和硬件效率；
+另一方面，C/C++ 等语言则为了对硬件的控制以及更快的执行而牺牲了使用的简单性和学习成本。</p>
+</div>
+<h3 id="vs">执行模型：编译型 vs 解释型</h3>
+<p>一种常见的划分编程语言的方式是通过执行模型，
+它可以是"编译型"、"解释型"，或两者的混合。</p>
+<h4 id="_4">编译型语言</h4>
+<p>回顾一下前一部分，
+几乎每个计算机程序的运行时（即程序运行时的时间）
+都可以归结为在硬件上执行由 ISA 定义的指令。</p>
+<p>然而，编程语言是为了人类而设计的，而不是计算机硬件；
+因此必须有一种方式将用编程语言编写的软件转换为可在硬件上运行的机器可执行代码，
+要么在程序运行之前，要么在程序运行期间。</p>
+<p><strong>编译型语言</strong>选择前者。
+在编译型语言中，开发人员在编程语言中编写的代码（以形成完整程序或部分程序）
+通过一个称为<strong>"编译器"</strong>的软件将其转换为机器可执行代码，
+然后该以机器代码形式的应用程序可以直接在硬件上运行。</p>
+<div style="text-align: center;">
+
+<pre class="mermaid"><code>graph TD
+
+    subgraph 开发人员端
+        S([源代码]) --&gt;|编译| M([机器码])
+    end
+
+    subgraph 用户端
+        M --&gt;|在| H([硬件]) 上执行
+    end</code></pre>
+
+</div>
+
+<p>与编译型语言相关的一些术语：</p>
 <ul>
 <li><strong>源代码</strong>：开发人员用编程语言编写的代码。</li>
-<li><strong>机器代码</strong>：可以直接在硬件上运行的代码。</li>
-<li><strong>编译</strong>：将源代码转换为机器代码的过程。</li>
-<li><strong>已编译的应用程序</strong>：已经经过编译（从源代码），通常以机器代码形式，并且可以直接在硬件上运行的软件。</li>
-<li><strong>二进制可执行文件</strong>：由于机器代码通常以二进制形式存在（例如，001100101010111000110），
-可以直接在硬件上运行的编译应用程序通常称为 "二进制可执行文件"。</li>
-<li><strong>编译</strong>：“编译”这个动作的动词形式。</li>
+<li><strong>机器码</strong>：可直接在硬件上运行的代码。</li>
+<li><strong>编译</strong>：将源代码转换为机器码的过程。</li>
+<li><strong>已编译应用程序</strong>：已经编译的软件（从源代码），通常以机器码形式，可以直接在硬件上运行。</li>
+<li><strong>二进制可执行文件</strong>：由于机器码通常以二进制形式（例如，001100101010111000110）存在，
+可以直接在硬件上运行的已编译应用程序通常称为"二进制可执行文件"。</li>
+<li><strong>编译</strong>："编译"的动词形式。</li>
 <li><strong>编译器</strong>：执行编译的软件。</li>
-<li><strong>编译时</strong>：编译执行的时间。</li>
-<li><strong>运行时</strong>：程序运行的时间。</li>
+<li><strong>编译时</strong>：进行编译的时间。</li>
+<li><strong>运行时</strong>：运行程序的时间。</li>
 </ul>
 <div class="admonition info">
-<p class="admonition-title">反编译</p>
-<p>你可能想知道是否可能将机器代码转换回源代码。
+<p class="admonition-title">反汇编</p>
+<p>你可能想知道是否可能将机器码转换回源代码。
 是的，确实可以。
-这个过程称为<strong>反编译</strong>，
-有很多<strong>反编译器</strong>可以进行反编译。</p>
+这种过程被称为<strong>反汇编</strong>，
+有很多<strong>反汇编器</strong>能够执行反汇编。</p>
 </div>
-<p>编译语言的优点有：</p>
+<p>编译型语言的优点有：</p>
 <ul>
-<li>快速且高效：
-编译语言最大的优势是它们运行速度快且硬件高效。
-编译过程确保<strong>编译应用程序中的每个指令都以最高效的方式执行有用的操作</strong>。
-许多人对现代编译器可以执行的广泛优化范围感到惊讶，
-从识别和消除源代码中无用的部分，
-到以与硬件更好配合的方式 "重写" 源代码。
-此外，由于编译应用程序与硬件直接进行交互
-而不引入中间层（与解释语言相比），
-它们运行速度更快，内存占用更少。</li>
+<li>快速和硬件效率高：
+编译型语言的最大优点是它们快速和硬件效率高。
+通过编译的过程，确保了"编译型应用程序中的每一条指令都以最高效的方式执行有用的工作"。
+许多人对现代编译器能够做到的大量优化还感到惊奇，
+从识别和消除源代码中的无用代码，到以更好地与硬件配合运行的方式"重写"源代码。
+此外，由于已编译的应用程序与硬件直接进行交互，
+它们运行速度更快，使用的内存更少。</li>
 <li>（有时）更好的错误排除：
-在许多情况下（例如变量类型，我们将在后面介绍），
-编译语言的静态特性意味着可以在编译时检测到源代码中的许多错误，
-而不是在运行时导致用户遇到故障。</li>
+在许多情况下（例如变量类型，稍后我们将介绍），
+编译型语言的静态特性意味着源代码中的许多错误可以在编译时检测出来，
+而不会导致用户在运行时遇到故障。</li>
 </ul>
-<p>缺点包括：</p>
+<p>缺点有：</p>
 <ul>
-<li>（通常）学习和使用难度较大：
-由于编译语言通常更接近硬件，
-学习它们需要更大的努力。
-使用它们也通常更难，
-因为与硬件接近意味着您必须自己管理许多东西（特别是内存），
-而不是将这个责任委托给一些软件（大多数解释语言）。
-此外，用编译语言编写相同的应用程序通常需要更多的代码。</li>
-<li>较低的灵活性：
-编译语言的静态特性意味着在其中执行某些操作较为困难，
-例如在运行时修改变量的类型。</li>
-<li>硬件特定：由于机器代码是最接近硬件的抽象，
-并且不同操作系统通常具有不同的二进制可执行文件格式，
-通常无法在多个操作系统上运行编译的应用程序
-或在实现不同 ISA 的硬件上运行。
+<li>（通常）学习和使用上较困难：
+由于编译型语言通常更接近硬件，
+需要更多的努力来学习它们。
+使用它们通常也更困难，
+因为与硬件接近意味着你必须自己管理很多事情（特别是内存），
+而不是将该责任委托给一个软件（大多数解释型语言如此）。
+此外，在编译语言中通常需要更多的代码来编写同样的应用程序。</li>
+<li>灵活性较差：
+编译型语言的静态特性意味着它们在某些方面更难以做某些事情，
+例如在运行时修改变量类型。</li>
+<li>与硬件相关：由于机器码是与硬件最接近的抽象，
+而且不同操作系统通常具有不同的二进制可执行文件格式，
+已编译的应用程序通常无法在多个操作系统上运行，
+或者在实现不同 ISA 的硬件上运行。
 例如，为 Windows 编译的应用程序无法在 Linux 或 macOS 上运行；
-针对 x86 ISA 的 PC 应用程序无法在通常实现 ARM ISA 的智能手机上运行。</li>
+针对 x86 ISA 的 PC 应用程序无法在通常使用 ARM ISA 的智能手机上运行。</li>
 </ul>
-<p>一些常用的编译语言有：</p>
+<p>一些流行的编译型语言：</p>
 <ul>
-<li>C/C++：尽管创建于很多年前，C/C++ 仍然是全球最流行的编译语言之一。
-它提供了对硬件的极致控制和无与伦比的性能（如果以正确的方式使用）。
-然而，它的学习曲线更陡峭，
-并且内存管理极具挑战（但使用智能指针和 RAII 等东西可以减轻这种情况）。</li>
-<li>Rust：一种现代、相对较新的编程语言。
-它是世界上最难学的语言之一，
-但一旦熟悉它，您将从其内存安全保证以及其现代的语法和设计中受益匪浅，这使其非常直观和简洁。</li>
+<li>C/C++：虽然创作于很多年前，C/C++ 仍然是世界上最流行的编译型语言之一。
+它提供对硬件的最高控制和无与伦比的性能（如果以正确的方式使用）。
+然而，它的学习曲线较陡峭，
+内存管理以难以置信的难度而闻名
+（可以通过使用诸如智能指针和 RAII 等工具来缓解）。</li>
+<li>Rust：一种现代的、相对较新的编程语言。
+它是世界上最难学习的语言之一，
+但一旦你熟悉它，你将从其内存安全保证中受益很多，
+以及现代的语法和设计使其非常直观和简洁。</li>
 </ul>
-<h4 id="_6">解释语言</h4>
-<p>与编译语言不同，解释语言选择使用一个名为<strong>"解释器"</strong>的特殊软件
-在运行时实际 "执行" 源代码。
-解释器会读取源代码中的每个 "高级" 指令并执行它。</p>
-<p>从一个角度来看，您可以认为源代码是由 "理解它的虚拟硬件"（解释器）直接执行的；
-从另一个角度来看，由于解释器的执行最终归结为机器代码，
-您可以认为源代码在运行时由解释器动态地转换为机器代码。</p>
-<p>例如，考虑以下 Python 代码：</p>
+<h4 id="_5">解释型语言</h4>
+<p>与编译型语言不同，
+解释型语言选择使用一种特殊的软件（称为<strong>"解释器"</strong>）在运行时实际地"执行"源代码。
+解释器会读取源代码中的每个"高级"指令并执行它。</p>
+<div style="text-align: center;">
+
+<pre class="mermaid"><code>
+graph TD
+
+    subgraph 开发人员端
+        S([源代码])
+    end
+
+    subgraph 用户端
+        S --&gt;|由| I([解释器]) 解释 --&gt;|在| H([硬件]) 上运行
+    end</code></pre>
+
+</div>
+
+<p>从一方面来看，你可以认为源代码由一个理解源代码的"虚拟硬件"（解释器）实际地"执行"；
+但从另一方面来看，由于解释器的执行最终归结为机器码，
+你可以认为源代码在运行时由解释器动态地转换为机器码。</p>
+<p>例如，考虑下面的 Python 代码：</p>
 <div class="language-Python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">125</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">137</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The result of </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> times </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<p>即使您没有编程经验，上述代码应该很容易理解：
-它将 125 和 137 相乘，然后将结果打印到控制台（即执行代码的终端）。</p>
+<p>即使你对编程没有经验，
+上面的代码应该很容易理解：
+它将 125 和 137 相乘，然后将结果打印到控制台
+（即执行代码的终端）。</p>
 <p>该代码如何由解释器执行？
-解释器实际上会读取并执行每一行：</p>
+解释程序实际上会读取并执行每一行：</p>
 <ol>
-<li>第一行 <code>a = 125</code> 通过分配一块内存，将其命名为 <code>a</code> 并将 125 写入其中来执行。</li>
-<li>执行第二行 <code>b = 137</code> 时，会进行类似的操作。</li>
-<li>执行第三行 <code>c = a * b</code> 时，会先读取之前命名为 <code>a</code> 和 <code>b</code> 的内存块，
-然后将它们相乘，将结果写入命名为 <code>c</code> 的已分配内存块中。</li>
-<li>执行第四行 <code>print(f"The result of {a} times {b} is {c}")</code> 时，会读取 <code>a</code>、<code>b</code> 和 <code>c</code>，
-然后将它们打印到控制台。</li>
+<li>第一行 <code>a = 125</code> 通过分配一块内存，将其命名为 <code>a</code> 并写入 125，
+   被执行。</li>
+<li>执行第二行 <code>b = 137</code> 时发生类似的事情。</li>
+<li>执行第三行 <code>c = a * b</code> 时，读取以前命名为 <code>a</code> 和 <code>b</code> 的内存块，
+   将它们相乘并将结果写入已分配的命名为 <code>c</code> 的内存块。</li>
+<li>执行第四行 <code>print(f"The result of {a} times {b} is {c}")</code> 时，
+   读取 <code>a</code>、<code>b</code> 和 <code>c</code>，然后将它们打印到终端上。</li>
 </ol>
 <div class="admonition info">
 <p class="admonition-title">注意</p>
-<p>以上的解释在硬件上的实际发生情况并不完全正确。
+<p>上述解释在硬件上实际发生的情况并不完全正确。
 Python 代码的实际执行是一个复杂的过程，
-考虑到解释器 "理解" 源代码的方式以及 Python 解释器的执行引擎（即 Python 虚拟机）是一个基于栈的系统。</p>
-<p>但是现在，不必对硬件细节过于担忧；
-上面的解释提供了关于解释语言提供的抽象的良好说明。</p>
+考虑到解释器如何"理解"源代码，
+以及 Python 解释器的执行引擎，即 Python 虚拟机，
+是一种基于堆栈的系统。</p>
+<p>但是现在，不要过多地担心硬件细节。
+上面的解释提供了对解释型语言提供的抽象的很好说明。</p>
 </div>
-<p>解释语言的优点有：</p>
+<p>解释型语言的优点有：</p>
 <ul>
-<li>其动态特性允许在代码中进行更大的灵活性。
+<li>它们的动态特性允许更灵活地编写代码。
 例如，Python 允许您在运行时更改变量的类型（例如，从整数更改为字符串），
-这在编译语言中通常是被禁止的。</li>
-<li>它们通常更容易学习和使用。
-解释器提供了一种更人性化的计算机抽象，使编程更容易。
-在解释语言中编写相同的软件通常会导致比编译语言更短的源代码。
-并且在解释语言中，通常无需手动管理内存；解释器会为您处理。</li>
+而这在编译型语言中通常是禁止的。</li>
+<li>通常更易学和使用。
+解释器提供了一种更人性化的计算机抽象，这使得编程更加容易。
+在解释型语言中，通常无需手动管理内存；
+解释器会为您处理这些。</li>
 <li>更好的跨平台和跨 ISA 兼容性：
 由于解释器为计算机硬件提供了另一层抽象，
-使用解释语言编写的软件可以在安装了该语言解释器的任何计算机上运行，
-而无论其 ISA 和操作系统如何。</li>
+使用解释型语言编写的软件可以在安装了该语言解释器的任何计算机上运行，
+而不管其 ISA 和操作系统如何。</li>
 </ul>
-<p>缺点包括：</p>
+<p>缺点有：</p>
 <ul>
-<li>运行速度慢且硬件效率低下。
-显然，解释器读取、解析和 "模拟执行" 源代码行比直接执行编译后的机器代码慢得多。
-实际上，Python 代码可以比等价的 C++ 代码慢 20 倍到 200 倍。</li>
+<li>缓慢和硬件效率低。
+显然，与直接执行已编译机器码相比，
+解释器读取、解析和"模拟执行"源代码的每一行要慢得多。
+事实上，Python 代码可以比等效的 C++ 代码慢 20 到 200 倍。</li>
 <li>（有时）更难调试：
-解释语言的灵活性也意味着有时更难调试它们。
-在极端情况下，解释语言中的所有错误都是运行时错误，
-因为没有对源代码进行编译时分析。
-如果一个应用程序中存在 1/1000 的严重错误，
-那么在开发该应用程序时很可能无法发现该错误，
-而在不幸的用户打开它时会导致运行时错误。</li>
+解释型语言的灵活性也意味着它们有时更难调试。
+在极端情况下，解释型语言中的所有错误都是运行时错误，
+因为不对源代码进行编译时分析。
+如果应用程序中存在一个每 1000 次发生一次的错误，
+在开发应用程序时很有可能不会察觉到它，
+但是当一个倒霉的用户打开它时会产生一个运行时错误。</li>
 </ul>
-<h4 id="_7">混合技术</h4>
-<p>除了前面介绍的 "纯" 编译语言/解释语言之外，
-还有一些技术模糊了二者之间的界限：</p>
-<h5 id="jit-compilation">即时编译（JIT Compilation）</h5>
-<p>这项技术允许在运行时编译部分源代码。</p>
+<h4 id="_6">混合技术</h4>
+<p>除了上述介绍的"纯"编译型/解释型语言之外，
+还有一些模糊了它们之间界限的技术：</p>
+<h5 id="just-in-timejit">即时（Just-In-Time，JIT）编译</h5>
+<p>即时编译技术允许在运行时编译源代码的某些部分。</p>
 <p>JIT 编译提供了一些优势：</p>
 <ul>
-<li>该程序可以在安装了 JIT 编译器的任何计算机上运行。</li>
-<li>JIT 常常比解释性语言更快，因为 JIT 编译器会将源代码编译为机器代码。</li>
-<li>JIT 编译器有时可以发现比编译语言的 "静态编译器" 更多的可用优化项，
+<li>程序可以在安装了 JIT 编译器的任何计算机上运行。</li>
+<li>JIT 通常比解释型语言更快，因为 JIT 编译器将源代码编译为机器码。</li>
+<li>与编译型语言的"静态编译器"相比，JIT 编译器有时可以找到更多有效的优化，
 因为它可以访问程序的运行时状态。</li>
 </ul>
-<h5 id="ilvm">中间语言（IL）和虚拟机（VM）</h5>
-<p>一些语言支持将源代码编译为既非人类可读也非硬件可执行的<strong>中间表示</strong>。
-在运行时，该中间表示由一种称为<strong>"虚拟机"</strong>的软件执行
-（请勿将其与可安装操作系统的虚拟机混淆）。
-这种方法最著名的示例是 Java 和它的字节码表示。</p>
+<h5 id="intermediate-languageilvirtual-machinevm">中间语言（Intermediate Language，IL）和虚拟机（Virtual Machine，VM）</h5>
+<p>一些语言支持将源代码编译为既非人为代码也非硬件可执行代码的中间表示。
+在运行时，这种中间表示由一段称为<strong>"虚拟机"</strong>的软件执行
+（与能够安装操作系统的虚拟机不要混淆）。
+其中最著名的例子是 Java 及其字节码表示。</p>
 <p>这种技术在速度和跨平台兼容性方面提供了一种权衡：
 由于源代码被编译为中间表示，
-编译器可以进行一些编译时优化；
-而且，引入虚拟机使中间表示能够在安装了虚拟机的任何计算机上执行。</p>
-<p>需要注意的是，中间表示<strong>并不</strong>设计为人类可读，
-因为它被期望由编译器生成，而不是由人类开发者编写。</p>
-<h3 id="vs_1">编程范式：有状态 vs. 无状态</h3>
-<p>将编程语言分类的另一种方法是根据它们的<strong>编程范式</strong>。
-基本上，<strong>"编程范式"</strong> 是一种用于设计和理解计算机程序的思维模式，
-或者您可以将其视为计算机的抽象。
-大多数编程语言允许您使用不同的编程范式来构建软件，
-但其中一些语言可能鼓励某些范式。</p>
-<p>一般来说，编程范式有两个主要的大类：有状态和无状态。</p>
-<h4 id="oop">有状态编程范式 &amp; 面向对象编程 (OOP)</h4>
-<p>有状态编程范式采用了<strong>状态</strong>的概念，
-通常与现代的 "面向对象编程" 等效。</p>
-<p><strong>状态</strong>是程序执行过程中会发生变化并影响其行为的东西。
+编译器可以做一些编译时优化；
+而虚拟机的引入使得中间表示
+可以在安装了虚拟机的任何计算机上执行。</p>
+<p>重要的是要注意，中间表示<strong>不是</strong>设计为能够被人类阅读的，
+因为它预计由编译器生成，而不是由人类开发者编写。</p>
+<h3 id="_7">编程范式：有状态与无状态</h3>
+<p>另一种根据它们的<strong>编程范式</strong>来划分编程语言的方式。
+从根本上讲，<strong>编程范式</strong>是一种设计和理解计算机程序的心智模型，
+你可以将其视为计算机的抽象。
+大多数编程语言允许使用不同的编程范式来构建软件，
+但其中一些范式是更常用的。</p>
+<p>一般来说，有两个主要的编程范式：有状态和无状态。</p>
+<h4 id="oop">有状态编程范式和面向对象编程（OOP）</h4>
+<p>有状态编程范式采用<strong>状态</strong>的理念，
+并且通常等同于现代的"面向对象编程"。</p>
+<p><strong>状态</strong>是在程序执行期间可以变化并影响其行为的事物。
 通常，这些<strong>状态</strong>保存在为程序分配的内存块中。
-需要注意的是，在有状态编程范式中，程序的行为取决于输入和状态，
-即使输入相同，程序的输出也可能不同。</p>
-<p>例如，考虑一个简单的应用程序，有一个按钮和一个保存的数字。
-数字从 0 开始；每次按下按钮时，数字加 1，然后显示在屏幕上。
-在这种情况下，“数字”是程序的状态，
-因为它在按钮被按下时发生变化，并影响屏幕上的显示内容。</p>
-<p>下面的图表说明了有状态编程范式的编程模型：</p>
+值得注意的是，在有状态编程范式中，
+程序的行为不仅取决于输入，还取决于状态；
+即使输入相同，程序的输出也可以不同。</p>
+<p>例如，考虑一个包含按钮和保存数字的简单应用程序。
+数字从 0 开始；每次按下按钮，数字加 1，
+并显示在屏幕上。
+在这种情况下，"数字"是程序的<strong>状态</strong>，
+因为它在按下按钮时会发生变化，并影响在屏幕上显示的内容。</p>
+<p>以下图示说明了有状态编程范式的编程模型：</p>
+<div style="text-align: center;">
+
 <pre class="mermaid"><code>graph TD
 
-    input --&gt;|changes| program-state
-    input --&gt;|influences| program-behavior
-    program-state --&gt;|influences| program-behavior</code></pre>
-<h4 id="_8">无状态编程范式 &amp; 函数式编程</h4>
-<p>无状态编程范式通常以（数学意义上的）<strong>函数</strong>的形式（将输入转换为输出，无任何副作用）来抽象计算机程序；
+    I([输入]) --&gt;|改变| P([程序状态])
+    I --&gt;|影响| B([程序行为])
+    P --&gt;|影响| B</code></pre>
+
+</div>
+
+<h4 id="_8">无状态编程范式和函数式编程</h4>
+<p>无状态编程范式通常倾向于将计算机程序抽象为<strong>函数</strong>（数学意义上），
+这些函数将输入转换为输出，且没有副作用；
 通常不鼓励或禁止使用状态。
-无状态编程范式通常称为<strong>"函数式编程"</strong>。</p>
-<p>例如，考虑一个计算两个人之间年龄差的程序。
-在函数式编程范式中，这样的过程可以抽象为以下图表：</p>
+无状态编程范式通常称为<strong>函数式编程</strong>。</p>
+<p>例如，考虑计算两个人的年龄差异的程序。
+在函数式编程范式中，这样的过程可以抽象为以下图示：</p>
+<div style="text-align: center;">
+
 <pre class="mermaid"><code>flowchart LR
 
-    person-A([person-A])
-    person-B([person-B])
+    PA([PersonA])
+    PB([PersonB])
 
-    person-A-age([person-A-age])
-    person-B-age([person-B-age])
+    PAA([PersonA的年龄])
+    PBA([PersonB的年龄])
 
-    output([output])
+    O([输出])
 
-    person-A --&gt; get-age --&gt; person-A-age
-    person-B --&gt; get-age --&gt; person-B-age
-    person-A-age --&gt; calculate-age-difference
-    person-B-age --&gt; calculate-age-difference
-    calculate-age-difference --&gt; output</code></pre>
-<p>正如您所看到的，处理的每个步骤（无论是 <code>get-age</code> 还是 <code>calculate-age-difference</code>）
-的<strong>唯一</strong>任务都是将其输入转换为输出；
-没有副作用（例如，向屏幕打印内容或更改内存块的内容），
-相同的输入总是产生相同的输出。
-除了程序输入之外，不存在影响程序行为的状态。</p>
+    PA --&gt; GA[得到年龄] --&gt; PAA
+    PB --&gt; GA --&gt; PBA
+    PAA --&gt; CAD[计算年龄差异]
+    PBA --&gt; CAD
+    CAD --&gt; O</code></pre>
+
+</div>
+
+<p>正如你所看到的，处理的每个步骤（无论是 <code>得到年龄</code> 还是 <code>计算年龄差异</code>）
+的<strong>唯一</strong>任务是将其输入转换为其输出；
+没有副作用（例如，向屏幕打印内容或更改一块内存的内容），
+而且相同的输入总是产生相同的输出。
+除了程序输入之外，没有任何状态影响程序的行为。</p>
 <h4 id="_9">编程范式和编程语言</h4>
 <p>不同的编程范式具有不同的优点和缺点。
-例如，函数式编程使开发人员更易于理解程序的行为
-（有状态程序的行为更不可预测，特别是在并发时，
-因为它取决于输入和状态），
-而有状态的编程范式在构建程序方面更强大。</p>
-<p>因此，大多数软件应用在不同方面使用不同的编程范式，
-而不是仅使用一种范式。
-一种常见的做法是将程序的高级结构设计为具有状态的对象
+例如，函数式编程使开发人员更容易理解程序的行为
+（有状态程序的行为通常更难以预测，特别是在并发情况下，
+因为它依赖于输入和状态），
+而具有有状态编程范式的语言在功能上更强大。</p>
+<p>因此，大多数软件应用程序在不同方面使用不同的编程范式，
+而不是完全使用一种范式。
+一个常见的做法是将程序的高级结构设计为有状态对象
 （即具有状态的东西），
-然后利用函数式编程来实现这些对象的功能。</p>
-<p>同样，大多数现代编程语言支持多种编程范式。
-然而，其中一些语言可能通过设计鼓励或偏向某一种范式。</p>
-<p>例如，支持有状态范式/面向对象编程的一些编程语言：</p>
+然后在实现这些对象的功能时使用函数式编程。</p>
+<p>同样，大多数现代编程语言都支持多种范式。
+然而，其中一些语言可能通过设计鼓励一种范式或另一种范式。</p>
+<p>例如，支持有状态范式/面向对象编程的一些编程语言有：</p>
 <ul>
-<li>Java：Java 是一种设计用于面向对象编程（OOP）的最流行语言之一。</li>
-<li>C/C++：C/C++ 是一种多范式语言，对于面向对象编程有很好的支持。</li>
+<li>Java：Java 是为面向对象编程（OOP）而设计的最流行的语言之一。</li>
+<li>C/C++：C/C++ 是一种多范式语言，具备优秀的面向对象编程支持。</li>
 <li>Python：Python 也是一种多范式语言。</li>
 <li>Rust：Rust 是一种多范式语言，主要鼓励函数式编程，
 但也支持面向对象编程。</li>
 </ul>
-<p>支持无状态范式/函数式编程的一些编程语言：</p>
+<p>一些支持无状态范式/函数式编程的编程语言有：</p>
 <ul>
-<li>LISP：LISP 是最早的编程语言之一。
-它具有鼓励现代称为函数式编程的概念的独特设计。</li>
-<li>Rust：如前所述，Rust 是主要鼓励函数式编程的多范式语言。</li>
-<li>Python：如前所述，Python 也是一种多范式语言，没有对函数式编程或面向对象编程有很强的偏向。</li>
+<li>LISP：LISP 是最古老的编程语言之一。
+它具有独特的设计，主要支持现代中所谓的函数式编程。</li>
+<li>Rust：上面已经提到过，Rust 是一种主要鼓励函数式编程的多范式语言。</li>
+<li>Python：上面已经提到过，Python 也是一种多范式语言，没有明显倾向于函数式编程或面向对象编程。</li>
 </ul>
-<h3 id="vs-dsls">通用编程语言 vs. 领域特定语言 (DSLs)</h3>
-<p>第三种将编程语言分类的方式是根据适用领域。
-可以将编程语言分为两大类别：<strong>通用编程语言</strong>和<strong>领域特定语言 (DSLs)</strong>。</p>
-<h4 id="_10">通用编程语言</h4>
-<p>通用编程语言是为广泛用途而设计的编程语言。
-也就是说，您可以使用它们来构建任何任务的软件。
-我们之前提到的大多数语言都属于这个类别，包括 C/C++、Python、Rust 和 Java。</p>
-<h4 id="_11">领域特定语言</h4>
-<p>领域特定语言（Domain Specific Languages，DSLs）是为特定领域而设计的语言，
-如数学、数据库操作、数据分析和人工智能。
-严格来说，许多 DSL 并不符合本节中介绍的编程语言定义，
-因为它们不是为构建软件而设计的；
-但是，如果您把编程语言的定义概括为
-"一种使某些事情更容易做到的抽象或模型"，
-那么 DSLs 就符合这个定义。</p>
-<p>一些 DSL 示例：</p>
+<h3 id="vs-dsls">通用目的语言 vs 领域专用语言（DSLs）</h3>
+<p>第三种划分编程语言的方法是根据其适用领域。
+可以将编程语言分为两大类别：
+<strong>通用目的语言</strong>和<strong>领域专用语言（Domain Specific Languages，DSLs）</strong>。</p>
+<h4 id="_10">通用目的语言</h4>
+<p>通用目的语言是为通用用途而设计的编程语言。
+也就是说，你可以使用它们来为任何任务构建软件。
+我们之前提到的大多数语言都属于这个类别，
+包括 C/C++、Python、Rust 和 Java。</p>
+<h4 id="_11">领域专用语言</h4>
+<p>领域专用语言 (Domain Specific Languages, DSLs) 是为特定领域而设计的语言，
+例如数学、数据库操作、数据分析和人工智能。
+严格来说，许多 DSLs 不符合本节介绍的编程语言的定义，
+因为它们并不旨在用于构建软件；
+然而，如果你将编程语言的定义推广为
+"一种使特定任务更容易完成的抽象或模型"，
+那么 DSLs 的确符合这一定义。</p>
+<p>一些 DSLs 的例子：</p>
 <ul>
-<li>SQL：SQL 是为数据库操作而设计的 DSL。</li>
+<li>SQL：SQL 是一种为数据库操作而设计的 DSL。</li>
 <li>Mermaid：Mermaid 是一种 DSL，允许您以文本形式高效地表示图形、流程图、思维导图等。</li>
-<li>Slint：Slint 是一个 UI（用户界面，如按钮、窗口和滑动条）框架，提供了一种表示 UI 元素的 DSL。</li>
-<li>Bash：Bash 可以被视为一种使在终端上进行各种操作更容易的 DSL。</li>
-<li>MATLAB：MATLAB 是一种流行的用于数学的 DSL，支持各种数学概念和操作，如矩阵和矩阵求逆等。</li>
+<li>Slint：Slint 是一个 UI（用户界面，如按钮、窗口和滑块）框架，提供了表示 UI 元素的 DSL。</li>
+<li>Bash：Bash 可以被看作是一种使在终端上做事情更容易的 DSL。</li>
+<li>MATLAB：MATLAB 是一种流行的数学 DSL，支持各种数学概念和运算，如矩阵和矩阵求逆。</li>
 </ul>
 <div class="admonition info">
-<p class="admonition-title">有趣事实（个人观点）：开发者评价</p>
-<p>个人而言，我认为MATLAB依然是最流行的语言之一，真是个奇迹，
-考虑到它那可怕的集成开发环境、上古的语法和反人类的设计
-（比如使用小括号来从1开始索引数组，而其他人都使用0和方括号）。</p>
-<p>尽管MATLAB是我认真学习的第一种语言，
-但现在它是我最不喜欢和最少使用的语言。
-我强烈不建议新的开发者将MATLAB作为他/她的主要语言，
-并鼓励当前使用MATLAB的用户切换到Python，
-这对他们自己和开源社区的发展都有好处。</p>
+<p class="admonition-title">有趣的事实（个人主观观点）：开发者的评论</p>
+<p>就我个人而言，我觉得 MATLAB 能够保持为最受欢迎的语言之一是个奇迹，
+考虑到它丑陋的集成开发环境、古老的语法和人性化设计的否定
+（比如使用花括号从 1 开始索引数组，而其他人都使用 0 和方括号）。</p>
+<p>尽管 MATLAB 是我认真学习的第一种语言，
+但它现在是我最不喜欢和最少使用的语言。
+我强烈不建议任何新的开发者使用 MATLAB 作为他/她的主要语言，
+并强烈鼓励当前的 MATLAB 用户切换到 Python，
+这对他们自己和开源社区的发展都有很大帮助。</p>
 </div>
 <h2 id="_12">结论</h2>
-<p>在本节中，我们讨论了编程语言的概念以及它们的一般分类。</p>
-<p>一般来说，编程语言是<strong>计算机的抽象，旨在使设计、表示、构建和理解计算机程序更容易理解</strong>。</p>
-<p>编程语言可以根据以下 3 种方式进行分类：</p>
+<p>在本节中，我们讨论了编程语言是什么以及它们的通用分类。</p>
+<p>一般来说，<strong>编程语言是计算机的抽象，旨在使设计、表示、构建和理解计算机程序对人类更容易</strong>。</p>
+<p>编程语言可以根据以下三种方式进行分类：</p>
 <ol>
-<li>执行模型分类：<ul>
-<li>编译语言：源代码在程序执行之前被编译为机器代码。</li>
-<li>解释语言：解释器直接执行源代码。</li>
-<li>混合技术：即时编译（JIT Compilation）和中间语言（IL）与虚拟机（VM）。</li>
+<li>执行模型：<ul>
+<li>编译型语言：在程序执行之前将源代码编译为机器码。</li>
+<li>解释型语言：解释器直接执行源代码。</li>
+<li>混合化技术：即时编译 (JIT) 与中间语言 (IL) 和虚拟机 (VM)。</li>
 </ul>
 </li>
-<li>编程范式分类：<ul>
-<li>有状态范式和面向对象编程 (OOP)：程序包含具有状态的对象，除了输入之外，还会修改其行为。</li>
-<li>无状态范式和函数式编程：程序被抽象为将输入转换为输出的函数，无副作用，不使用状态。</li>
+<li>编程范式：<ul>
+<li>有状态编程范式和面向对象编程 (OOP)：程序包含改变其行为的状态，除了输入外还依赖状态。</li>
+<li>无状态编程范式和函数式编程：程序被抽象为将输入转换为输出的函数，并且没有副作用；不使用状态或不鼓励使用状态。</li>
 </ul>
 </li>
-<li>适用领域分类：<ul>
-<li>通用编程语言：可用于构建几乎任何任务的编程语言。</li>
-<li>领域特定语言 (DSLs)：针对特定领域而设计的编程语言。</li>
+<li>适用领域：<ul>
+<li>通用目的语言：可以用于任何用途构建软件的编程语言。</li>
+<li>领域专用语言 (DSLs)：为特定领域设计的编程语言。</li>
 </ul>
 </li>
 </ol>
-<p>恭喜！您现在对编程语言有了一个高层次的了解。
-接下来，我们将详细了解几乎所有现代通用语言中都存在的常见抽象和思想。</p>
+<p>恭喜你！你现在对编程语言有了高层次的了解。
+接下来，我们将介绍几乎每个现代通用语言都会遇到的常见抽象和思想。</p>
 
 
 
@@ -1712,6 +1856,22 @@ Python 代码的实际执行是一个复杂的过程，
             </div>
           </a>
         
+        
+          
+          <a href="../common-concepts/intro/" class="md-footer__link md-footer__link--next" aria-label="下一页: 现代编程语言中的常见概念">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                现代编程语言中的常见概念
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
