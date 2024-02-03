@@ -1,0 +1,2238 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Complete Introduction to Development">
+      
+      
+        <meta name="author" content="Trent Fellbootman">
+      
+      
+        <link rel="canonical" href="https://TODO/programming-languages/common-concepts/values-operators-and-expressions/">
+      
+      
+        <link rel="prev" href="../variables/">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
+    
+    
+      
+        <title>Values, Operators and Expressions - DEV-000</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.45e1311d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#values-operators-and-expressions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="DEV-000" class="md-header__button md-logo" aria-label="DEV-000" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DEV-000
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Values, Operators and Expressions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../zh/programming-languages/common-concepts/values-operators-and-expressions/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ru/programming-languages/common-concepts/values-operators-and-expressions/" hreflang="ru" class="md-select__link">
+              Русский
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ja/programming-languages/common-concepts/values-operators-and-expressions/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Trent-Fellbootman/dev000" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Trent-Fellbootman/dev000
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../developer-mindset/" class="md-tabs__link">
+          
+  
+  Module 0: The Developer's Mindset
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../abstract-computer/" class="md-tabs__link">
+          
+  
+  Module 1: The Abstract Computer
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro/" class="md-tabs__link">
+          
+  
+  Module 2: Programming Languages
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="DEV-000" class="md-nav__button md-logo" aria-label="DEV-000" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    DEV-000
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Trent-Fellbootman/dev000" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Trent-Fellbootman/dev000
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DEV-000: The Complete Introduction to Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../outline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DEV-000 Course Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Module 0: The Developer's Mindset
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Module 0: The Developer's Mindset
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer-mindset/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module 0: The Developer's Mindset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer-mindset/abstraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abstraction: The Developer's Way of Thinking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer-mindset/hierarchy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hierarchy: A Way to Manage Complexity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer-mindset/standards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standards: Facilitating Interactions Between Entities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer-mindset/conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Module 1: The Abstract Computer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Module 1: The Abstract Computer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../abstract-computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module 1: The Abstract Computer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../abstract-computer/why-abstraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Abstract Computer: Why do we need it?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../abstract-computer/isa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Registers, Memory and Instructions: Instruction Set Architectures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../abstract-computer/memory-use-cases-stack-heap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Memory Use Cases, Stack and Heap: Basic Memory Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../abstract-computer/conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Module 2: Programming Languages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Module 2: Programming Languages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module 2: Programming Languages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programming Languages: A High Level Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Common Concepts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Common Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Concepts in Modern Programming Languages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Values, Operators and Expressions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Values, Operators and Expressions
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-values-and-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are values and expressions?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What are values and expressions?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a value?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-an-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is an expression?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-terms-with-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Terms With Expressions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Terms With Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expression-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expression Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operators
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-an-operator-and-why-do-we-need-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is an operator and why do we need them?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-taxonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Taxonomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Operators
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-boolean-algebra-and-boolean-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Boolean Algebra and Boolean Operators
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Boolean Algebra and Boolean Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-boolean-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Boolean Algebra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bitwise-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bitwise Operators
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparison Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Operators
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Special Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#increment-decrement-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increment &amp; Decrement Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Operator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Precedence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-values-and-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are values and expressions?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What are values and expressions?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a value?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-an-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is an expression?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-terms-with-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Terms With Expressions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Terms With Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expression-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expression Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operators
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-an-operator-and-why-do-we-need-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is an operator and why do we need them?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-taxonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Taxonomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Operators
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arithmetic Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-boolean-algebra-and-boolean-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Boolean Algebra and Boolean Operators
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Boolean Algebra and Boolean Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-boolean-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Boolean Algebra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bitwise-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bitwise Operators
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparison Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Operators
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Special Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#increment-decrement-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increment &amp; Decrement Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Operator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Precedence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/Trent-Fellbootman/dev000/blob/main/docs/en/programming-languages/common-concepts/values-operators-and-expressions.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="values-operators-and-expressions">Values, Operators and Expressions</h1>
+<p>Values and expressions are abstractions common to all programming languages.
+Roughly speaking, values represent data,
+while expressions represent some data you get by transforming some other data.</p>
+<h2 id="what-are-values-and-expressions">What are values and expressions?</h2>
+<h3 id="what-is-a-value">What is a value?</h3>
+<p>Basically, a <strong>value</strong> is a "thing".
+It could be a "simple thing" like a number or a string,
+or a complex thing like a user-defined struct/class object (recall from the previous lecture).</p>
+<p>The following are all examples of values:</p>
+<ul>
+<li><code>42</code></li>
+<li><code>"hello"</code></li>
+<li><code>true</code></li>
+<li><code>[1, 2, "cute"]</code> (Python list)</li>
+<li><code>{a: 1, b: 2}</code> (Python dictionary)</li>
+<li><code>Student {name: "John", age: 20}</code> (Rust struct literal)</li>
+</ul>
+<p>You might wonder, "variables are things, and values are also things, so what is the difference between variables and values?"
+Well, simply speaking, variables represents <strong>states</strong> that can live and change for a period of time,
+while values represent stateless <strong>data</strong>.
+In compiled languages, values may not have memory allocated to them at all.
+In other words, the concept of values only exist for human programmers,
+and are often optimized away (i.e., eliminated) by the compiler.</p>
+<p>Consider the following C++ code snippet:</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">35</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="mi">5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
+</span></code></pre></div>
+<p>In this code snippet, <code>x, y, z</code> are all variables,
+while <code>42, 35, 3, 5</code>, as well as that long thing <code>(x + y) * (x - y) + (3 * x) + (5 * y)</code> getting assigned to <code>z</code>,
+are all values.</p>
+<p>Notice that in the long expression <code>(x + y) * (x - y) + (3 * x) + (5 * y)</code>,
+<code>x</code> and <code>y</code> represent the <strong>valued</strong> of the respective variables <code>x</code> and <code>y</code>
+at the time when the statement <code>z = (x + y) * (x - y) + (3 * x) + (5 * y)</code> executes,
+instead of the variables.</p>
+<p>Typically, when a variable is declared or performing <strong>mutating operations</strong>
+(mutating operations are operations that change the value of a variable),
+for example, <code>int a;</code> or <code>a = 42;</code>,
+it is seen as a variable;
+when its value is read, it is seen as a value (e.g., in the statement <code>b = 3 * a</code>, <code>a</code> is represents the <strong>value</strong> of variable <code>a</code>).
+The name of a variable can mean different things in different contexts.</p>
+<h3 id="what-is-an-expression">What is an expression?</h3>
+<p>Actually, we have already seen an expression before: <code>(x + y) * (x - y) + (3 * x) + (5 * y)</code>.
+Basically, an <strong>expression</strong> is just a <strong>value</strong>, but viewed from a slightly different perspective.</p>
+<p>Technically, <strong>expressions</strong> and <strong>values</strong> are equivalent.
+However, when we talk about values,
+we usually talk about "atomic values",
+i.e., really simple values without any transformation or untransformed values of a variable.
+When we talk about <strong>expressions</strong>, we usually mean more complicated values
+constructed from simpler values.</p>
+<p>Such a subtle difference is illustrated in the table below:</p>
+<table>
+<thead>
+<tr>
+<th>Typical Values</th>
+<th>Typical Expressions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>42</code>, <code>"hello"</code>, <code>a</code> (<code>a</code> is a variable)</td>
+<td><code>(x + y) * (x - y) + (3 * x) + (5 * y)</code>, <code>3 * 5</code>, <code>"hello" + " world"</code></td>
+</tr>
+</tbody>
+</table>
+<p>It is important to note that values and expressions don't have a clear boundary and are technically the same concept.
+<code>42</code> and <code>a</code> are perfectly valid expressions ("atomic expressions"), while <code>(x + y) * (x - y)</code> is a value ("compound value") as well.</p>
+<h3 id="common-terms-with-expressions">Common Terms With Expressions</h3>
+<h4 id="expression-evaluation">Expression Evaluation</h4>
+<p>In programming languages, you will often come across the term "evaluate an expression".
+To "evaluate" an expressions means to "compute its final value".</p>
+<p>For example, consider the expression <code>3 * 5</code>;
+evaluating this expression means to actually multiply <code>3</code> with <code>5</code>,
+and get the result <code>15</code>.</p>
+<details class="code-lab">
+<summary>Code Lab: Values and Expressions</summary>
+<p>Run the following Rust code:</p>
+<div class="language-Rust highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">35</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="mi">5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;{}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">);</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;{}&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>What are the types of <code>x, y, z</code>, respectively?</p>
+</details>
+<details class="code-lab">
+<summary>Code Lab: Intermediate Results</summary>
+<p>Here's some C++ code for reading in the number of days and converting it to seconds
+(if you don't understand what it does, ask an AI):</p>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">days</span><span class="p">;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">days</span><span class="p">;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">secondsPerHour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3600</span><span class="p">;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">secondsPerDay</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">secondsPerHour</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">24</span><span class="p">;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">seconds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">days</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">secondsPerDay</span><span class="p">;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">seconds</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Compile the code to assembly, making sure to pass the <code>-O2</code> flag
+(which means "do compiler optimizations"),
+then find the section corresponding to the <code>main</code> function.
+You should see something similar to the following, assuming you're on an x86 machine:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>(omitted)
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>main:
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>.LFB1812:
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    .cfi_startproc
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    endbr64
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    pushq   %r12
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    .cfi_def_cfa_offset 16
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    .cfi_offset 12, -16
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    leaq    _ZSt3cin(%rip), %rdi
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    pushq   %rbp
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    .cfi_def_cfa_offset 24
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    .cfi_offset 6, -24
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    subq    $24, %rsp
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    .cfi_def_cfa_offset 48
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    movq    %fs:40, %rax
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    movq    %rax, 8(%rsp)
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    xorl    %eax, %eax
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    leaq    4(%rsp), %rsi
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    call    _ZNSirsERi@PLT
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    imull   $86400, 4(%rsp), %esi
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    leaq    _ZSt4cout(%rip), %rdi
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>    call    _ZNSolsEi@PLT
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>    movq    %rax, %rbp
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>    movq    (%rax), %rax
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>    movq    -24(%rax), %rax
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>    movq    240(%rbp,%rax), %r12
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>    testq   %r12, %r12
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>    je  .L10
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>    cmpb    $0, 56(%r12)
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>    je  .L5
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>    movsbl  67(%r12), %esi
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>(omitted)
+</span></code></pre></div>
+<p>Look at this.
+Where are the variables <code>secondsPerHour</code> and <code>secondsPerDay</code>?
+What did the compiler do to optimize, and why won't it affect proper execution of the code?</p>
+<p><em>(Hint: This is a trick question.
+What is the product of 3600 and 24?
+This question is very hard for beginners,
+so it's okay to ask an AI for help.)</em></p>
+<p>Judging from what you saw,
+is it better to write a really long expression,
+or break it into multiple expressions each assigned to a variable holding it?
+Will the latter have a negative effect on memory usage with the <code>-O0</code> flag?
+What if you pass in the <code>-O2</code> flag instead of <code>-O0</code>?</p>
+<p><em>(Hint: Ask an AI about <code>-O2</code> and <code>-O0</code>).</em></p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question: Lvalues and Rvalues</p>
+<p>Ask an AI about "lvalues" and "rvalues".</p>
+</div>
+<h2 id="operators">Operators</h2>
+<p>Look at the following Rust code:</p>
+<div class="language-Rust highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">let</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">let</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;{}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+</span></code></pre></div>
+<p>Even though we have not talk about the <code>+</code> operator,
+you probably already know what the code will output: <code>7</code>.
+<code>a + b</code> will look intuitive even if you haven't learned about operators before,
+as long as you know primary school math;
+indeed, operators in programming languages are designed to closely mimic math expressions.</p>
+<h3 id="what-is-an-operator-and-why-do-we-need-them">What is an operator and why do we need them?</h3>
+<p>Formally, an <strong>operator</strong> defines a mapping which transform some value(s) into another value.
+For example, the <code>+</code> operator maps two values to their addition,
+while the <code>/</code> operator maps two values to their division.</p>
+<p>An operator can take a number of input values called <strong>operand</strong> and produces an output value.
+For example, in the expression <code>3 + 4</code>, <code>3</code> is called the <strong>left operand</strong> and <code>4</code> is called the <strong>right operand</strong>.
+The <code>+</code> operator takes the two operands and produces the sum: <code>7</code>.</p>
+<p>The reason why we need operators is to make data transformation easy and intuitive.
+As we will learn later,
+it is possible to transform data without operators at all by using functions (and operators are just functions in essence);
+however, doing that will not be very human-friendly,
+while using operators allows us to transform data in an intuitive way that resembles math.</p>
+<p>Consider the following expressions that does the same thing:</p>
+<table>
+<thead>
+<tr>
+<th>With Operators</th>
+<th>With Functions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(3 + 4) ** 5</code></td>
+<td>pow(add(3, 4), 5)</td>
+</tr>
+</tbody>
+</table>
+<p>Obviously, it is much easier to read and write expressions using operators, compared to doing the same thing with functions.</p>
+<div class="admonition info">
+<p class="admonition-title">Operator Overriding</p>
+<p>It is possible to customize what an operator does.
+For example, you can create a custom type and define <code>+</code> to work as multiplication, and vise-versa.
+However, the common practice is to define the operator to be "what it naturally should do"
+(e.g., <code>+</code> should be addition, not subtraction).
+This is to improve code readability and avoid confusion.</p>
+</div>
+<h3 id="operator-taxonomy">Operator Taxonomy</h3>
+<p>Operators can be classified into several categories based on the number of operands they take.
+The most common ones are <strong>unary operators</strong>, <strong>binary operators</strong> and <strong>ternary operators</strong>.
+<strong>Unary operators</strong> take one operand;
+<strong>binary operators</strong> take two operands;
+and <strong>ternary operators</strong> take three operands.</p>
+<div class="admonition info">
+<p class="admonition-title">n-ary operators where n &gt; 3?</p>
+<p>Operators that take more than 3 operands are very uncommon, if they exist at all.
+Personally speaking, I have never seen such an operator in any programming language.</p>
+<p>The reason for this is that operators (and programming languages in general)
+are meant to make things easy and intuitive, instead of hard and anti-human
+(although a lot of Chinese universities tend to forget that by teaching stuff like <code>i += (i++ * ++i) ? (++i &amp; i++) : (i++ | ++i), i == (i = i++) * ++i + i++</code>).
+Operators with more than 3 operands, on the other hand, are hard to understand and cause confusion.
+In fact, ternary operators are also very uncommon;
+as far as I know, the only commonly used ternary operator is the conditional operator <code>? :</code>.
+Binary operators are the most common, as they have their counterparts in math.</p>
+</div>
+<p>Operators can also be classified by what they do.
+Generally speaking, there are data processing operators and comparison operators.</p>
+<p>Data processing operators are operators that do "normal data processing",
+like addition, subtraction, multiplication, division, and so on.</p>
+<p>Some examples of data processing operators:
+<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code> (power operator, e.g., <code>2 ** 3 == 8</code>),
+logical operators (<code>&amp;&amp;</code>, <code>||</code>, <code>!</code>, <code>&amp;</code>, <code>|</code>, <code>^</code>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code>).</p>
+<p>Comparison operators are operators that "compare" the operands and output a boolean result;
+for example, <code>2 &lt;= 3</code> evaluates to <code>true</code>, while <code>3 &lt;= 2</code> evaluates to <code>false</code>.
+except for very few, uncommon operators (e.g., spaceship operator introduced in newer C++ standards),
+the output of these operators are always boolean, i.e., either true or false.</p>
+<p>As far as I know, comparison operators are always binary operators.</p>
+<p>Some examples of comparison operators:</p>
+<ul>
+<li><code>==</code> (equal to)</li>
+<li><code>!=</code> (not equal to)</li>
+<li><code>&gt;</code> (greater than)</li>
+<li><code>&gt;=</code> (greater than or equal to)</li>
+<li><code>&lt;</code> (less than)</li>
+<li><code>&lt;=</code> (less than or equal to)</li>
+</ul>
+<p>There is one operator that falls outside of comparison operator and data processing operators:
+the conditional operator <code>? :</code>.
+We will discuss what it does in the next subsection.</p>
+<h3 id="basic-operators">Basic Operators</h3>
+<p>Operators are mostly the same in virtually all modern programming languages (that excludes LISP),
+and they are typically designed to closely mimic their mathematical counterparts (when applicable).
+In this subsection, we discuss the common operators.</p>
+<h4 id="arithmetic-operators">Arithmetic Operators</h4>
+<p>These operators represent mathematical operations such as addition and subtraction.</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Explanation</th>
+<th>C++ Example</th>
+<th>Python Example</th>
+<th>Rust Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td><code>a + b</code> evaluates to the sum of <code>a</code> and <code>b</code></td>
+<td><code>3 == 1 + 2</code></td>
+<td><code>3 == 1 + 2</code></td>
+<td><code>3 == 1 + 2</code></td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td><code>a - b</code> evaluates to the difference of <code>a</code> and <code>b</code></td>
+<td><code>-1 == 1 - 2</code></td>
+<td><code>-1 == 1 - 2</code></td>
+<td><code>-1 == 1 - 2</code></td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td><code>a * b</code> evaluates to the product of <code>a</code> and <code>b</code></td>
+<td><code>6 == 2 * 3</code></td>
+<td><code>6 == 2 * 3</code></td>
+<td><code>6 == 2 * 3</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td><code>a / b</code> evaluates to the quotient of <code>a</code> and <code>b</code></td>
+<td><code>2 == 6 / 3</code></td>
+<td><code>2 == 6 / 3</code></td>
+<td><code>2 == 6 / 3</code></td>
+</tr>
+<tr>
+<td><code>**</code></td>
+<td><code>a ** b</code> evaluates to the result of raising <code>a</code> to the power of <code>b</code></td>
+<td>Not Supported</td>
+<td><code>27 == 3 ** 3</code></td>
+<td>Not Supported</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td><code>a % b</code> evaluates to the remainder of <code>a</code> divided by <code>b</code></td>
+<td><code>1 == 101 % 2</code></td>
+<td><code>1 == 101 % 2</code></td>
+<td><code>1 == 101 % 2</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition question">
+<p class="admonition-title">Question: The Power Operator</p>
+<p>Is it more common for compiled languages to implement the power operator or not to implement it?
+What about interpreted languages?
+Why is there such a difference?</p>
+<p><em>Hint: This question may involve algorithms and is hard for beginners, so feel free to ask an AI.</em></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Operator Conventions</p>
+<p>The notations for common operations like addition and subtraction are mostly consistent across languages,
+but there is less consensus when it comes to less common arithmetic operators.</p>
+<p>For example, the power operator is represented as <code>^</code> instead of <code>**</code> in MATLAB;
+also in MATLAB, <code>%</code> is not for modulo, but used to indicate comments.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Return Types and Operator Behavior</p>
+<p>Arithmetic operators work in mostly the same way, but there are some subtle differences across languages
+(especially between compiled &amp; interpreted languages).</p>
+<p>The output type of an arithmetic operator, when its operands are numerical values,
+is usually the same with its operands.
+In C/C++, for example, the output type of <code>+</code>, <code>-</code>, <code>*</code>, and <code>/</code> is always the same as its operands,
+when operands are language-defined numerical types like <code>int</code>, <code>float</code>, <code>double</code>, <code>uint8_t</code>, etc.
+Even if you try to compute <code>5 / 3</code>, the output type will be <code>1</code>, instead of <code>1.6667</code>.</p>
+<p>However, this is not the case for Python.
+In Python, the behavior of <code>+</code>, <code>-</code> and <code>*</code> are the same, but the behavior of <code>/</code> is different:
+if the first operand is divisible by the second, the output type will be <code>int</code>;
+otherwise, the output type will be <code>float</code>.
+So for example, <code>5 / 3</code> returns <code>1.666...</code> in Python,
+while <code>6 / 3</code> returns <code>2</code>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">The Order Counts</p>
+<p>Although operators are designed to closely mimic their mathematical counterparts,
+there are some important differences, especially for binary operators.</p>
+<p>The order of operands may matter, especially when the operator is overridden.
+For example, <code>a + b</code> and <code>b + a</code> may evaluate to different values on non-numerical types,
+or when the behavior of <code>+</code> is overridden.</p>
+</div>
+<details class="code-lab">
+<summary>Code Lab: Arithmetic Operators</summary>
+<p>Write a simple program that consumes two integers from user input and outputs their sum, difference, division (decimal) and product.</p>
+<p>Ask an AI for how to take input from the console and print to it.</p>
+<p><em>Hint: Output decimal, not integer for division.</em></p>
+</details>
+<details class="code-lab">
+<summary>Code Lab: Overflow</summary>
+<p>Compile and run the following C/C++ code:</p>
+<div class="language-C++ highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;limits&gt;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">max</span><span class="p">();</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39; &#39;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>What do you observe?
+Can you explain why this happened?</p>
+<p><em>Hint: Ask an AI to explain the code for you.</em></p>
+</details>
+<h4 id="basic-boolean-algebra-and-boolean-operators">Basic Boolean Algebra and Boolean Operators</h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Boolean algebra and boolean operators are a large topic.
+In this section, you will likely find a lot of unfamiliar things,
+both in programming and in mathematics.
+Therefore, you should have an AI by your side
+and ask him/her whenever you see something you don't know and that I do not explain.</p>
+</div>
+<h5 id="basic-boolean-algebra">Basic Boolean Algebra</h5>
+<p>You may already know that a <strong>boolean</strong> value is one that can be either <code>true</code> or <code>false</code> from the previous lecture.</p>
+<div class="admonition info">
+<p class="admonition-title">Other notations of <code>true</code> and <code>false</code></p>
+<p>There are other notations for <code>true</code> and <code>false</code>.</p>
+<p>Common aliases for <code>true</code>: <code>1</code>, <code>TRUE</code>, <code>True</code>.
+Common aliases for <code>false</code>: <code>0</code>, <code>FALSE</code>, <code>False</code>.</p>
+</div>
+<p>There are certain algebraic operations defined on boolean values;
+they form the basics of boolean algebra.</p>
+<p>The most common boolean operations are:</p>
+<ul>
+<li>AND: The AND of two booleans <code>a</code> and <code>b</code> is true only if both <code>a</code> and <code>b</code> are true.
+Otherwise, it is false.</li>
+<li>OR: The OR of two booleans <code>a</code> and <code>b</code> is true if either <code>a</code> or <code>b</code> is true.
+Otherwise, it is false.</li>
+<li>NOT: The NOT of a boolean <code>a</code> is true if <code>a</code> is false and false if <code>a</code> is true.</li>
+<li>XOR: The XOR of two booleans <code>a</code> and <code>b</code> is true if <code>a</code> and <code>b</code> are different.
+For example, <span class="arithmatex">\(true \operatorname{XOR} true = false; true \operatorname{XOR} false = true\)</span>.</li>
+</ul>
+<h5 id="boolean-operators">Boolean Operators</h5>
+<p>Similar to arithmetic operators, boolean operators are typically the same across different languages.</p>
+<p>Here are some examples:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Example in C/C++, Java, Rust, C#, Dart</th>
+<th>Example in Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AND</td>
+<td><code>true &amp;&amp; true == true</code></td>
+<td><code>true and true == true</code></td>
+</tr>
+<tr>
+<td>OR</td>
+<td><code>true || false == true</code></td>
+<td><code>true or false == true</code></td>
+</tr>
+<tr>
+<td>NOT</td>
+<td><code>!true == false</code></td>
+<td><code>not true == false</code></td>
+</tr>
+<tr>
+<td>XOR</td>
+<td><code>true ^ true == false</code></td>
+<td><code>true ^ true == false</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition question">
+<p class="admonition-title">Question: Design Choices</p>
+<p>Do you think the design of notations of boolean operators in Python is better than that in C/C++,
+or vice versa?</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question: Booleans variables</p>
+<p>Typically, an <code>int</code> takes 4 bytes (32 bits), and its range is from <span class="arithmatex">\(-2^{31}\)</span> to <span class="arithmatex">\(2^{31} - 1\)</span>.
+How many bits does a <code>bool</code> take?</p>
+<p><em>Hint: This is a trick question.
+It's not just a math question.
+You might want to do it yourself first, then ask an AI.
+Your answer and the AI's are likely different.</em></p>
+</div>
+<h5 id="bitwise-operators">Bitwise Operators</h5>
+<p>Almost all modern computers uses binary to represent data.
+As a result, virtually anything from integers to floats, boils down to zeros and ones in memory.</p>
+<p>For example, a <code>uint32_t</code> type <code>4</code> is represented as 4 bytes, or 32 bits <code>00000000 00000000 00000000 00000100</code>.</p>
+<div class="admonition question">
+<p class="admonition-title">Question: Binary Representations of Numbers</p>
+<p>Consult an AI to learn about how numbers are represented in binary.</p>
+<p><em>Hint: For beginners, it is sufficient to learn about integer representations.
+Don't bother with floating point numbers for now.</em></p>
+</div>
+<p>As a result, virtually any value can be seen as a collection of booleans
+(one boolean for each bit, <code>0</code> for <code>false</code>, <code>1</code> for <code>true</code>).
+If we have two values, we can perform some boolean operation bit-by-bit.
+This is called "bitwise operation".
+For example, if we have a <code>uint32_t</code> 4 (<code>00000000 00000000 00000000 00000100</code>),
+and a <code>uint32_t</code> 5 (<code>00000000 00000000 00000000 00000101</code>),
+we can do the bitwise XOR operation;
+the first 24 bits of the result will all be <code>0</code>,
+as each pair of the corresponding bits are both <code>0</code>;
+similarly, the last 8 bits will be <code>00000001</code>.
+So, the result is <code>00000000 00000000 00000000 00000001</code>,
+which can be interpreted as a <code>uint32_t</code> <code>1</code>.</p>
+<p>Bitwise operations are used for various purposes,
+like masking a certain part of the bits of a value,
+or doing a large number of boolean operations in one go.</p>
+<p>Here are the most common bitwise operators:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Example in C/C++, Java, Rust, C#, Dart</th>
+<th>Example in Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bitwise AND</td>
+<td><code>4 &amp; 5 == 1</code></td>
+<td><code>4 &amp; 5 == 1</code></td>
+</tr>
+<tr>
+<td>Bitwise OR</td>
+<td><code>4 | 5 == 5</code></td>
+<td><code>4 | 5 == 5</code></td>
+</tr>
+<tr>
+<td>Bitwise NOT</td>
+<td><code>~4 == -5</code></td>
+<td><code>~4 == -5</code></td>
+</tr>
+<tr>
+<td>Bitwise XOR</td>
+<td><code>4 ^ 5 == 1</code></td>
+<td><code>4 ^ 5 == 1</code></td>
+</tr>
+<tr>
+<td>Shift left</td>
+<td><code>4 &lt;&lt; 2 == 16</code></td>
+<td><code>4 &lt;&lt; 2 == 16</code></td>
+</tr>
+<tr>
+<td>Shift right</td>
+<td><code>4 &gt;&gt; 2 == 1</code></td>
+<td><code>4 &gt;&gt; 2 == 1</code></td>
+</tr>
+</tbody>
+</table>
+<p>Note that in addition to AND, OR, NOT, and XOR,
+we have two new operations: shift left and shift right.</p>
+<p>Shift left means to "move the bits to the left";
+the bits that are moved out of the leftmost bit are discarded,
+while the new bits appearing on the right are filled with zeros.</p>
+<p>Shift right does the similar thing, only that the bits are shifted to the right instead of the left.</p>
+<p>As an example, <code>0101</code> shifted right by 2 bits is <code>0001</code>;
+<code>0101</code> shifted left by 1 bit is <code>1010</code>.</p>
+<h4 id="comparison-operators">Comparison Operators</h4>
+<p>A comparison operator "compares" two values and outputs a boolean.
+They are designed to closely mimic their counterparts in mathematics.</p>
+<p>Here are the most common comparison operators:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Example in C/C++, Java, Rust, C#, Dart, Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Equal to</td>
+<td><code>4 == 5</code> evaluates to <code>false</code></td>
+</tr>
+<tr>
+<td>Not equal to</td>
+<td><code>4 != 5</code> evaluates to <code>true</code></td>
+</tr>
+<tr>
+<td>Greater than</td>
+<td><code>4 &gt; 4</code> evaluates to <code>false</code></td>
+</tr>
+<tr>
+<td>Greater than or equal to</td>
+<td><code>4 &gt;= 4</code> evaluates to <code>true</code></td>
+</tr>
+<tr>
+<td>Less than</td>
+<td><code>4 &lt; 4</code> evaluates to <code>false</code></td>
+</tr>
+<tr>
+<td>Less than or equal to</td>
+<td><code>4 &lt;= 4</code> evaluates to <code>true</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="special-operators">Special Operators</h4>
+<p>Besides the common operators we've seen before, there are some special operators.</p>
+<h5 id="increment-decrement-operators">Increment &amp; Decrement Operators</h5>
+<p>Some languages such as C/C++ support 4 unary increment &amp; decrement operators for integer-like variables,
+denoted by two symbols <code>++</code> and <code>--</code>.
+Strictly speaking, these operators are not really <code>operators</code> because they must operate on variables,
+and that they mutate the value of the variable.</p>
+<p><code>++</code> is called the increment operator,
+and there are two variants: <code>++x</code> and <code>x++</code>,
+where <code>x</code> is the variable operand.</p>
+<p>Both of these variants increments the variable <code>x</code> by 1;
+however, denote <span class="arithmatex">\(x_0\)</span> as the value of <code>x</code> before the operator is applied,
+then <code>++x</code> evaluates to <span class="arithmatex">\(x_0 + 1\)</span>, while <code>x++</code> evaluates to <span class="arithmatex">\(x_0\)</span>.</p>
+<p>For example, if <code>a</code> holds the value <code>42</code> initially,
+then <code>++a</code> evaluates to <code>43</code>,
+while <code>a++</code> evaluates to <code>42</code>.
+After the operator is applied, <code>a</code> holds the value <code>43</code> in both cases.</p>
+<p>Similarly, <code>--</code> is called the decrement operator,
+and there are two variants: <code>--x</code> and <code>x--</code>,
+where <code>x</code> is the variable operand.</p>
+<p>Both of these variants decrements the variable <code>x</code> by 1;
+however, denote <span class="arithmatex">\(x_0\)</span> as the value of <code>x</code> before the operator is applied,
+then <code>--x</code> evaluates to <span class="arithmatex">\(x_0 - 1\)</span>, while <code>x--</code> evaluates to <span class="arithmatex">\(x_0\)</span>.</p>
+<div class="admonition info">
+<p class="admonition-title">The Semantics of Increment &amp; Decrement Operators</p>
+<p>There are language-defined behavior of <code>++</code> and <code>--</code> on integer-like types only.
+However, you can define what <code>++</code> and <code>--</code> does on custom types by operator overriding.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">"Legitimate" Usage of Increment &amp; Decrement Operators</p>
+<p>There has been some discussions on whether increment &amp; decrement operators are a feature or a flaw in the modern world,
+as the non-stateless nature (meaning that they mutate their operand) of these operators can lead to both brevity and confusion.</p>
+<p>In fact, many modern programming languages (like Rust) have decided not to support these operators at all.
+Even in languages that does support them (e.g., C/C++),
+people tend to use these operators only in a few well-defined, template-like and very limited cases
+where using <code>++</code> or <code>--</code> has almost become a standard (e.g., loop counters).</p>
+<p>Although many Chinese universities teach the "advanced usage" of <code>++</code> and <code>--</code>,
+such as <code>i += (i *= ++i, i /= i++, ++i ? ++i : i++ % i++ + (++i ? ++i : i++))</code>,
+such "advanced usage" is generally considered <strong>VERY BAD</strong> practice
+because they serve for no purpose other than complicating the readers.
+As such, they should always be avoided.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">The Origin of Increment &amp; Decrement Operators</p>
+<p>If most programming languages decide not to support increment &amp; decrement operators,
+why were they created in the first place?
+Why does C/C++ support them, while Rust does not?</p>
+<p><em>Hint: This is a very hard question for beginners.
+For the first question, try searching for "pre-indexing" and "post-indexing" (in context of assembly languages).
+For the second question, search for how old is C/C++, and how old is Rust.
+Then, think about compiler optimizations.
+Feel free to ask an AI for help.</em></p>
+</div>
+<h5 id="conditional-operator">Conditional Operator</h5>
+<p>The conditional operator <code>? :</code> is the only commonly-used ternary operator in modern programming languages.
+Basically, <code>a ? b : c</code> evaluates to <code>b</code> if <code>a</code> is true, and to <code>c</code> if <code>a</code> is false.</p>
+<p>For example, <code>2 &lt; 3 ? 1 : 2</code> evaluates to <code>1</code>.</p>
+<h3 id="operator-precedence">Operator Precedence</h3>
+<p><strong>Operator precedence</strong> defines the <strong>logical order</strong> in which operators are applied and sub-expressions are evaluated.
+Given an expression <code>a + b * c</code> for example, it defines whether it is evaluated to <span class="arithmatex">\(a + (b * c)\)</span> or <span class="arithmatex">\((a + b) * c\)</span>.</p>
+<div class="admonition info">
+<p class="admonition-title">Logical Order, Not Physical Order</p>
+<p>Operator precedence only defines the <strong>logical order</strong>, but there is no guarantee on the actual order in which sub-expressions are evaluated.
+That means, the value of an expression is well-defined
+(guaranteed to be the same as if the sub-expressions were evaluated in the order specified by operator precedence),
+but the actual order in which evaluation happens is not well-defined
+(some evaluations may even happen concurrently).</p>
+</div>
+<p>If one operator has a <strong>higher precedence</strong> than another,
+the corresponding sub-expression is evaluated first (logically);
+if it has a <strong>lower precedence</strong> than another, the corresponding sub-expression is evaluated later (physically).
+For example, if <code>*</code> has a higher precedence than <code>+</code>, then <code>a + b * c</code> evaluates to <span class="arithmatex">\(a + (b * c)\)</span>;
+if <code>*</code> has a lower precedence, it evaluates to <span class="arithmatex">\((a + b) * c\)</span>.</p>
+<p>When two operators have the <strong>same precedence</strong>, the evaluation typically happens from left to right.
+For example, if <code>+</code> and <code>-</code> have the same precedence, then <code>a - b + c</code> evaluates to <span class="arithmatex">\((a - b) + c\)</span>, not <span class="arithmatex">\(a - (b + c)\)</span>.</p>
+<p>Sub-expressions enclosed within braces <code>()</code> are evaluated first (logically).
+For example, <code>(a + b) * c</code> evaluates to <span class="arithmatex">\((a + b) * c\)</span>, not <span class="arithmatex">\(a + (b * c)\)</span>.</p>
+<p>In most cases, operator precedence closely mimics its mathematical counterparts and is consistent across programming languages.
+For example, <code>*</code> and <code>/</code> have the same precedence, higher than <code>+</code> and <code>-</code> which also have the same precedence.
+Among logical operators, <code>!</code> have high precedence than <code>&amp;&amp;</code> and <code>||</code>.
+When it comes to other cases, the good practice is to use braces <code>()</code> to explicitly state which sub-expressions are evaluated first (logically),
+in order to avoid ambiguity.
+For example, <code>a &amp;&amp; b || c &amp;&amp; d</code> and <code>(a &amp;&amp; b) || (c &amp;&amp; d)</code> are equivalent,
+but it is better to write the latter.</p>
+<details class="code-lab">
+<summary>Code Lab: Putting it Together (Part 1)</summary>
+<p>Without compiling and running, infer the output of the following Rust program:</p>
+<div class="language-Rust highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;x = {}, y = {}, z = {}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">);</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;x = {}, y = {}, z = {}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">);</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Then, run the code to verify your answer.</p>
+<p><em>Hint: Ask an AI to explain what <code>println!</code> does.</em></p>
+</details>
+<details class="code-lab">
+<summary>Code Lab: Putting it Together (Part 2)</summary>
+<p>Write a Rust program that converts Celsius to Fahrenheit.</p>
+<p><em>Hint: Ask an AI to help you read and print things to the console.</em></p>
+</details>
+<p>Congratulations!
+You have learned about values, expressions and operators.
+Next, we will talk about control flow.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../variables/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Variables">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Variables
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
