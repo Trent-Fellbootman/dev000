@@ -122,3 +122,4 @@ nav:
     - Common Concepts:
       - programming-languages/common-concepts/intro.md
       - programming-languages/common-concepts/variables.md
+      - programming-languages/common-concepts/values-operators-and-expressions.md
