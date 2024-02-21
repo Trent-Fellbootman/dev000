@@ -140,18 +140,16 @@ and so on.
 ```mermaid
 graph TD
 
-Car
+A([Car]) --> B([Car-Body])
+A --> E([chassis])
+A --> F([Wheels])
+A --> C([Engine])
 
-Car --> Car-Body
-Car --> chassis
-Car --> Wheels
-Car --> Engine
+B --> G([Doors])
+B --> H([Windows])
 
-Car-Body --> Doors
-Car-Body --> Windows
-
-Engine --> Gears
-Engine --> Cylinders
+C --> I([Gears])
+C --> J([Cylinders])
 ```
 
 </div>
@@ -169,21 +167,19 @@ For example, consider the following hierarchy:
 ```mermaid
 graph TD
 
-Creatures
+A([Creatures]) --> B([Plants])
 
-Creatures --> Plants
+B --> G([Trees])
 
-Plants --> Trees
+B --> H([Grass])
 
-Plants --> Grass
+A --> C([Animals])
 
-Creatures --> Animals
+C --> D([Insects])
 
-Animals --> Insects
+C --> E([Mammals])
 
-Animals --> Mammals
-
-Mammals --> Humans
+E --> F([Humans])
 ```
 
 </div>

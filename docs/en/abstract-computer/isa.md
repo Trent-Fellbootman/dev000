@@ -111,10 +111,10 @@ and updates the PC (usually to the memory address of the next instruction, but c
 ```mermaid
 graph TD
 
-    start --> read-instruction
-    read-instruction --> execute-instruction
-    execute-instruction --> update-PC
-    update-PC --> read-instruction
+    A([start]) --> B([read instruction])
+    B --> C([execute instruction])
+    C --> D([update PC])
+    D --> B
 ```
 
 </div>
